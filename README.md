@@ -10,7 +10,7 @@ AI Yoga Masters is an open-source, AI-native yoga school founded by **Alex Julia
 
 [Read the original book][book] · [Explore the curriculum](#the-original-curriculum) · [Start with the core practice](#the-core-practice) · [Build with us](#contributing)
 
-**Project status:** Foundation stage. The original book and curriculum exist; the public digital school is now being rebuilt in the open. This repository does not yet contain a runnable website, user accounts, or an AI teaching assistant.
+**Project status:** Website foundation stage. The original book and curriculum now have a runnable Next.js public-site foundation in this repository. There is not yet a database, user-account system, or AI teaching assistant.
 
 ---
 
@@ -437,17 +437,7 @@ Mindfulness should increase agency—not create dependence on a teacher, app, re
 
 ## What exists today
 
-The repository currently contains only the project foundation:
-
-- this `README.md`;
-- a Node-oriented `.gitignore`;
-- an MIT software license.
-
-There is **not yet** an application, database, authentication system, AI agent, practice tracker, or production curriculum site in this repository.
-
-That is intentional.
-
-We are starting with the roots.
+The repository now contains the first runnable Next.js website foundation alongside the project documentation. It remains intentionally lightweight: there is no database, authentication system, AI agent, or practice tracker yet.
 
 ---
 
@@ -455,10 +445,11 @@ We are starting with the roots.
 
 | Stage | Focus |
 | --- | --- |
-| **Foundation — now** | Establish identity, source material, principles, safety boundaries, and the public-building model. |
+| **Foundation — complete** | Establish identity, source material, principles, safety boundaries, and the public-building model. |
+| **Website foundation — now** | Launch the calm, accessible Next.js home for AI Yoga Masters and connect the production domain. |
 | **Curriculum extraction** | Convert the 64 lessons, flows, and meditations into structured source-aware content. |
 | **Evidence pass** | Review health, scientific, historical, and philosophical claims; clearly separate source, evidence, and interpretation. |
-| **Minimal school** | Build a calm, accessible web experience around the curriculum. |
+| **Minimal school — underway** | Expand the website from the public foundation into structured curriculum pages. |
 | **AI-native learning** | Add source-aware study tools only where they materially improve learning. |
 | **Practice layer** | Explore optional private reflection, progress, and journaling features without turning practice into engagement farming. |
 | **Open ecosystem** | Develop contribution standards, reusable teaching formats, and experiments others can build on. |
