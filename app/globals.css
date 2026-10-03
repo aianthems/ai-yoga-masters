@@ -321,7 +321,9 @@ footer p { margin: 0; }
 }
 
 @media (max-width: 900px) {
-  nav { display: none; }
+  .site-header { position: relative; flex-wrap: wrap; gap: .7rem; padding-top: 1rem; padding-bottom: 1rem; }
+  .site-header nav { width: 100%; flex-wrap: wrap; gap: .25rem 1rem; }
+  .site-header nav a { display: inline-flex; align-items: center; min-height: 44px; }
   .hero-grid,
   .thesis,
   .principle-grid {
@@ -367,4 +369,132 @@ footer p { margin: 0; }
   html { scroll-behavior: auto; }
   .button,
   .chapter-row { transition: none; }
+}
+
+:focus-visible {
+  outline: 3px solid var(--violet);
+  outline-offset: 5px;
+}
+.skip-link {
+  position: fixed;
+  z-index: 40;
+  top: 0.5rem;
+  left: 1rem;
+  padding: 0.75rem;
+  background: var(--paper);
+  transform: translateY(-170%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.school {
+  max-width: 1150px;
+  margin: auto;
+}
+.school-intro,
+.school-section {
+  padding: clamp(2rem, 6vw, 5rem) clamp(1.25rem, 6vw, 5rem);
+}
+.school-intro h1 {
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  line-height: 1.05;
+  margin-top: 2rem;
+  overflow-wrap: break-word;
+}
+.school-lede {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  max-width: 65ch;
+  color: var(--ink-soft);
+}
+.school h2 {
+  font:
+    400 clamp(2rem, 4vw, 3.2rem)/1.15 Georgia,
+    serif;
+  letter-spacing: -0.03em;
+}
+.school h3 {
+  font:
+    400 1.6rem/1.2 Georgia,
+    serif;
+}
+.school p,
+.school li {
+  line-height: 1.8;
+}
+.school-section {
+  border-top: 1px solid var(--line);
+}
+.school-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.school-card {
+  padding: 1.5rem;
+  background: var(--panel);
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.lesson-map {
+  padding-left: 1.5rem;
+}
+.lesson-map li {
+  padding: 0.8rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.lesson-map li > a,
+.lesson-map li > span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  justify-content: space-between;
+}
+.lesson-map small,
+.lesson-map a span {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+.source-note {
+  background: var(--panel);
+}
+.original-teaching {
+  max-width: 85ch;
+  margin: auto;
+}
+.practice-panel {
+  background: var(--ink);
+  color: white;
+}
+.editorial-note,
+.copyright-note {
+  font-size: 0.85rem;
+}
+.school-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem clamp(1.25rem, 6vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+.library-list {
+  columns: 2;
+}
+@media (max-width: 620px) {
+  .school-grid {
+    grid-template-columns: 1fr;
+  }
+  .library-list {
+    columns: 1;
+  }
+  .site-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
