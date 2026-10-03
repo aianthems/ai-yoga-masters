@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
 import { curriculum, bookUrl } from "../../../lib/curriculum";
+import { lessonMedia } from "../../../lib/lesson-media";
 const lessons = curriculum.filter((l) => l.chapter === 1);
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -29,6 +30,7 @@ export default async function Lesson({
   const index = lessons.findIndex((l) => l.slug === slug);
   const lesson = lessons[index];
   if (!lesson) notFound();
+  const media = lessonMedia[slug];
   return (
     <>
       <SiteHeader />
@@ -50,6 +52,41 @@ export default async function Lesson({
             Original book · printed p. {lesson.printedPage} onward ↗
           </a>
         </section>
+        {media && (
+          <section
+            className="school-section lesson-music"
+            aria-labelledby="music"
+          >
+            <p className="section-kicker">
+              AI Yoga Masters · The original recording
+            </p>
+            <h2 id="music">{media.title}</h2>
+            <p>
+              Listen to the original song, then explore the lesson directly from
+              the book below.
+            </p>
+            <div className="lesson-video">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${media.youtubeId}`}
+                title={`${media.title} — Lesson ${lesson.number}: ${lesson.title}`}
+                width="960"
+                height="540"
+                loading="lazy"
+                allow="encrypted-media; picture-in-picture; fullscreen"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+            <a
+              className="text-link"
+              href={`https://www.youtube.com/watch?v=${media.youtubeId}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open the original song on YouTube ↗
+            </a>
+          </section>
+        )}
         <section
           className="school-section source-note"
           aria-labelledby="edition"
@@ -93,14 +130,16 @@ export default async function Lesson({
             privately; nothing needs to be submitted or shared.
           </p>
         </section>
-        <section className="school-section" aria-labelledby="music">
-          <p className="section-kicker">Music and teaching</p>
-          <h2 id="music">The original song and video</h2>
-          <p>
-            This lesson’s original song and video will appear here once the
-            recordings and their lesson match have been verified.
-          </p>
-        </section>
+        {!media && (
+          <section className="school-section" aria-labelledby="music">
+            <p className="section-kicker">Music and teaching</p>
+            <h2 id="music">The original song and video</h2>
+            <p>
+              This lesson’s original song and video will appear here once the
+              recordings and their lesson match have been verified.
+            </p>
+          </section>
+        )}
         <nav className="school-pagination" aria-label="Lesson navigation">
           {index > 0 && (
             <a
