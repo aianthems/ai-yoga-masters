@@ -539,9 +539,9 @@ The goal is to preserve the roots, examine the claims, practice the principles, 
 
 ## Website curriculum edition
 
-`/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. The forty-eight lessons in Chapters 1–4 and Chapter 5’s sixteen flows and four meditations are readable on the site; the remaining chapters link to their original PDF sections. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
+`/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. The fifty-nine lessons in Chapters 1–4 and 6, and Chapter 5’s sixteen flows and four meditations are readable on the site; Chapter 7 links to its original PDF section. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
 
-Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make Chapters 1–5 readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
+Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make Chapters 1–6 readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
 
 
 ## Practice Studio
@@ -571,3 +571,7 @@ Flows and Meditations now has twenty native reader pages: sixteen flow overviews
 The chapter index opens every practice, the curriculum marks Chapter 5 as readable, and navigation connects Lesson 48 through the flows and meditations to Chapter 6. Relevant Practice Library needs link to Chapter 5 companions; reader pages link to matched Studio sessions and published lessons. Original video availability remains unverified and is stated plainly.
 
 Validation includes exact source comparison after whitespace normalization for all twenty entries, source list order and repetitions, checked page references, production build/type checks, and native route/navigation checks.
+
+## Chapter 6 website edition
+
+Mirrors and Fractals (Lessons 49–59) is readable with original book text, checked printed/PDF page references, separate contemporary practices and reflections, and editorial notes. The chapter and curriculum mark publication; numbered lesson navigation crosses from Lesson 48 to 49 and points to Chapter 7 after Lesson 59. Chapter 5 retains its separate flow and meditation library. All eleven source lessons were verified against PDF pages 125–143.
