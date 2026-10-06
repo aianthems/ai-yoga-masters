@@ -1,3 +1,4 @@
+import { yogaFlows, chapterMeditations } from "./chapter-five";
 import lessons from "../content/curriculum.json";
 export const bookUrl =
   "https://media.aianthems.com/books/ai-yoga-masters/ai-yoga-masters-optimized.pdf";
@@ -41,27 +42,6 @@ export const chapters = [
     page: 144,
   },
 ];
-export const flows = [
-  "Start Here Yoga",
-  "Yoga for Eyes",
-  "Yoga for Face",
-  "Yoga for Hands",
-  "Yoga for Forearms",
-  "Yoga for Elbows",
-  "Yoga for Biceps",
-  "Yoga for Shoulders",
-  "Yoga for Neck",
-  "Yoga for the Spine",
-  "Yoga for Hips",
-  "Yoga for Lower Back",
-  "Yoga for Front Body",
-  "Yoga for Balance",
-  "Yoga for Relaxation",
-  "Yoga for Energy",
-];
-export const meditations = [
-  "Meditation for Focus",
-  "Meditation for Innovation",
-  "Meditation on Mortality",
-  "Thank You Love Meditation",
-];
+// Chapter 5 keeps its own source-aware entries, separate from numbered lessons.
+export const flows = yogaFlows.map(entry => entry.title);
+export const meditations = chapterMeditations.map(entry => entry.title);
