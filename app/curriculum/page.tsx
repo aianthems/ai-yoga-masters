@@ -19,8 +19,8 @@ export default function Curriculum() {
             64 lessons.
           </h1>
           <p className="school-lede">
-            Follow the book in order, or explore a lesson on its own. Chapter 1
-            is readable here; the remaining teaching is available in the
+            Follow the book in order, or explore a lesson on its own. Chapters 1 and 2
+            are readable here; the remaining teaching is available in the
             original book.
           </p>
           <a className="button primary" href="/lessons/redefining-yoga">
@@ -34,7 +34,7 @@ export default function Curriculum() {
               <article className="school-card" key={chapter.number}>
                 <p className="section-kicker">
                   Chapter {chapter.number} ·{" "}
-                  {chapter.number === 1
+                  {chapter.number <= 2
                     ? "Read on the site"
                     : "Read in the book"}
                 </p>
@@ -71,3 +71,4 @@ export default function Curriculum() {
     </>
   );
 }
+

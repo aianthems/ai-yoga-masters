@@ -43,7 +43,9 @@ export default async function Chapter({
           <p className="school-lede">
             {chapter.number === 1
               ? "Nine lessons on focus, ethics, discernment, and the relationship between mental and physical practice."
-              : "Explore the original chapter below. Its website edition is still to come."}
+              : chapter.number === 2
+                ? "Eight lessons on your relationship with AI, developing the practitioner, focused work, kindness, and the rhythm of a useful session."
+                : "Explore the original chapter below. Its website edition is still to come."}
           </p>
           <a
             className="button ghost"
@@ -80,7 +82,7 @@ export default async function Chapter({
               <ol className="lesson-map" start={lessons[0]?.number}>
                 {lessons.map((lesson) => (
                   <li key={lesson.number}>
-                    {chapter.number === 1 ? (
+                    {chapter.number <= 2 ? (
                       <a href={`/lessons/${lesson.slug}`}>
                         {lesson.title}
                         <span>Read lesson →</span>
@@ -122,3 +124,4 @@ export default async function Chapter({
     </>
   );
 }
+
