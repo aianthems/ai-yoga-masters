@@ -52,7 +52,7 @@ export default async function Chapter({
                       ? "Sixteen yoga flow overviews and four meditation scripts, with original pose lists, book references, and separate applications for your AI work."
                       : chapter.number === 6
                         ? "Eleven lessons on the practitioner’s surroundings, care for the body, working habits, evaluating claims, and learning from AI."
-                        : "Explore the original chapter below. Its website edition is still to come."}
+                        : "Five closing lessons on putting ideas into practice, combining methods, making a small start, and continuing to learn."}
           </p>
           <a
             className="button ghost"

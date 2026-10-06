@@ -166,7 +166,11 @@ export default async function Lesson({
             <a className="text-link" href={`/chapters/${nextChapter.slug}`}>
               Continue to Chapter {nextChapter.number} →
             </a>
-          ) : null}
+          ) : (
+            <a className="text-link" href="/practices">
+              Explore the Practice Library →
+            </a>
+          )}
         </nav>
       </main>
       <footer>

@@ -539,9 +539,9 @@ The goal is to preserve the roots, examine the claims, practice the principles, 
 
 ## Website curriculum edition
 
-`/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. The fifty-nine lessons in Chapters 1–4 and 6, and Chapter 5’s sixteen flows and four meditations are readable on the site; Chapter 7 links to its original PDF section. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
+`/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. All 64 numbered lessons in Chapters 1–4 and 6–7, plus Chapter 5’s sixteen flows and four meditations, are readable on the site. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
 
-Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make Chapters 1–6 readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
+Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make all seven chapters readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
 
 
 ## Practice Studio
@@ -575,3 +575,7 @@ Validation includes exact source comparison after whitespace normalization for a
 ## Chapter 6 website edition
 
 Mirrors and Fractals (Lessons 49–59) is readable with original book text, checked printed/PDF page references, separate contemporary practices and reflections, and editorial notes. The chapter and curriculum mark publication; numbered lesson navigation crosses from Lesson 48 to 49 and points to Chapter 7 after Lesson 59. Chapter 5 retains its separate flow and meditation library. All eleven source lessons were verified against PDF pages 125–143.
+
+## Chapter 7 website edition
+
+Integration and Innovation (Lessons 60–64) completes the native website edition of all seven chapters: 64 numbered lessons, sixteen flow overviews, and four meditation scripts. The closing lessons preserve original source text with checked printed/PDF references and separate contemporary practices, reflections, and editorial notes. Lesson 59 continues into Lesson 60; after Lesson 64, readers can explore the Practice Library. Its One Small Start doorway now opens Lessons 62 and 63 as native pages. All five source lessons were verified against PDF pages 145–150.

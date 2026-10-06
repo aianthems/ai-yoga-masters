@@ -20,9 +20,9 @@ export default function Curriculum() {
             64 lessons.
           </h1>
           <p className="school-lede">
-            Follow the book in order, or explore a lesson on its own. Chapters 1–6
-            are readable here; the remaining teaching is available in the
-            original book.
+            All seven chapters are readable here. Follow the book in order, or
+            explore a lesson on its own, alongside sixteen yoga flows and four
+            meditations.
           </p>
           <a className="button primary" href="/lessons/redefining-yoga">
             Begin with Lesson 1 →
