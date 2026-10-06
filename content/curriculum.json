@@ -383,79 +383,232 @@
     "number": 18,
     "title": "Presence",
     "chapter": 3,
-    "slug": "presence"
+    "slug": "presence",
+    "paragraphs": [
+      "Along with focus and discernment, presence is one of the main pillars of yoga. It is one of the most fundamental teachings — live fully in the present moment. Unfortunately, most people are only partially there for their own lives! This is a simplified example, but let’s say a person is thinking about the past 20% of the time, thinking about the future 20% of the time, and spending 20% of their time on social media. Let’s say that another 20% of their awareness is entangled in various attachments like drinking alcohol, smoking, sports betting, and similar things. This means that they are only 20% there for their own life!",
+      "Think about how good a driver you would be if you only had 20% vision. Think about how much information you would retain from studying if you were only 20% there. Again, this is a simplified example with somewhat arbitrary numbers, but the point is that most people are only partially there in life. This is why presence is so powerful and so important. It allows you to be 100% there and get the most out of life.",
+      "To do great things, you need to be 100% there. To fully enjoy life, you want to be 100% there. There is a time and place for everything just mentioned — reminiscing about the past, thinking about the future, connecting on social media, and even enjoying some drinks if that is your thing. However, the time is not all the time. Whatever you are doing in the present moment is the thing you should be thinking about. As Ram Dass once said, if you decide to drink, drink! Don’t sit there, ruining the experience by worrying and doubting yourself — thinking about everything except the drink. If you decide to have a drink, enjoy the drink. Be present. When you are working with AI, work with AI. Be present."
+    ],
+    "printedPage": 45,
+    "pdfPage": 50,
+    "practice": "Before your next AI interaction, notice your surroundings and name the task in front of you. Choose one small action that belongs to this moment. When attention wanders into other plans or past results, return gently.",
+    "reflection": "What helped you be more present for the task you chose?",
+    "note": "The percentages in the original are an illustrative example, not measured findings. The new practice explores attention without requiring perfect presence."
   },
   {
     "number": 19,
     "title": "Purity",
     "chapter": 3,
-    "slug": "purity"
+    "slug": "purity",
+    "paragraphs": [
+      "Have you ever heard of saucha before the 8 Petals of Yoga in this book? Many people, including yoga practitioners, have not. As discussed in Lesson 2, saucha is a Sanskrit word that translates to “purity and cleanliness”. It is truly amazing that so many people have heard of yoga, but have absolutely no idea about saucha. With all due respect, it shows how far we have collectively strayed from the original teachings of yoga.",
+      "Saucha is literally one of the most important parts of yoga! It is the first one of the niyamas from the 8 Petals of Yoga. Further, it is the only one of the yamas and niyamas (10 in total) mentioned twice in the benefits section of the Yoga Sutras of Patanjali (Sadhana Pada, verses 35-45). It clearly says that saucha is the specific yoga principle that results in the greatest benefits — including freedom from desire, permanent cheerfulness, fitness for the highest levels of spirituality, as well as mastery of focus and mastery over the senses. Those are some pretty good benefits!",
+      "Where does this come in with AI? Speech is a reflection of mind — so is behavior, and so is what you create. With AI being a tool we use, it is an extension of us. The more pure we are, the better the extension. This is purity on all levels — body, mind, and spirit. The more you practice purity, the clearer you will see, and the more productive you will be."
+    ],
+    "printedPage": 46,
+    "pdfPage": 51,
+    "practice": "Look at one prompt or draft. Remove an unnecessary instruction, clarify an ambiguous phrase, or organize one piece of your workspace. Notice whether this makes the next step easier to understand.",
+    "reflection": "What became clearer when you simplified one part of the session?",
+    "note": "Saucha and its benefits are presented through the author’s interpretation of yoga texts. The adaptation treats clarity and organization as practical experiments, not measures of personal worth or spiritual purity."
   },
   {
     "number": 20,
     "title": "Non-Attachment",
     "chapter": 3,
-    "slug": "non-attachment"
+    "slug": "non-attachment",
+    "paragraphs": [
+      "It is said in the Yoga Sutras of Patanjali that if you master non-attachment, there is no need to even meditate. Non-attachment is that powerful. Unfortunately, due to a big misunderstanding of who we truly are, it is easier than ever to become attached and identified with a myriad of things. It is honestly just too easy to get attached to people, places, and methods these days. This is a bad habit in the fast ever-changing world of AI, where we can’t get attached and need to learn how to rapidly adapt.",
+      "There is a famous story about two monks that stumbled upon a woman trying to cross a river. One monk picks the woman up and carries her across. The other monk was in shock because they were not supposed to touch women. The monks continued walking, but the monk who watched this occur kept ruminating on it until he finally exploded in anger. He yelled at the monk who helped the woman cross the river — exclaiming that he is supposed to be a monk and should act like it. The monk who helped the woman across calmly responded with, “I put the woman down at the river bank, but you are still carrying her in your mind.”",
+      "Once you cross a river with a boat, don’t carry the boat with you for the rest of the journey. It served its purpose, now you have to let it go, otherwise it becomes a hinderance. This same thing has happened, and will continue to happen, with AI. We need to let go of outdated models, methods, and behaviors, otherwise we will fall behind. Non-attachment is a way to maximize productivity now, as well as enjoyment later."
+    ],
+    "printedPage": 47,
+    "pdfPage": 52,
+    "practice": "Choose one AI-generated result you have become attached to. Compare it with your actual goal. Keep what serves the goal, revise what does not, and consider whether a different approach would help.",
+    "reflection": "What could you let go of while still honoring the work you have already done?",
+    "note": "The traditional story and claims about non-attachment are preserved as written. The new exercise explores flexibility in a task; it does not ask you to detach from essential relationships or responsibilities."
   },
   {
     "number": 21,
     "title": "Water and Adaptability",
     "chapter": 3,
-    "slug": "water-and-adaptability"
+    "slug": "water-and-adaptability",
+    "paragraphs": [
+      "It is not the strongest or even the smartest that survive. Rather, it is the most adaptable that thrive. This is only greatly amplified in the fast world of AI where change is happening at an unprecedented pace.",
+      "I have been a student of the Tao Te Ching for the last decade. Much of the book is about learning from nature, and many of the 81 verses are about water. Water is the ultimate embodiment of adaptability. It perfectly forms and fits to whatever container you put it in. Further, when there is an obstacle in the path to the goal, water doesn’t get frustrated and complain like we humans often do. No — it simply takes a different path and goes around. What if we had this mindset with our projects and with our lives? How much farther along would we be on our journeys?",
+      "It is very easy to look at water as an inanimate object that has no real intelligence, however both spirituality and science tell a different story. In spiritual traditions (like Taoism), we learn that water is not just about adaptability, but so much more. For instance, have you noticed that water always goes to the lowest places first — making sure they are properly nourished before the highest places? What if we took this approach in society? What if we made sure the people who truly needed help received it first? Additionally, think about a tree branch with water running through it versus a dried branch on the ground. You can easily snap the branch without water, but the branch with water bends instead of breaking.",
+      "You yourself are mostly water. It is said that the human body is made up of 60-70% water, even though different sources give slightly different percentages. However, most agree that the brain is a higher percentage of water, and it is the first part of the body to be affected by dehydration. Experts also agree that babies have a significantly higher percentage of water. It is interesting to note that people tend to become less adaptable, more rigid, and more susceptible to “breaking” (both physically and mentally) as they get older (and are a lower percentage of water). Correlation is not causation, but it is fascinating to see how connected water and adaptability are.",
+      "It is important to stay hydrated for focus, as well as for overall health. It is also important to learn from water and build its teachings — like adaptability and helping those who need it most — into our systems. Think about water more, and be more like water."
+    ],
+    "printedPage": 48,
+    "pdfPage": 53,
+    "practice": "Name one obstacle in your current AI project. Describe the outcome you still want, then try one alternative route: a smaller step, a clearer prompt, a different format, or a different tool. Compare what changed.",
+    "reflection": "Which adjustment let you keep moving without abandoning your purpose?",
+    "note": "Water is used as a philosophical metaphor for adaptability. The original’s claims connecting hydration, age, and mental flexibility have not undergone an evidence review; this adaptation is a project exercise, not health guidance."
   },
   {
     "number": 22,
     "title": "Union and Harmony",
     "chapter": 3,
-    "slug": "union-and-harmony"
+    "slug": "union-and-harmony",
+    "paragraphs": [
+      "There are many different definitions for yoga, and it is important to have your own. Remember, I believe that “focus” is the single best definition of yoga. However, words often have multiple different meanings, and a commonly used definition of yoga is “union” — the coming together and integration of mind, body, and spirit. Note that “union” could also be interpreted as the final stage of focus — samadhi (union with focus). In regards to the union of mind, body, and spirit, we ideally want everything working in harmony, instead of being fragmented and compartmentalized.",
+      "I am still in awe of the ability of AI tools like ChatGPT and Gemini to bring everything together. I’m not just talking about diverse information and perspectives. The multimodality is also incredible — text, speech, and video coming together in an integrated way. It is often through integration that power is multiplied. The same can be said for a human. Body, mind, and spirit are all powerful on their own compartmentalized, however bringing them together into an integrated unit is where the true power is unlocked.",
+      "There are levels, or circles, to this. First and foremost, we want to be in harmony with ourselves. We want to be in harmony with others, and with nature. We want to be in harmony with everything, including AI. Separation and division weakens, where integration and unity strengthens. Let’s do everything we can to make sure AI brings things together, not apart."
+    ],
+    "printedPage": 50,
+    "pdfPage": 55,
+    "practice": "Choose a project with several parts, such as lyrics, music, artwork, or a website. Write down the shared purpose. Check whether each part supports it, and make one adjustment that brings the parts into better agreement.",
+    "reflection": "Where did connecting the parts improve the whole?",
+    "note": "Union and harmony are explored as the author’s philosophical framework. The new practice applies that framework to creative coordination without promising a particular outcome."
   },
   {
     "number": 23,
     "title": "Intention and Direction",
     "chapter": 3,
-    "slug": "intention-and-direction"
+    "slug": "intention-and-direction",
+    "paragraphs": [
+      "Imagine you are out at sea, with no land visible. If you are in the middle of the ocean, it is very important to have a compass and know where you want to go. How does this relate to AI? We are currently swimming in a sea of information, with infinitely more information pouring in. There is no sign of it letting up. If you don’t have a strong intention and sense of direction, it is too easy to get lost.",
+      "Be as intentional as possible, and constantly remind yourself of your direction so you don’t fall off track. You have the opportunity of a lifetime right now. It is easier than it has ever been to do something truly great, however at the same time, it has never been harder. How can that be? Aren’t those opposites? Life is interesting like that. As I learned from the Tao Te Ching, some of the best truths are paradoxical.",
+      "When I say it has never been easier, I mean that you have the most powerful tools ever created available to you, as well as instant access to all information in the world. The level of connection is truly incredible, and people just 100 years ago would be in disbelief. You are able to do things so fast and at such an immense scale now.",
+      "However, at the same time, things have never been more difficult. With such speed and so many changing variables, life can be very overwhelming. I think we all know how stressful and traumatic life can be nowadays. Money isn’t what it used to be, and crazy events are the norm. Further, there are more distractions than ever before. There are literally distractions and things to get addicted to everywhere you look. I am not necessarily even talking about drugs, cigarettes, and alcohol. I am also talking about the sugar and addictive properties of a lot of foods, television shows, and internet personalities.",
+      "If you allow yourself to get caught up in all these things, you will miss what is most important. Intention and direction can help mitigate many of the challenges just mentioned, making life much easier. Make sure you always have your metaphorical compass, and make sure you know your true north."
+    ],
+    "printedPage": 51,
+    "pdfPage": 56,
+    "practice": "Name what you want to create, who it is for, and one quality that matters. Ask your AI tool for one manageable piece, then compare the result with that intention before continuing.",
+    "reflection": "Which decision became easier once you named your direction?",
+    "note": "The compass is a metaphor for intention. The adaptation invites a concrete purpose for one session, while leaving room for the purpose to change as you learn."
   },
   {
     "number": 24,
     "title": "Objects and Tools",
     "chapter": 3,
-    "slug": "objects-and-tools"
+    "slug": "objects-and-tools",
+    "paragraphs": [
+      "A lot of yoga is how to best utilize various objects in reality. Remember (from Lesson 10), it is never the object that is the problem. Rather, it is the relationship with the object that is the problem. We already went over the cigarette example. The object of cigarettes affects people totally differently — depending on the relationship each individual has with the object. Another word for object is tool. Let’s go through two more quick, but slightly more nuanced, examples.",
+      "Consider the object, or tool, of a chainsaw. A person trained as a lumberjack would be able to safely use this object to do an important job, even though I love trees. On the other hand, think about an innocent child with no training trying to use the chainsaw. It is terrifying to even think about. However, it has nothing to do with the intelligence of the child. The child may be brilliant. It is also important to note that even though the child is innocent and morally sound, using the tool of a chainsaw could still cause tremendous harm and damage. Even if you are smart and moral, if you don’t have the right training, a tool can still be dangerous.",
+      "Let’s now imagine the object, or tool, of a paintbrush with a blank canvas to work with. A person with training as an artist would be able to use the paintbrush to create a beautiful picture. However, someone who was never used a paintbrush would struggle to use the same tool to make something beautiful. What matters most in these examples is not the overall intelligence or even morality, but it is the training. A person trained to use a specific tool or object typically uses the object optimally, or at least better.",
+      "This sounds crazy at first, but AI has a lot in common with a chainsaw and a paintbrush. It can be used to create some beautiful works of art — on a scale infinitely bigger than what a paintbrush can do. However, at the same time, it can be infinitely more dangerous than a child with a chainsaw. It all comes down to our relationship with AI. Everything is still so new, so a lot of that relationship will come down to how people are trained to use AI. This program is an initial prototype for an example training system."
+    ],
+    "printedPage": 52,
+    "pdfPage": 57,
+    "practice": "Choose one AI tool and one small task. Identify what the tool can help with and what you still need to judge or verify yourself. Try the task, then note one skill you want to practice next.",
+    "reflection": "What did this experiment teach you about using the tool deliberately?",
+    "note": "The tool analogies reflect the author’s perspective. Tool design and limitations also affect outcomes; the adaptation does not assume that training alone removes every risk."
   },
   {
     "number": 25,
     "title": "No Idols",
     "chapter": 3,
-    "slug": "no-idols"
+    "slug": "no-idols",
+    "paragraphs": [
+      "In yoga, we learn that there is no one or nothing above you, and there is no one or nothing below you. We are all on the same level here. I’m aware this is one of the Ten Commandments as well. Two of my most important mentors in life were a rabbi and a priest. Often, the highest morality is the highest practicality. Idol worship is bad for both sides — idol and obsessed. The true purpose is lost. Every single time you have an idol, it eventually ends badly. People become dependent on the person or thing, sometimes to the point of addiction. It isn’t healthy, and it isn’t honorable. Have respect and reverence for others, but don’t turn anyone or anything into an idol.",
+      "Specific to AI, this goes for people and AI itself. Yes — have respect and reverence for the leaders in this field, but don’t turn them into idols. You can accomplish the same level of greatness because the same greatness is inside of you. Further, don’t turn AI itself into an idol, which I predict will be very compelling to do. It is already so easy to be in awe of AI, and this is just the beginning. AI is still like a baby. Imagine the growth in just a few more years.",
+      "Regardless of how advanced AI is and will get, do not turn it into an idol. Do not become completely dependent on it, otherwise you will eventually lose yourself. If you do anything, allow AI to be a reminder of your own greatness and true power. After all, you are the one wielding the tool. I know it is so cliche, but also remember that with great power comes great responsibility. Never forget who you are, and use AI for the good of all."
+    ],
+    "printedPage": 54,
+    "pdfPage": 59,
+    "practice": "Before accepting an AI suggestion, write down your own reason for choosing it. Check one important claim or compare another approach. Decide whether to accept, revise, or decline the suggestion.",
+    "reflection": "Where did you retain your own judgment while still learning from the tool?",
+    "note": "The original’s views on idols are philosophical and personal. The new practice concerns independent judgment in an AI interaction, not a judgment of religious beliefs or admiration for others."
   },
   {
     "number": 26,
     "title": "Energy and Love",
     "chapter": 3,
-    "slug": "energy-and-love"
+    "slug": "energy-and-love",
+    "paragraphs": [
+      "Energy is the most foundational level of existence, and this is more of a scientific statement than a spiritual one. Everything comes down to energy, and everything is built on top of it. Simply put, the quality of our energy largely determines the quality of our work. Think about how much easier it is to work and be creative when you have good energy versus when you don’t. It honestly is like day and night.",
+      "We will get into specific techniques to improve our energy later, but the point here is to realize that maybe the hippies were on to something. I’m trying to have some fun here as I convey this message. To bring in Ram Dass again, I have listened to a specific lecture from him on the Bhagavad Gita so many times. It may be over a hundred. It is just such a beautiful talk and a joy to listen to. In the very beginning of the lecture at Naropa University, he says that the words said don’t matter as much as the energy exchanged. At the most fundamental level, what is being transferred between people is energy.",
+      "It is actually fascinating if you stop and think about what is going on with communication and energy. In essence, your energy is packaged into letters, words, and sentences, then delivered invisibly from your vocal chords into the ears of the other person. Although delivery matters, what is the most important part of the package? It is the contents of the package, or the energy. What energy are you delivering to people in life and in what you are building with AI?",
+      "On a similar note, people will often remember how you made them feel more than the actual words said. This is not always the case, however often this is what leaves the greatest lasting impact. This is all for multiple reasons. First of all, everyone could use a little more kindness. It is also the right thing to do, morally speaking. However, don’t forget that it is also the wisest business practice. Remember the Jeff Bezos story from before? That love and care became a foundation of Amazon’s mammoth success.",
+      "It is important to talk about love in a more nuanced way. It is better to love wisely than to love blindly. Having been a yoga teacher for over a decade, I have heard thousands of times about how the answer is always love no matter what. At first, I was completely on board. However, I soon realized that as much as I want life to be simple, it isn’t. Life is complex. Life is color — not black and white. Love is a great default answer, and I actual recommend that setting. However, it is not always the best choice. For instance, is it a good idea to love cigarettes? Is it a good idea to love binge drinking? Is it smart to love someone or something that is harmful to you? The answer is obviously no.",
+      "Love should undoubtedly be built into AI systems, however there is an interesting limitation that we all must figure out how to transcend. Much like you can only love someone as much as you love yourself, you can only build love into a system as much as you understand it. May we all take love and energy more seriously, and even treat it like scientists — researching, experimenting, and learning as much as we can.",
+      "In closing, energy and love matter — a lot. Our understanding of both will only become more important moving forward, and I predict that true love will only become exponentially more valuable."
+    ],
+    "printedPage": 55,
+    "pdfPage": 60,
+    "practice": "Review one AI-assisted message or creation from the recipient’s perspective. Name the feeling or experience you hope to offer, then revise one detail to express that care while keeping the content honest and your boundaries clear.",
+    "reflection": "Which detail better expressed the care you wanted to convey?",
+    "note": "Energy and love are used in the author’s philosophical and experiential framing. The adaptation focuses on communication and care, without treating spiritual energy as a measured physical quantity."
   },
   {
     "number": 27,
     "title": "Karma Yoga",
     "chapter": 3,
-    "slug": "karma-yoga"
+    "slug": "karma-yoga",
+    "paragraphs": [
+      "Most people have heard of karma, and most likely they learned about it from a friend. The word has almost become part of American slang and even regular language. Unfortunately, like many other concepts from yoga nowadays, karma is greatly misunderstood. With all due respect, the way most people currently look at karma doesn’t make any sense when you stop and really think about it. If karma is all about action and reaction like most people believe, why do so many good deeds go unrewarded? Why do so many bad deeds go unpunished? Delving deeper, if you look at karma and reincarnation together it makes even less sense. If a person gets mind-wiped between each lifetime, why would you punish someone for something they can’t remember? Without going too deeply into reincarnation right now (because we want to stay on track with the yoga of AI), many yoga teachers even believe that the reason some people go through horrible suffering (like child abuse and severe illness at an early age) is because of karma; because of something they did in a previous life — even though they have no memory of it. I’m sorry, but it makes no sense to punish someone for something they don’t remember in the name of karma, especially if this individual is a child.",
+      "Anyways, with that mini-rant over, the modern notion of karma has no legitimacy. I don’t know how it got this way, but I do know what the Yoga Sutras and Bhagavad Gita have to say. According to yoga philosophy, karma is “pure action”. This is straight from the foundational texts of yoga. What exactly is pure action? It is acting purely and fully in the present moment — not thinking about the past or future; not worrying if you mess up; and not projecting into potential rewards. Karma is about doing what you need to do as best as you can, because it is the right thing to do. It is fully doing what you are doing, as opposed to doing a task but thinking about something else. Many people do not know that karma yoga is one of the original styles of yoga, and it is “the yoga of action”. It is the yoga of acting in the present moment.",
+      "Life is in color, not in black and white. Everything is nuanced. I know I was a little harsh on the modern-day concept of karma, but it was merely to help drive the point home. Many yoga terms are very misunderstood nowadays, and I really don’t know how we have strayed so far from the original teachings. This is not to offend anyone, but rather to bring us back to the core of yoga. I am about to reveal a powerful secret of yoga, and it has to do with karma. We live in the worlds we believe. If you subscribe to the modern-day idea of karma and you believe that bad deeds should be punished, your subconscious and unconscious mind will find a way to get you punished in order to validate that belief. It doesn’t matter how big or small, and this is where it gets crazy. How do you know what you did was even bad? What if you are completely innocent? What if what you did was actually the best thing you could have done? Even if that is the case, if you believe you are doing something wrong (which many people often do), this deeply rooted belief will cause you to self-sabotage, or reality will appear that way.",
+      "Don’t believe in the modern-day idea of karma. It is not logical, and it is also a detriment. Instead, practice the real karma yoga — pure action. Act purely in the present moment — not thinking about the past, and not worried about the future."
+    ],
+    "printedPage": 57,
+    "pdfPage": 62,
+    "practice": "Choose one useful action that serves the task or someone who will use your work. Give that action your attention instead of repeatedly checking for praise or a future reward. Review its actual effect before deciding what comes next.",
+    "reflection": "What changed when you focused on the action and its usefulness?",
+    "note": "Karma yoga is presented through the author’s interpretation. The source’s claims about belief, punishment, and self-sabotage are not established psychological findings; the new practice does not blame people for suffering."
   },
   {
     "number": 28,
     "title": "Priorities and Multitasking",
     "chapter": 3,
-    "slug": "priorities-and-multitasking"
+    "slug": "priorities-and-multitasking",
+    "paragraphs": [
+      "In a world of infinite choice, priorities are more important than ever. That is where yoga comes in. By sharpening discernment, you will be able to see more clearly. Specifically, you will better be able to see what is important, and what is not as important. As said earlier, you can do anything, but you can’t do everything. It is essential to have strong priorities, otherwise nothing gets done.",
+      "Remember how too much of a good thing is a bad thing? Even too many priorities (a good practice) becomes a bad thing. This was a tough one for me, because I have so many different unique ideas. The only reason I got AI Yoga Masters done was because I made it my number one priority for a while — even with other projects cooking. Don’t be black and white with your mindset. When I say I made AI Yoga Masters my priority, it wasn’t 100%, but it was as close as I could make it. I still had other responsibilities, however I drastically changed my priorities in order to give my best energy and focus to the project.",
+      "With multitasking, too much of a good thing definitely becomes a very bad thing. Although I know modern-day multitasking can feel like you are being highly productive, but were you really? I know personally so many times I had a coffee and went crazy with multitasking, but it was like I got everything done except the most important thing. Yes, I did the laundry, cleaned my workspace, organized a music playlist, but the website I was working on barely had a dent in it!",
+      "There is plenty of recent and legitimate research on how switching between tasks drastically reduces productivity. I am well aware that it feels like you are being productive and getting so much done, but unfortunately it is an illusion. The priorities are off, and there are too many switches between tasks. It doesn’t seem like a big deal at first, but every single time you switch between a task, you have to refocus on the new thing. Again, it seems harmless, but even if you only spend a few seconds refocusing and switch tasks 100 times an hour, it already starts to add up to a lot of wasted time that could have been organized better. This is also being generous, because it often takes much longer than a few seconds to get into a flow state.",
+      "Remember we talked about how it is helpful to think of your mind as a company? It needs to be managed well for a productive life. On a similar note, it is helpful to replace the word “multitasking” with “managing”. Instead of trying to always do multiple things at once, manage things as a judicious CEO.",
+      "It is obviously not productive to take doing only one task at a time to the extreme. For example, when you are doing the laundry, you don’t need to sit there staring at it until the task is complete. As a manager of the mind and of tasks, you can put certain tasks in motion that you know will take a while, then bring all of your focus to one smaller task at a time. It doesn’t matter if we are talking about doing the laundry, or generating AI videos.",
+      "In closing, it is vital to balance managing and focusing. As the CEO of your life, effectively manage the bigger picture, but also completely focus on the task at hand. Better managing (less task switches) combined with better focus (longer and higher quality) results in optimal productivity."
+    ],
+    "printedPage": 59,
+    "pdfPage": 64,
+    "practice": "Choose the most important next step in your AI project. Note other tasks so you can return to them later. Let long-running processes continue where useful, then bring your attention to one step that needs your judgment now.",
+    "reflection": "Which task needed your attention, and which could wait or run in the background?",
+    "note": "The discussion of multitasking mixes personal experience with broad research claims that have not undergone a complete review. The adaptation is an experiment in organizing work, not a universal rule against task switching."
   },
   {
     "number": 29,
     "title": "Unlearning and Unbiased",
     "chapter": 3,
-    "slug": "unlearning-and-unbiased"
+    "slug": "unlearning-and-unbiased",
+    "paragraphs": [
+      "When studying the Tao Te Ching, people may be shocked to find that it suggests emptying can be more important than filling. Specifically, unlearning can be more important than learning. This is so contradictory to how most of us were acculturated — being taught that we should always be learning as much as possible.",
+      "Balance is the key. I am not saying to stop learning, but I am definitely suggesting that you start unlearning if you haven’t already. Listen, you are not ChatGPT. Your mind can’t hold all the information in the entire world! There is limited space. With that being the case, we need to be actively getting rid of outdated information and programs to make room for the new.",
+      "It is actually very similar to a laptop. There is not infinite space. You sometimes need to delete old and outdated programs to make room for new and better programs. What about software updates? That is a beautiful metaphor too. It is akin to upgrading your mindset.",
+      "You can give yourself a major software update by looking into the cognitive biases. There are over 100 officially recognized cognitive biases, and this is one of the most powerful exercises you can ever do. Cognitive biases are defined as systematic patterns of deviation from rationality where individuals create their own “subjective reality” from their perception. It is important to note that subjective reality is what a person perceives, where objective reality is true reality. They are almost always different, largely due to the cognitive biases. These maladaptive mental patterns are like funhouse glasses that we all have on — distorting reality and preventing us from truly seeing the situation clearly.",
+      "In yoga, this concept is known as coloring. Our minds start as pure crystals that reflect the truth, however throughout life our minds get colored, or tainted, by stress and trauma. If these issues are not resolved (which they often aren’t), we see reality through a colored, or distorted, filter. Let’s go through some specific examples of cognitive biases.",
+      "Confirmation Bias is a common cognitive bias. It is when people unconsciously or subconsciously look for things that confirm preexisting beliefs. For example, if someone thinks that everyone except themselves is a bad driver, it is like they will see a reality that confirms that, even if it is not the truth.",
+      "The Above-Average Effect is another common cognitive bias. When surveyed, most people report that they are above average in a certain skill or quality. This results in something like 90% of people thinking they are above average in a task, like driving, when the true number should be 50%.",
+      "Sunk Cost Fallacy is another example. This stems from the belief that one needs to ‘make good’ on a past investment of time or money, even if continuing the investment is resulting in negative outcomes. For example, this could be someone sticking with a diet or exercise plan that is simply not working or even harming them, but they don’t want to admit they were wrong. They have already invested so much in this. It would be painful and embarrassing to pull out now. That is nonsense, and it could be resolved by simply admitting you were wrong and moving on.",
+      "One more common example is the Bandwagon Effect. In essence, this is about social proof. It is easier for a person to do something if they see someone else doing it, even more so if a lot of other people are doing it. I want to share the most frustrating example of this for me personally, because my first book was about applying yoga principles to the road. Whenever I go into Boston, I see this all the time. I’m walking with my Mom, and we get to an intersection. There is a “do not walk” signal. No cars seem to be coming at the moment, so one person goes. Another goes. Then, a group of people walk out as a car makes a right turn, nearly hitting them. The “do not walk” sign was still there — bright red. However, there was social proof, and people hopped on the bandwagon. Just because other people are doing something doesn’t mean it is smart or even safe.",
+      "The worst part of the cognitive biases is known as the Lollapalooza Effect. It is the concept that when multiple cognitive biases come together, they exponentially distort reality. This is really concerning because most people have many cognitive biases working against them at once — the Lollapalooza Effect in full force. I am not exempt from this by the way. I need to work every day on making sure I am actively recognizing and deleting cognitive biases within myself.",
+      "The more you practice unlearning, the closer you get to the crystal mind in yoga. You see more clearly, and there is more room for innovation."
+    ],
+    "printedPage": 61,
+    "pdfPage": 66,
+    "practice": "Choose one assumption behind an AI answer or your own plan. Ask what evidence would challenge it. Look for a reliable source or a contrasting example, then revise the assumption if the evidence warrants it.",
+    "reflection": "What did you update, and what remains uncertain?",
+    "note": "The software and crystal-mind images are metaphors. The source’s cognitive-bias counts and examples have not undergone a complete evidence review; the adaptation invites checking assumptions rather than claiming a bias-free mind."
   },
   {
     "number": 30,
     "title": "Staying Humble",
     "chapter": 3,
-    "slug": "staying-humble"
+    "slug": "staying-humble",
+    "paragraphs": [
+      "Adaptability, non-attachment, staying humble, and unlearning all go together. You will only be right in the end if you can admit you were wrong along the way. This is a tough one, I know! However, the value of being able to admit you were wrong is immense. Being able to adapt and not be attached to old methods and old tools (in essence, unlearn) will allow you to be successful beyond belief in the fast-changing realm of AI.",
+      "Stay humble when working with AI, and stay humble in life. This opens you up to the maximum amount of help, because you are able to learn from others. Thinking that you know the absolute best way and you have it all figured out is a sure sign and guarantee that you don’t and you won’t.",
+      "As we probably all have, I went through a phase where I thought I had it all figured out. I didn’t, and I still don’t. However, I am getting closer to a clearer picture all the time because I am able to remain humble. There are so many benefits of staying humble. It is one of the primary things that will lead you to the truth of who you are, as well as to your destiny. It opens you up to so much in life, and I am not just talking about innovation and higher productivity. I am also talking about the beauty of true connection. I consider being humble one of my greatest strengths and most valuable assets.",
+      "I want to share a story that may help with staying humble. I have come to realize that being self-made is a myth. I know there is a lot of talk about being self-made from rap stars and entrepreneurs, however that is not the full truth. Yes, I bet they worked extremely hard, and I am not taking anything away from their ingenuity and success. However, there is not one person on Earth that is completely independent and completely self-made. We are made by our experiences in life, and by the people we connect with. Yes, I have my own identity, but at the same time I see so much of my parents in myself — certain behaviors, patterns, and values. I see mentors I had in myself — still living their teachings to this day, even if they have passed on. I now even am starting to see strangers in myself as I learn to connect with people on a deeper level — heart to heart. It is not just people. The experiences we go through in life — good and bad — can greatly shape who we are. So much went into creating all of us. You are not self-made, but it is like you are an entire universe. Paradoxically, the more humble you are, the greater you become."
+    ],
+    "printedPage": 64,
+    "pdfPage": 69,
+    "practice": "Choose one part of your AI-assisted work where you may be missing something. Ask for a concrete critique, check it against the task and available evidence, and make one revision that improves the work.",
+    "reflection": "What became possible when you allowed yourself to revise your view?",
+    "note": "The stories and claims about humility reflect the author’s experience and philosophy. The new practice treats humility as openness to revision while retaining your own judgment."
   },
   {
     "number": 31,

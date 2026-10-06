@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SiteHeader from "../components/site-header";
-import { chapters } from "../../lib/curriculum";
+import { chapters, curriculum } from "../../lib/curriculum";
 export const metadata: Metadata = {
   title: "Curriculum | AI Yoga Masters",
   description:
@@ -19,7 +19,7 @@ export default function Curriculum() {
             64 lessons.
           </h1>
           <p className="school-lede">
-            Follow the book in order, or explore a lesson on its own. Chapters 1 and 2
+            Follow the book in order, or explore a lesson on its own. Chapters 1–3
             are readable here; the remaining teaching is available in the
             original book.
           </p>
@@ -34,7 +34,7 @@ export default function Curriculum() {
               <article className="school-card" key={chapter.number}>
                 <p className="section-kicker">
                   Chapter {chapter.number} ·{" "}
-                  {chapter.number <= 2
+                  {curriculum.some((lesson) => lesson.chapter === chapter.number && lesson.paragraphs?.length)
                     ? "Read on the site"
                     : "Read in the book"}
                 </p>
