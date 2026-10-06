@@ -542,3 +542,8 @@ The goal is to preserve the roots, examine the claims, practice the principles, 
 `/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. Chapter 1’s nine lessons are readable on the site; the remaining chapters link to their original PDF sections. Each Chapter 1 page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
 
 Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make Chapter 1 readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
+
+
+## Practice Studio
+
+`/practice` guides a six-stage AI session: attention check-in, practice selection, intention, practice, reflection, and closing. One-Pointed Focus is the default, with Clarity & Discernment and Care & Honesty as companion practices. All three link to the original Chapter 1 lessons. Optional 2/5/10/15-minute timers support pause and resume, count wall-clock time across background tabs, and never advance the session automatically. Intention and reflection exist only in React memory; there is no submission or browser-storage persistence. These guided sequences are new applications, separate from the original source teaching.
