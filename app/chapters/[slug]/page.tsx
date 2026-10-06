@@ -5,9 +5,8 @@ import {
   chapters,
   curriculum,
   bookUrl,
-  flows,
-  meditations,
 } from "../../../lib/curriculum";
+import { yogaFlows, chapterMeditations, chapterFivePath, chapterFiveIntroduction } from "../../../lib/chapter-five";
 export const dynamicParams = false;
 export function generateStaticParams() {
   return chapters.map(({ slug }) => ({ slug }));
@@ -49,7 +48,9 @@ export default async function Chapter({
                   ? "Thirteen lessons on presence, non-attachment, adaptability, intention, care, priorities, and the willingness to keep learning."
                   : chapter.number === 4
                     ? "Eighteen lessons on everyday attention, body awareness, personal cues, digital breaks, nature, and changing your perspective."
-                    : "Explore the original chapter below. Its website edition is still to come."}
+                    : chapter.number === 5
+                      ? "Sixteen yoga flow overviews and four meditation scripts, with original pose lists, book references, and separate applications for your AI work."
+                      : "Explore the original chapter below. Its website edition is still to come."}
           </p>
           <a
             className="button ghost"
@@ -64,21 +65,14 @@ export default async function Chapter({
           {chapter.number === 5 ? (
             <>
               <h2>Yoga flows</h2>
-              <ul className="library-list">
-                {flows.map((flow) => (
-                  <li key={flow}>{flow}</li>
-                ))}
+              <ul className="lesson-map">
+                {yogaFlows.map(flow => <li key={flow.slug}><a href={chapterFivePath(flow)}>{flow.title}<span>Read flow →</span></a></li>)}
               </ul>
               <h2>Meditations</h2>
-              <ul className="library-list">
-                {meditations.map((m) => (
-                  <li key={m}>{m}</li>
-                ))}
+              <ul className="lesson-map">
+                {chapterMeditations.map(meditation => <li key={meditation.slug}><a href={chapterFivePath(meditation)}>{meditation.title}<span>Read meditation →</span></a></li>)}
               </ul>
-              <p>
-                These libraries are organized separately from the numbered
-                lessons. Read their practices in the original chapter.
-              </p>
+              <p>These twenty practices form a separate collection alongside the book’s 64 numbered lessons.</p>
             </>
           ) : (
             <>
@@ -103,6 +97,13 @@ export default async function Chapter({
             </>
           )}
         </section>
+        {chapter.number === 5 ? <section className="school-section original-teaching" aria-labelledby="introduction">
+          <p className="section-kicker">Source teaching · Alex Julian, 2024 · Printed p. 93</p>
+          <h2 id="introduction">The original chapter introduction</h2>
+          {chapterFiveIntroduction.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+          <p className="editorial-note">The website address above is part of the original 2024 text. Verified accompanying videos have not yet been added to this edition. Health and benefit claims in the source have not undergone a complete evidence review.</p>
+          <p className="copyright-note">© 2024 Alex Julian Yoga. All rights reserved.</p>
+        </section> : null}
         <nav className="school-pagination" aria-label="Chapter navigation">
           {chapter.number > 1 && (
             <a

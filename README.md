@@ -539,9 +539,9 @@ The goal is to preserve the roots, examine the claims, practice the principles, 
 
 ## Website curriculum edition
 
-`/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. The forty-eight lessons in Chapters 1–4 are readable on the site; the remaining chapters link to their original PDF sections. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
+`/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. The forty-eight lessons in Chapters 1–4 and Chapter 5’s sixteen flows and four meditations are readable on the site; the remaining chapters link to their original PDF sections. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
 
-Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make Chapters 1–4 readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
+Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make Chapters 1–5 readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
 
 
 ## Practice Studio
@@ -563,3 +563,11 @@ Philosophy and Principles (Lessons 18–30) is readable with original source tex
 ## Chapter 4 website edition
 
 Techniques and Practices (Lessons 31–48) is readable with original book text, checked printed/PDF page references, separate contemporary practices and reflections, and editorial notes. Navigation connects Chapters 3 and 4, and the final lesson points to Chapter 5. The Practice Library now opens Virtual Fasting as a native lesson. All eighteen source lessons were verified against PDF pages 72–97.
+
+## Chapter 5 website edition
+
+Flows and Meditations now has twenty native reader pages: sixteen flow overviews at `/flows/[slug]` and four meditation scripts at `/meditations/[slug]`. These are separate from the 64 numbered lessons. A shared server-rendered reader preserves source paragraphs, pose inventories, repeated cues, and original benefit lists with printed/PDF references, and labels contemporary applications and reflections separately.
+
+The chapter index opens every practice, the curriculum marks Chapter 5 as readable, and navigation connects Lesson 48 through the flows and meditations to Chapter 6. Relevant Practice Library needs link to Chapter 5 companions; reader pages link to matched Studio sessions and published lessons. Original video availability remains unverified and is stated plainly.
+
+Validation includes exact source comparison after whitespace normalization for all twenty entries, source list order and repetitions, checked page references, production build/type checks, and native route/navigation checks.
