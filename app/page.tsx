@@ -113,6 +113,7 @@ export default function Home() {
             <h2>Use AI with one-pointed attention.</h2>
             <p className="studio-invite">Bring a real task to the Practice Studio. Set your intention, practice at your own pace, and reflect afterward.</p>
             <a className="button primary" href="/practice">Begin an AI Practice →</a>
+            <a className="text-link" href="/practices">Find a practice for what you need →</a>
           </div>
 
           <ol className="steps">
