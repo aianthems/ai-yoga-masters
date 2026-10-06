@@ -45,7 +45,9 @@ export default async function Chapter({
               ? "Nine lessons on focus, ethics, discernment, and the relationship between mental and physical practice."
               : chapter.number === 2
                 ? "Eight lessons on your relationship with AI, developing the practitioner, focused work, kindness, and the rhythm of a useful session."
-                : "Explore the original chapter below. Its website edition is still to come."}
+                : chapter.number === 3
+                  ? "Thirteen lessons on presence, non-attachment, adaptability, intention, care, priorities, and the willingness to keep learning."
+                  : "Explore the original chapter below. Its website edition is still to come."}
           </p>
           <a
             className="button ghost"
@@ -82,7 +84,7 @@ export default async function Chapter({
               <ol className="lesson-map" start={lessons[0]?.number}>
                 {lessons.map((lesson) => (
                   <li key={lesson.number}>
-                    {chapter.number <= 2 ? (
+                    {lesson.paragraphs?.length ? (
                       <a href={`/lessons/${lesson.slug}`}>
                         {lesson.title}
                         <span>Read lesson →</span>

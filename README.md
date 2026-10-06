@@ -539,9 +539,9 @@ The goal is to preserve the roots, examine the claims, practice the principles, 
 
 ## Website curriculum edition
 
-`/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. Chapters 1 and 2’s seventeen lessons are readable on the site; the remaining chapters link to their original PDF sections. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
+`/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. The thirty lessons in Chapters 1–3 are readable on the site; the remaining chapters link to their original PDF sections. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
 
-Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make Chapters 1 and 2 readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
+Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make Chapters 1–3 readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
 
 
 ## Practice Studio
@@ -555,3 +555,7 @@ The Tao of AI (Lessons 10–17) is readable on the site with original source par
 ## Practice Library
 
 `/practices` offers five doorways by need: scattered attention, checking AI answers, postponing a start, stepping away from the screen, and creating with intention. Each `/practices/[slug]` page contains a short practice, reflection, source lesson links, and verified related music where available. Lessons not yet published on the website open their exact original PDF pages. `/practice?practice=<slug>` preselects the corresponding guided session; unknown selections fall back to One-Pointed Focus. The Studio now also offers One Small Start, Step Away & Return, and Create with Intention.
+
+## Chapter 3 website edition
+
+Philosophy and Principles (Lessons 18–30) is readable with original source text, checked printed/PDF references, and separate contemporary practices, reflections, and editorial notes. The reader continues directly from Lesson 17 to Lesson 18 and points onward to Chapter 4 after Lesson 30. The practice library now links to the native Intention and Direction lesson.
