@@ -69,8 +69,8 @@ export default function Home() {
                 intelligence.
               </p>
               <div className="actions">
-                <a className="button primary" href="/lessons/redefining-yoga">
-                  Begin Lesson 1
+                <a className="button primary" href="/practice">
+                  Begin an AI Practice
                 </a>
                 <a
                   className="button ghost"
@@ -111,6 +111,8 @@ export default function Home() {
           <div className="section-heading">
             <p className="section-kicker">Core practice</p>
             <h2>Use AI with one-pointed attention.</h2>
+            <p className="studio-invite">Bring a real task to the Practice Studio. Set your intention, practice at your own pace, and reflect afterward.</p>
+            <a className="button primary" href="/practice">Begin an AI Practice →</a>
           </div>
 
           <ol className="steps">
@@ -219,3 +221,4 @@ export default function Home() {
     </>
   );
 }
+

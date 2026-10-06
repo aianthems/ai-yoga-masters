@@ -14,7 +14,7 @@ export default function SiteHeader() {
         <nav aria-label="Primary navigation">
           <a href="/curriculum">Curriculum</a>
           <a href="/chapters/lost-teachings-of-yoga">Chapter 1</a>
-          <a href="/#practice">Practice</a>
+          <a href="/practice">Practice</a>
           <a href="/#petals">8 Petals</a>
           <a
             href="https://media.aianthems.com/books/ai-yoga-masters/ai-yoga-masters-optimized.pdf"
@@ -28,3 +28,4 @@ export default function SiteHeader() {
     </>
   );
 }
+
