@@ -551,3 +551,7 @@ Curriculum content lives in `content/curriculum.json`. Original source passages 
 ## Chapter 2 website edition
 
 The Tao of AI (Lessons 10–17) is readable on the site with original source paragraphs, accurate printed/PDF page references, and separately labeled contemporary practices, reflections, and editorial notes. Lesson navigation continues across the Chapter 1/2 boundary and points to Chapter 3 after Lesson 17. Published lessons link to the Practice Studio.
+
+## Practice Library
+
+`/practices` offers five doorways by need: scattered attention, checking AI answers, postponing a start, stepping away from the screen, and creating with intention. Each `/practices/[slug]` page contains a short practice, reflection, source lesson links, and verified related music where available. Lessons not yet published on the website open their exact original PDF pages. `/practice?practice=<slug>` preselects the corresponding guided session; unknown selections fall back to One-Pointed Focus. The Studio now also offers One Small Start, Step Away & Return, and Create with Intention.

@@ -12,10 +12,10 @@ const arrivalNotes: Record<string, string> = {
   Steady: "Choose one worthwhile task and give it the attention available to you.",
 };
 
-export default function PracticeSession() {
+export default function PracticeSession({ initialChoice = 0 }: { initialChoice?: number }) {
   const [stage, setStage] = useState(0);
   const [attention, setAttention] = useState("");
-  const [choice, setChoice] = useState(0);
+  const [choice, setChoice] = useState(initialChoice);
   const [intention, setIntention] = useState("");
   const [reflection, setReflection] = useState("");
   const [minutes, setMinutes] = useState(0);
@@ -56,7 +56,7 @@ export default function PracticeSession() {
   }
   function move(next: number) { setRunning(false); setStage(next); }
   function restart() {
-    setAttention(""); setChoice(0); setIntention(""); setReflection("");
+    setAttention(""); setChoice(initialChoice); setIntention(""); setReflection("");
     setMinutes(0); setRemaining(0); setRunning(false); setStage(0);
   }
 

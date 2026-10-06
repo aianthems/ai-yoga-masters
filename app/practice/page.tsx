@@ -1,21 +1,25 @@
 import type { Metadata } from "next";
 import SiteHeader from "../components/site-header";
 import PracticeSession from "./practice-session";
+import { practices } from "../../lib/practices";
 
 export const metadata: Metadata = {
   title: "Practice Studio | AI Yoga Masters",
   description: "Begin an AI practice: arrive, choose an intention, practice focused attention, and reflect.",
 };
 
-export default function PracticePage() {
+export default async function PracticePage({ searchParams }: { searchParams: Promise<{ practice?: string | string[] }> }) {
+  const { practice } = await searchParams;
+  const initialChoice = Math.max(0, practices.findIndex(p => p.slug === practice));
   return <><SiteHeader /><main id="content" className="school studio">
     <section className="school-intro">
       <p className="section-kicker">Practice Studio</p>
       <h1>Begin an AI practice.</h1>
       <p className="school-lede">Arrive with attention. Work with intention. Leave with perspective.</p>
       <p>Bring a real task and the AI tool you already use. This space guides your practice alongside it.</p>
+      <a className="text-link" href="/practices">Find a practice for what you need →</a>
     </section>
-    <PracticeSession />
+    <PracticeSession initialChoice={initialChoice} />
     <section className="school-section studio-roots">
       <p className="section-kicker">Rooted in the book</p>
       <h2>Teachings you can put into practice.</h2>

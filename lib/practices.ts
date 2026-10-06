@@ -1,5 +1,6 @@
 export const practices = [
   {
+    slug: "one-pointed-focus",
     title: "One-Pointed Focus",
     description: "Give one worthwhile task your attention. Notice wandering and return gently.",
     prepare: "Choose a manageable task. Remove one optional distraction, while keeping what you need for accessibility or essential communication. Find a comfortable position; move whenever you need to.",
@@ -8,6 +9,7 @@ export const practices = [
     lessons: [{ slug: "5-states-of-mind", title: "3 · 5 States of Mind" }, { slug: "ekagra-one-pointed-focus", title: "4 · Ekagra: One-Pointed Focus" }, { slug: "pratyahara-and-dharana", title: "6 · Pratyahara and Dharana" }],
   },
   {
+    slug: "clarity-discernment",
     title: "Clarity & Discernment",
     description: "Slow down and examine one claim before relying on an AI answer.",
     prepare: "Choose one factual claim from an AI response. Decide what you need to know before you rely on it. Keep the response and its sources available.",
@@ -16,11 +18,39 @@ export const practices = [
     lessons: [{ slug: "clarity-and-discernment", title: "5 · Clarity and Discernment" }],
   },
   {
+    slug: "care-honesty",
     title: "Care & Honesty",
     description: "Review an AI-assisted creation with truthfulness and care for the people it affects.",
     prepare: "Choose one result you intend to share. Consider who will encounter it and whose information or work it includes.",
     cues: ["Check factual statements and remove anything misleading.", "Credit the work and ideas you used. Protect your own and other people’s private information.", "Consider how the result could affect others. Make one revision that improves its honesty or care."],
     reflection: "What did care and honesty require you to change?",
     lessons: [{ slug: "ahimsa-and-satya", title: "7 · Ahimsa and Satya" }],
+  },
+  {
+    slug: "small-start",
+    title: "One Small Start",
+    description: "Turn a postponed project into one small action you can take now.",
+    prepare: "Choose something you have been postponing. Make the next step small enough to begin without planning the whole project: write a sentence, name a section, or ask one useful question.",
+    cues: ["Take the small action you chose. An imperfect beginning is enough.", "Keep the AI interaction focused on that step rather than generating a larger plan you do not need yet.", "Notice what now exists that did not exist before. Decide whether to continue or leave a clear next step for later."],
+    reflection: "What became easier after you took the first small step?",
+    lessons: [{ slug: "upgrading-the-person", title: "11 · Upgrading the Person" }, { slug: "timing-matters", title: "17 · Timing Matters" }],
+  },
+  {
+    slug: "step-away",
+    title: "Step Away & Return",
+    description: "Close a useful session and make space for life beyond the screen.",
+    prepare: "Choose a stopping point. Save any work you need and note where to resume. You can finish this guidance now and take your break away from the screen.",
+    cues: ["Record one sentence about your next step so you do not need to keep rehearsing it.", "Step away from the screen, or redirect your attention to your surroundings in a way that works for you. Let the task wait.", "When you return, decide whether the task still needs your attention. Continuing is a choice, not an obligation."],
+    reflection: "What did you notice when you gave the task some space?",
+    lessons: [{ slug: "mental-and-physical", title: "8 · Mental and Physical" }, { slug: "timing-matters", title: "17 · Timing Matters" }],
+  },
+  {
+    slug: "clear-intention",
+    title: "Create with Intention",
+    description: "Choose what you want to make and let that purpose guide your AI session.",
+    prepare: "Name what you want to create, who it is for, and one quality that matters. Keep the intention concrete: a verse with a clear story, an image with a chosen mood, or a page that answers one question.",
+    cues: ["Tell the AI the purpose and the quality you chose. Ask for one manageable piece of the creation.", "Compare the result with your intention. Keep what serves it and revise what does not.", "Decide what is enough for this session. Leave one useful next step rather than chasing every new possibility."],
+    reflection: "Which creative choice became clearer once you named your intention?",
+    lessons: [{ slug: "redefining-yoga", title: "1 · Redefining Yoga" }, { slug: "samyama", title: "12 · Samyama" }],
   },
 ] as const;
