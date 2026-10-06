@@ -20,7 +20,7 @@ export default function Curriculum() {
             64 lessons.
           </h1>
           <p className="school-lede">
-            Follow the book in order, or explore a lesson on its own. Chapters 1–5
+            Follow the book in order, or explore a lesson on its own. Chapters 1–6
             are readable here; the remaining teaching is available in the
             original book.
           </p>
