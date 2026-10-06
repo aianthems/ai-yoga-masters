@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
-import { curriculum, bookUrl } from "../../../lib/curriculum";
+import { curriculum, bookUrl, chapters } from "../../../lib/curriculum";
 import { lessonMedia } from "../../../lib/lesson-media";
-const lessons = curriculum.filter((l) => l.chapter === 1);
+const lessons = curriculum.filter((l) => l.paragraphs?.length);
 export const dynamicParams = false;
 export function generateStaticParams() {
   return lessons.map(({ slug }) => ({ slug }));
@@ -31,13 +31,15 @@ export default async function Lesson({
   const lesson = lessons[index];
   if (!lesson) notFound();
   const media = lessonMedia[slug];
+  const chapter = chapters.find((c) => c.number === lesson.chapter)!;
+  const nextChapter = chapters.find((c) => c.number === lesson.chapter + 1);
   return (
     <>
       <SiteHeader />
       <main id="content" className="school">
         <section className="school-intro">
-          <a className="text-link" href="/chapters/lost-teachings-of-yoga">
-            ← Chapter 1 · Lost Teachings of Yoga
+          <a className="text-link" href={`/chapters/${chapter.slug}`}>
+            ← Chapter {chapter.number} · {chapter.title}
           </a>
           <p className="section-kicker">
             Lesson {lesson.number} · Original 2024 edition
@@ -125,6 +127,7 @@ export default async function Lesson({
           <p>{lesson.practice}</p>
           <h3>Reflect afterward</h3>
           <p>{lesson.reflection}</p>
+          <a className="text-link" href="/practice">Bring this teaching to the Practice Studio →</a>
           <p className="editorial-note">
             Developed with AI assistance for this digital edition. Reflect
             privately; nothing needs to be submitted or shared.
@@ -149,21 +152,21 @@ export default async function Lesson({
               ← Lesson {lessons[index - 1].number}: {lessons[index - 1].title}
             </a>
           )}
-          <a className="text-link" href="/chapters/lost-teachings-of-yoga">
-            Chapter 1 lessons
+          <a className="text-link" href={`/chapters/${chapter.slug}`}>
+            Chapter {chapter.number} lessons
           </a>
-          {index < 8 ? (
+          {index < lessons.length - 1 ? (
             <a
               className="text-link"
               href={`/lessons/${lessons[index + 1].slug}`}
             >
               Lesson {lessons[index + 1].number}: {lessons[index + 1].title} →
             </a>
-          ) : (
-            <a className="text-link" href="/chapters/the-tao-of-ai">
-              Continue to Chapter 2 →
+          ) : nextChapter ? (
+            <a className="text-link" href={`/chapters/${nextChapter.slug}`}>
+              Continue to Chapter {nextChapter.number} →
             </a>
-          )}
+          ) : null}
         </nav>
       </main>
       <footer>
@@ -172,3 +175,4 @@ export default async function Lesson({
     </>
   );
 }
+
