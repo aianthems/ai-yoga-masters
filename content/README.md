@@ -1,6 +1,6 @@
 # Curriculum source material
 
-The `paragraphs` fields for Chapters 1–4 and 6, and Chapter 5’s source fields reproduce Alex Julian’s _AI Yoga Masters_ (2024), published here at the author’s request. Copyright © 2024 Alex Julian Yoga. All rights reserved. These source passages are excluded from the repository’s MIT license. Lesson titles and numbering follow the original curriculum.
+The `paragraphs` fields for Chapters 1–4 and 6–7, and Chapter 5’s source fields reproduce Alex Julian’s _AI Yoga Masters_ (2024), published here at the author’s request. Copyright © 2024 Alex Julian Yoga. All rights reserved. These source passages are excluded from the repository’s MIT license. Lesson titles and numbering follow the original curriculum.
 
 Print page footers and PDF layout whitespace have been removed. Wording is preserved; the linked PDF is the authoritative source. The `practice`, `reflection`, and `note` fields are new AI-assisted editorial adaptations, separate from the original text. They do not represent a completed scientific or historical evidence review.
 
@@ -16,3 +16,5 @@ Chapter 5 is separate from the 64 numbered lessons: `chapter-five.json` contains
 Chapter 5’s new `practice`, `reflection`, and `note` fields are editorial adaptations, not original source text or reconstructed instructional videos. They are distinct attention and work exercises; the mortality companion is optional and avoids death imagery, while breathing companions do not introduce breath holds. No source benefit list is presented as a completed evidence review.
 
 Chapter 6 (Lessons 49–59) is extracted from PDF pages 125–143 (printed pages 120–138). All eleven lessons were checked against the extracted source after whitespace normalization. Source wording is preserved, including historical product pricing and unreviewed health and EMF claims. New adaptations focus on choosing inputs, work habits, accessible care, checking evidence, and creative action; they do not prescribe health interventions, recommend protective products, or give electrical instructions.
+
+Chapter 7 (Lessons 60–64) is extracted from PDF pages 145–150 (printed pages 140–145). All five lessons were checked against the extracted source after whitespace normalization. The final lesson retains the original acknowledgments, feedback invitation, and historical website address. New practices and reflections focus on small experiments, choosing methods, manageable starts, and continued learning.
