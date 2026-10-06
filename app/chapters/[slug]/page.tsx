@@ -47,7 +47,9 @@ export default async function Chapter({
                 ? "Eight lessons on your relationship with AI, developing the practitioner, focused work, kindness, and the rhythm of a useful session."
                 : chapter.number === 3
                   ? "Thirteen lessons on presence, non-attachment, adaptability, intention, care, priorities, and the willingness to keep learning."
-                  : "Explore the original chapter below. Its website edition is still to come."}
+                  : chapter.number === 4
+                    ? "Eighteen lessons on everyday attention, body awareness, personal cues, digital breaks, nature, and changing your perspective."
+                    : "Explore the original chapter below. Its website edition is still to come."}
           </p>
           <a
             className="button ghost"
