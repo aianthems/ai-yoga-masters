@@ -556,3 +556,8 @@ footer p { margin: 0; }
 .need-card > p { color: var(--ink-soft); }
 .need-card .need-practice { margin-top: auto; padding-top: 1rem; font-weight: bold; color: var(--indigo); }
 .library-music-link { display: flex; width: fit-content; }
+
+/* Keep the originating lesson available throughout a Studio session. */
+.studio-origin { margin-bottom: 2rem; padding: clamp(1.25rem, 4vw, 2rem); border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
+.studio-origin h2 { max-width: 30ch; }
+.studio-origin h3 { font-size: 1rem; }

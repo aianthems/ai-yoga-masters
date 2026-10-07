@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
 import { curriculum, bookUrl, chapters } from "../../../lib/curriculum";
+import { lessonPracticeHref } from "../../../lib/lesson-practice";
 import { lessonMedia } from "../../../lib/lesson-media";
 const lessons = curriculum.filter((l) => l.paragraphs?.length);
 export const dynamicParams = false;
@@ -127,7 +128,7 @@ export default async function Lesson({
           <p>{lesson.practice}</p>
           <h3>Reflect afterward</h3>
           <p>{lesson.reflection}</p>
-          <a className="text-link" href="/practice">Bring this teaching to the Practice Studio →</a>
+          <a className="text-link" href={lessonPracticeHref(lesson)}>Bring this teaching to the Practice Studio →</a>
           <p className="editorial-note">
             Developed with AI assistance for this digital edition. Reflect
             privately; nothing needs to be submitted or shared.

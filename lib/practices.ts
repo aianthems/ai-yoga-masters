@@ -33,7 +33,7 @@ export const practices = [
     prepare: "Choose something you have been postponing. Make the next step small enough to begin without planning the whole project: write a sentence, name a section, or ask one useful question.",
     cues: ["Take the small action you chose. An imperfect beginning is enough.", "Keep the AI interaction focused on that step rather than generating a larger plan you do not need yet.", "Notice what now exists that did not exist before. Decide whether to continue or leave a clear next step for later."],
     reflection: "What became easier after you took the first small step?",
-    lessons: [{ slug: "upgrading-the-person", title: "11 · Upgrading the Person" }, { slug: "timing-matters", title: "17 · Timing Matters" }],
+    lessons: [{ slug: "pain-of-procrastination", title: "62 · Pain of Procrastination" }, { slug: "sweetness-of-starting", title: "63 · Sweetness of Starting" }, { slug: "upgrading-the-person", title: "11 · Upgrading the Person" }],
   },
   {
     slug: "step-away",
@@ -42,7 +42,7 @@ export const practices = [
     prepare: "Choose a stopping point. Save any work you need and note where to resume. You can finish this guidance now and take your break away from the screen.",
     cues: ["Record one sentence about your next step so you do not need to keep rehearsing it.", "Step away from the screen, or redirect your attention to your surroundings in a way that works for you. Let the task wait.", "When you return, decide whether the task still needs your attention. Continuing is a choice, not an obligation."],
     reflection: "What did you notice when you gave the task some space?",
-    lessons: [{ slug: "mental-and-physical", title: "8 · Mental and Physical" }, { slug: "timing-matters", title: "17 · Timing Matters" }],
+    lessons: [{ slug: "virtual-fasting", title: "41 · Virtual Fasting" }, { slug: "mental-and-physical", title: "8 · Mental and Physical" }, { slug: "timing-matters", title: "17 · Timing Matters" }],
   },
   {
     slug: "clear-intention",
@@ -51,6 +51,6 @@ export const practices = [
     prepare: "Name what you want to create, who it is for, and one quality that matters. Keep the intention concrete: a verse with a clear story, an image with a chosen mood, or a page that answers one question.",
     cues: ["Tell the AI the purpose and the quality you chose. Ask for one manageable piece of the creation.", "Compare the result with your intention. Keep what serves it and revise what does not.", "Decide what is enough for this session. Leave one useful next step rather than chasing every new possibility."],
     reflection: "Which creative choice became clearer once you named your intention?",
-    lessons: [{ slug: "redefining-yoga", title: "1 · Redefining Yoga" }, { slug: "samyama", title: "12 · Samyama" }],
+    lessons: [{ slug: "intention-and-direction", title: "23 · Intention and Direction" }, { slug: "redefining-yoga", title: "1 · Redefining Yoga" }, { slug: "samyama", title: "12 · Samyama" }],
   },
 ] as const;
