@@ -579,3 +579,11 @@ Mirrors and Fractals (Lessons 49–59) is readable with original book text, chec
 ## Chapter 7 website edition
 
 Integration and Innovation (Lessons 60–64) completes the native website edition of all seven chapters: 64 numbered lessons, sixteen flow overviews, and four meditation scripts. The closing lessons preserve original source text with checked printed/PDF references and separate contemporary practices, reflections, and editorial notes. Lesson 59 continues into Lesson 60; after Lesson 64, readers can explore the Practice Library. Its One Small Start doorway now opens Lessons 62 and 63 as native pages. All five source lessons were verified against PDF pages 145–150.
+
+## Lesson-aware Studio
+
+Every numbered lesson links to a matched Studio practice using `/practice?practice=<slug>&lesson=<lesson-slug>`. The Studio carries the lesson’s existing contemporary exercise and reflection, labels their digital-edition provenance, and keeps a return link available throughout the session. Closing offers the next numbered lesson (including across chapter boundaries), or the Practice Library after Lesson 64. Restart clears private writing and restores the initial practice while retaining the lesson context.
+
+Pairings live in `lib/lesson-practice.ts` and apply to the contemporary exercises, not the original book’s health claims. Context is resolved from published curriculum data on the server; unknown or repeated lesson parameters add no context. A valid explicit practice selection takes precedence; otherwise a known lesson supplies its suggested practice, and generic entries fall back to One-Pointed Focus. Practice Library and Chapter 5 practice-only links continue to work. No account, submission, or persistence is added.
+
+Run `npm test` for focused lesson-routing regression tests and `npm run build` for the production build and type checks.

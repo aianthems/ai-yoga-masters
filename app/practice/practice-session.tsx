@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import type { StudioLesson } from "../../lib/lesson-practice";
 import { practices } from "../../lib/practices";
 
 const stages = ["Arrive", "Choose", "Set intention", "Practice", "Reflect", "Close"];
@@ -12,7 +13,7 @@ const arrivalNotes: Record<string, string> = {
   Steady: "Choose one worthwhile task and give it the attention available to you.",
 };
 
-export default function PracticeSession({ initialChoice = 0 }: { initialChoice?: number }) {
+export default function PracticeSession({ initialChoice = 0, origin }: { initialChoice?: number; origin?: StudioLesson }) {
   const [stage, setStage] = useState(0);
   const [attention, setAttention] = useState("");
   const [choice, setChoice] = useState(initialChoice);
@@ -61,6 +62,15 @@ export default function PracticeSession({ initialChoice = 0 }: { initialChoice?:
   }
 
   return <section className="school-section session" aria-label="Guided AI practice">
+    {origin && <aside className="studio-origin" aria-labelledby="origin-title">
+      <p className="section-kicker">From your lesson</p>
+      <h2 id="origin-title">Lesson {origin.number}: {origin.title}</h2>
+      <p>This session pairs the lesson’s contemporary exercise with a Studio practice. You can choose a different practice and still return to your lesson.</p>
+      <h3>Contemporary exercise · digital-edition adaptation</h3>
+      <p>{origin.practice}</p>
+      <p className="editorial-note">Developed with AI assistance for this digital edition; separate from Alex Julian’s original 2024 source teaching.</p>
+      <a className="text-link" href={`/lessons/${origin.slug}`}>← Return to Lesson {origin.number}: {origin.title}</a>
+    </aside>}
     <ol className="session-progress" aria-label="Session stages">
       {stages.map((name, i) => <li key={name} aria-current={stage === i ? "step" : undefined} className={i <= stage ? "reached" : ""}><span>{i + 1}</span>{name}</li>)}
     </ol>
@@ -99,7 +109,7 @@ export default function PracticeSession({ initialChoice = 0 }: { initialChoice?:
       </>}
 
       {stage === 4 && <>
-        <label className="session-field" htmlFor="reflection">{practice.reflection}<textarea id="reflection" rows={4} maxLength={2400} value={reflection} onChange={e => setReflection(e.target.value)} placeholder="A few words are enough. You can also reflect without writing." /></label>
+        <label className="session-field" htmlFor="reflection">{origin?.reflection ?? practice.reflection}<textarea id="reflection" rows={4} maxLength={2400} value={reflection} onChange={e => setReflection(e.target.value)} placeholder="A few words are enough. You can also reflect without writing." /></label>
         <p>Notice one thing you want to carry into your next session. You can leave this blank.</p>
         <button className="button primary" onClick={() => move(5)}>Close my practice →</button>
       </>}
@@ -108,7 +118,10 @@ export default function PracticeSession({ initialChoice = 0 }: { initialChoice?:
         <p>You practiced {practice.title.toLowerCase()}. Take a moment to step away from the screen and re-enter the rest of your life.</p>
         {(intention.trim() || reflection.trim()) && <dl className="session-summary">{intention.trim() && <><dt>Your intention</dt><dd>{intention}</dd></>}{reflection.trim() && <><dt>Your reflection</dt><dd>{reflection}</dd></>}</dl>}
         <button className="button primary" onClick={restart}>Clear and begin a new practice</button>
-        <a className="text-link" href="/">Return to the school →</a>
+        {origin ? <nav className="session-lessons" aria-label="Continue after your practice">
+          <a className="text-link" href={`/lessons/${origin.slug}`}>Return to Lesson {origin.number}: {origin.title} →</a>
+          {origin.nextLesson ? <a className="text-link" href={`/lessons/${origin.nextLesson.slug}`}>Next: Lesson {origin.nextLesson.number}: {origin.nextLesson.title} →</a> : <a className="text-link" href="/practices">Explore the Practice Library →</a>}
+        </nav> : <a className="text-link" href="/">Return to the school →</a>}
       </>}
 
       {stage > 0 && stage < 5 && <button className="session-back text-link" onClick={() => move(stage - 1)}>← Back</button>}

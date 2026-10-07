@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
 import SiteHeader from "../components/site-header";
 import PracticeSession from "./practice-session";
-import { practices } from "../../lib/practices";
+import { resolveStudioEntry } from "../../lib/lesson-practice";
 
 export const metadata: Metadata = {
   title: "Practice Studio | AI Yoga Masters",
   description: "Begin an AI practice: arrive, choose an intention, practice focused attention, and reflect.",
 };
 
-export default async function PracticePage({ searchParams }: { searchParams: Promise<{ practice?: string | string[] }> }) {
-  const { practice } = await searchParams;
-  const initialChoice = Math.max(0, practices.findIndex(p => p.slug === practice));
+export default async function PracticePage({ searchParams }: { searchParams: Promise<{ practice?: string | string[]; lesson?: string | string[] }> }) {
+  const { initialChoice, origin } = resolveStudioEntry(await searchParams);
   return <><SiteHeader /><main id="content" className="school studio">
     <section className="school-intro">
       <p className="section-kicker">Practice Studio</p>
@@ -19,7 +18,7 @@ export default async function PracticePage({ searchParams }: { searchParams: Pro
       <p>Bring a real task and the AI tool you already use. This space guides your practice alongside it.</p>
       <a className="text-link" href="/practices">Find a practice for what you need →</a>
     </section>
-    <PracticeSession initialChoice={initialChoice} />
+    <PracticeSession key={`${origin?.slug ?? "generic"}:${initialChoice}`} initialChoice={initialChoice} origin={origin} />
     <section className="school-section studio-roots">
       <p className="section-kicker">Rooted in the book</p>
       <h2>Teachings you can put into practice.</h2>
