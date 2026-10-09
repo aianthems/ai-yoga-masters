@@ -3,6 +3,7 @@ import lessons from "../content/curriculum.json";
 export const bookUrl =
   "https://media.aianthems.com/books/ai-yoga-masters/ai-yoga-masters-optimized.pdf";
 export const curriculum = lessons;
+export const publishedLessons = curriculum.filter(lesson => lesson.paragraphs?.length);
 export const chapters = [
   {
     number: 1,

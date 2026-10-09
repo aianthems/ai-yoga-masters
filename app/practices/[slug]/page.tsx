@@ -1,3 +1,4 @@
+import { pageMetadata } from "../../../lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
@@ -11,7 +12,8 @@ export const dynamicParams = false;
 export function generateStaticParams() { return practiceNeeds.map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params; const need = practiceNeeds.find(n => n.slug === slug);
-  return { title: need ? `${need.need} | AI Yoga Masters` : "Practice not found", description: need?.invitation };
+  if (!need) notFound();
+  return pageMetadata({ title: `${need.need} | AI Yoga Masters`, description: need.invitation, path: `/practices/${need.slug}` });
 }
 
 export default async function NeedPractice({ params }: { params: Promise<{ slug: string }> }) {

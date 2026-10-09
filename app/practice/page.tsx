@@ -1,12 +1,19 @@
+import { hasStudioParameters, pageMetadata } from "../../lib/seo";
 import type { Metadata } from "next";
 import SiteHeader from "../components/site-header";
 import PracticeSession from "./practice-session";
 import { resolveStudioEntry } from "../../lib/lesson-practice";
 
-export const metadata: Metadata = {
-  title: "Practice Studio | AI Yoga Masters",
-  description: "Begin an AI practice: arrive, choose an intention, practice focused attention, and reflect.",
-};
+export async function generateMetadata({ searchParams }: {
+  searchParams: Promise<{ practice?: string | string[]; lesson?: string | string[] }>;
+}): Promise<Metadata> {
+  return pageMetadata({
+    title: "Practice Studio | AI Yoga Masters",
+    description: "Begin an AI practice: arrive, choose an intention, practice focused attention, and reflect.",
+    path: "/practice",
+    noIndex: hasStudioParameters(await searchParams),
+  });
+}
 
 export default async function PracticePage({ searchParams }: { searchParams: Promise<{ practice?: string | string[]; lesson?: string | string[] }> }) {
   const { initialChoice, origin } = resolveStudioEntry(await searchParams);

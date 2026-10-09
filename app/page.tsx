@@ -1,5 +1,8 @@
+import { pageMetadata, SITE_NAME, SITE_DESCRIPTION } from "../lib/seo";
 import SiteHeader from "./components/site-header";
 import { chapters as chapterMap } from "../lib/curriculum";
+
+export const metadata = pageMetadata({ title: SITE_NAME, description: SITE_DESCRIPTION, path: "/" });
 
 const bookUrl =
   "https://media.aianthems.com/books/ai-yoga-masters/ai-yoga-masters-optimized.pdf";

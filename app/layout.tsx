@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, robotsMetadata } from "../lib/seo";
 
 export const metadata: Metadata = {
-  title: "AI Yoga Masters",
-  description:
-    "Ancient practice for intelligent tools. Train attention, judgment, and agency in the age of AI.",
-  openGraph: {
-    title: "AI Yoga Masters",
-    description: "Train the user, not only the model.",
-    type: "website",
+  metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
+  robots: robotsMetadata(),
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 

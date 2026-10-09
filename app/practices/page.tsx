@@ -1,10 +1,11 @@
+import { pageMetadata } from "../../lib/seo";
 import type { Metadata } from "next";
 import SiteHeader from "../components/site-header";
 import { practiceNeeds } from "../../lib/practice-library";
 import { practices } from "../../lib/practices";
 import { lessonMedia } from "../../lib/lesson-media";
 
-export const metadata: Metadata = { title: "Practice Library | AI Yoga Masters", description: "Find a short AI yoga practice for scattered attention, checking answers, beginning, stepping away, or creating with intention." };
+export const metadata: Metadata = pageMetadata({ title: "Practice Library | AI Yoga Masters", description: "Find a short AI yoga practice for scattered attention, checking answers, beginning, stepping away, or creating with intention.", path: "/practices" });
 
 export default function PracticeLibrary() {
   const music = Object.entries(lessonMedia);

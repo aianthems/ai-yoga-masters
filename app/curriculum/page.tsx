@@ -1,12 +1,11 @@
+import { pageMetadata } from "../../lib/seo";
 import type { Metadata } from "next";
 import SiteHeader from "../components/site-header";
 import { chapterFiveEntries } from "../../lib/chapter-five";
 import { chapters, curriculum } from "../../lib/curriculum";
-export const metadata: Metadata = {
-  title: "Curriculum | AI Yoga Masters",
+export const metadata: Metadata = pageMetadata({ title: "Curriculum | AI Yoga Masters",
   description:
-    "Explore the original seven chapters, 64 lessons, yoga flows, and meditations.",
-};
+    "Explore the original seven chapters, 64 lessons, yoga flows, and meditations.", path: "/curriculum" });
 export default function Curriculum() {
   return (
     <>
