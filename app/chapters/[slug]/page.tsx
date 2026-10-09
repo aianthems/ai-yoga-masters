@@ -1,3 +1,4 @@
+import { pageMetadata } from "../../../lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
@@ -18,7 +19,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const c = chapters.find((c) => c.slug === slug);
-  return { title: c ? `${c.title} | AI Yoga Masters` : "Chapter not found" };
+  if (!c) notFound();
+  return pageMetadata({
+    title: `${c.title} | AI Yoga Masters`,
+    description: `Explore Chapter ${c.number}: ${c.title} from the original AI Yoga Masters book, with links to its lessons and practices.`,
+    path: `/chapters/${c.slug}`,
+  });
 }
 export default async function Chapter({
   params,

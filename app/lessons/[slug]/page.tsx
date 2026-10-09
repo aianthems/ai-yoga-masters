@@ -1,10 +1,11 @@
+import { pageMetadata } from "../../../lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
-import { curriculum, bookUrl, chapters } from "../../../lib/curriculum";
+import { publishedLessons, bookUrl, chapters } from "../../../lib/curriculum";
 import { lessonPracticeHref } from "../../../lib/lesson-practice";
 import { lessonMedia } from "../../../lib/lesson-media";
-const lessons = curriculum.filter((l) => l.paragraphs?.length);
+const lessons = publishedLessons;
 export const dynamicParams = false;
 export function generateStaticParams() {
   return lessons.map(({ slug }) => ({ slug }));
@@ -16,11 +17,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const l = lessons.find((l) => l.slug === slug);
-  return {
-    title: l
-      ? `Lesson ${l.number}: ${l.title} | AI Yoga Masters`
-      : "Lesson not found",
-  };
+  if (!l) notFound();
+  return pageMetadata({
+    title: `Lesson ${l.number}: ${l.title} | AI Yoga Masters`,
+    description: `Read Lesson ${l.number}: ${l.title} from AI Yoga Masters (2024), with source notes and a separate contemporary practice and reflection.`,
+    path: `/lessons/${l.slug}`,
+  });
 }
 export default async function Lesson({
   params,
