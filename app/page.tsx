@@ -57,44 +57,24 @@ export default function Home() {
     <>
       <SiteHeader />
       <main id="content">
-        <section className="hero" id="top">
-          <div className="hero-grid">
-            <div className="hero-copy">
-              <p className="eyebrow">Ancient practice for intelligent tools</p>
-              <h1>
-                Train the user,
-                <br />
-                not only the model.
-              </h1>
-              <p className="lede">
-                AI Yoga Masters explores how mindfulness, focus, philosophy, and
-                contemplative practice can improve the way people use artificial
-                intelligence.
-              </p>
-              <div className="actions">
-                <a className="button primary" href="/practice">
-                  Begin an AI Practice
-                </a>
-                <a
-                  className="button ghost"
-                  href={bookUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Read the original book ↗
-                </a>
-              </div>
-            </div>
-
-            <div className="hero-art" style={{ background: "#160d29" }}>
-              <img
-                src="https://pub-651b74915ffe45ecaf36799e0842fc9f.r2.dev/images/laptop-girls/laptop-girl-1.webp"
-                alt="Woman meditating beside a laptop beneath a neon sunset"
-                width={1672}
-                height={941}
-                fetchPriority="high"
-                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "contain" }}
-              />
+        <section className="landing-hero" id="top" aria-labelledby="hero-title">
+          <img
+            className="landing-image"
+            src="https://pub-651b74915ffe45ecaf36799e0842fc9f.r2.dev/images/laptop-girls/laptop-girl-1.webp"
+            alt="Woman meditating beside a laptop beneath a neon sunset"
+            width={1672}
+            height={941}
+            fetchPriority="high"
+          />
+          <div className="landing-content">
+            <h1 id="hero-title">Yoga 2.0</h1>
+            <div className="landing-actions">
+              <a className="button landing-book" href={bookUrl} target="_blank" rel="noreferrer">
+                Read the book ↗
+              </a>
+              <a className="button landing-curriculum" href="/curriculum">
+                Explore the curriculum →
+              </a>
             </div>
           </div>
         </section>
