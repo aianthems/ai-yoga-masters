@@ -57,4 +57,20 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "ECeVyGU0LNM",
     title: "Emotion and Stimulation",
   },
+  "nice-and-polite": {
+    youtubeId: "bxs1-Se6TiY",
+    title: "Nice and Polite",
+  },
+  "minimizing-stress": {
+    youtubeId: "eI7xNP6o2fs",
+    title: "Minimizing Stress",
+  },
+  "maximizing-relaxation": {
+    youtubeId: "bl6SKwrm0Ks",
+    title: "Maximizing Relaxation",
+  },
+  "timing-matters": {
+    youtubeId: "YNXsyDQwhkg",
+    title: "Timing Matters",
+  },
 };
