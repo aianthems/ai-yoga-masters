@@ -113,4 +113,16 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "TSLKk2msjjU",
     title: "Karma Yoga",
   },
+  "priorities-and-multitasking": {
+    youtubeId: "hW9XWilYXQ8",
+    title: "Priorities and Multitasking",
+  },
+  "unlearning-and-unbiased": {
+    youtubeId: "fdNpvRzEWFY",
+    title: "Unlearning and Unbiased",
+  },
+  "staying-humble": {
+    youtubeId: "dmm0AIIaiww",
+    title: "Staying Humble",
+  },
 };
