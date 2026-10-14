@@ -93,4 +93,24 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "IiwwGlJbmhU",
     title: "Union and Harmony",
   },
+  "intention-and-direction": {
+    youtubeId: "r_2RKND_Wuw",
+    title: "Intention and Direction",
+  },
+  "objects-and-tools": {
+    youtubeId: "IUgu2SnIz_M",
+    title: "Objects and Tools",
+  },
+  "no-idols": {
+    youtubeId: "YoigFbsmaYw",
+    title: "No Idols",
+  },
+  "energy-and-love": {
+    youtubeId: "7EsPKJEJtU8",
+    title: "Energy and Love",
+  },
+  "karma-yoga": {
+    youtubeId: "TSLKk2msjjU",
+    title: "Karma Yoga",
+  },
 };
