@@ -86,13 +86,15 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hero-art" aria-hidden="true">
-              <div className="orb orb-one" />
-              <div className="orb orb-two" />
-              <div className="orbit orbit-one" />
-              <div className="orbit orbit-two" />
-              <div className="center-symbol">ॐ</div>
-              <p className="art-caption">Focus · Discernment · Agency</p>
+            <div className="hero-art" style={{ background: "#160d29" }}>
+              <img
+                src="https://pub-651b74915ffe45ecaf36799e0842fc9f.r2.dev/images/laptop-girls/laptop-girl-1.webp"
+                alt="Woman meditating beside a laptop beneath a neon sunset"
+                width={1672}
+                height={941}
+                fetchPriority="high"
+                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "contain" }}
+              />
             </div>
           </div>
         </section>
