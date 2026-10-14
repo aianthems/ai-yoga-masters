@@ -145,4 +145,24 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "6ma9YrH53CQ",
     title: "Posture Practice",
   },
+  "mind-body-connection": {
+    youtubeId: "BKPx3tcHi-8",
+    title: "Mind-Body Connection",
+  },
+  "coordination-connection": {
+    youtubeId: "HhWOCWrmZD0",
+    title: "Coordination Connection",
+  },
+  "the-balance-game": {
+    youtubeId: "GrY8mLrFIQY",
+    title: "Balance Game",
+  },
+  "old-school-and-new-school": {
+    youtubeId: "RrnVZqMp6oE",
+    title: "Old School and New School",
+  },
+  "sacredfication": {
+    youtubeId: "Abx6kbAT3fY",
+    title: "Sacredfication",
+  },
 };
