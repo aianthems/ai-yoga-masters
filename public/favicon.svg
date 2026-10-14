@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101827"/><circle cx="32" cy="32" r="23" fill="none" stroke="#d4aa62" stroke-width="3"/><circle cx="32" cy="32" r="14" fill="none" stroke="#76c7bf" stroke-width="3"/><circle cx="32" cy="32" r="6" fill="#d4aa62"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="glow">
+      <stop stop-color="#ffe9a3" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#efb94f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#211135"/>
+  <g fill="#efc76b">
+    <path d="M32 23 C24 19 24 11 32 5 C40 11 40 19 32 23Z" transform="rotate(0 32 32)"/>
+    <path d="M32 23 C24 19 24 11 32 5 C40 11 40 19 32 23Z" transform="rotate(45 32 32)"/>
+    <path d="M32 23 C24 19 24 11 32 5 C40 11 40 19 32 23Z" transform="rotate(90 32 32)"/>
+    <path d="M32 23 C24 19 24 11 32 5 C40 11 40 19 32 23Z" transform="rotate(135 32 32)"/>
+    <path d="M32 23 C24 19 24 11 32 5 C40 11 40 19 32 23Z" transform="rotate(180 32 32)"/>
+    <path d="M32 23 C24 19 24 11 32 5 C40 11 40 19 32 23Z" transform="rotate(225 32 32)"/>
+    <path d="M32 23 C24 19 24 11 32 5 C40 11 40 19 32 23Z" transform="rotate(270 32 32)"/>
+    <path d="M32 23 C24 19 24 11 32 5 C40 11 40 19 32 23Z" transform="rotate(315 32 32)"/>
+  </g>
+  <circle cx="32" cy="32" r="12" fill="url(#glow)"/>
+  <circle cx="32" cy="32" r="6" fill="#ffe6a0"/>
+</svg>
