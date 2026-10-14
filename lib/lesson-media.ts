@@ -125,4 +125,24 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "dmm0AIIaiww",
     title: "Staying Humble",
   },
+  "meditationization": {
+    youtubeId: "KoMn4eEVDBQ",
+    title: "Meditationization",
+  },
+  "yogafication": {
+    youtubeId: "9jdv5YwHQ8g",
+    title: "Yogafication",
+  },
+  "pranayama": {
+    youtubeId: "OKEssndnvQU",
+    title: "Pranayama",
+  },
+  "mantra": {
+    youtubeId: "Kj31EEApp6g",
+    title: "Mantra Yoga Song",
+  },
+  "posture-practice": {
+    youtubeId: "6ma9YrH53CQ",
+    title: "Posture Practice",
+  },
 };
