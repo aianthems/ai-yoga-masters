@@ -561,3 +561,52 @@ footer p { margin: 0; }
 .studio-origin { margin-bottom: 2rem; padding: clamp(1.25rem, 4vw, 2rem); border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
 .studio-origin h2 { max-width: 30ch; }
 .studio-origin h3 { font-size: 1rem; }
+
+/* Full-screen homepage artwork. */
+.landing-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: calc(100svh - 76px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: #160d29;
+  color: white;
+}
+.landing-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+}
+.landing-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, rgba(15, 6, 30, .88), rgba(15, 6, 30, .08) 48%, transparent 70%);
+  pointer-events: none;
+}
+.landing-content { padding: clamp(2rem, 5vw, 5rem) 6vw; }
+.landing-content h1 {
+  margin: 0 0 1.4rem;
+  font-size: clamp(4.5rem, 8vw, 8rem);
+  line-height: 1;
+  letter-spacing: -.045em;
+  text-shadow: 0 2px 24px rgba(0,0,0,.35);
+}
+.landing-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
+.landing-book { background: #ffe6a0; border-color: #ffe6a0; color: #211135; }
+.landing-curriculum { background: rgba(22, 13, 41, .72); border-color: rgba(255,255,255,.8); color: white; }
+.landing-actions a:focus-visible { outline-color: #ffe6a0; }
+@media (max-width: 900px) {
+  .landing-hero { min-height: calc(100svh - 140px); }
+}
+@media (max-width: 620px) {
+  .landing-image { object-position: 53% center; }
+  .landing-content { width: 100%; padding: 2rem 5vw; }
+  .landing-actions { flex-direction: column; }
+}
