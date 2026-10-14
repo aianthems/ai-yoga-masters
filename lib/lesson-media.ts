@@ -73,4 +73,24 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "YNXsyDQwhkg",
     title: "Timing Matters",
   },
+  "presence": {
+    youtubeId: "A1pFYPqIGrY",
+    title: "Presence",
+  },
+  "purity": {
+    youtubeId: "0XRxpp-BAIM",
+    title: "Purity",
+  },
+  "non-attachment": {
+    youtubeId: "5CpT-shGg6o",
+    title: "Non-Attachment",
+  },
+  "water-and-adaptability": {
+    youtubeId: "5PIaEtWqSk0",
+    title: "Water and Adaptability",
+  },
+  "union-and-harmony": {
+    youtubeId: "IiwwGlJbmhU",
+    title: "Union and Harmony",
+  },
 };
