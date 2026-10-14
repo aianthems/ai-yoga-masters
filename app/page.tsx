@@ -7,17 +7,6 @@ export const metadata = pageMetadata({ title: SITE_NAME, description: SITE_DESCR
 const bookUrl =
   "https://media.aianthems.com/books/ai-yoga-masters/ai-yoga-masters-optimized.pdf";
 
-const petals = [
-  ["Yamas", "Use powerful tools without abandoning ethics."],
-  ["Niyamas", "Build the inner conditions for clear judgment."],
-  ["Asana", "Care for the body doing the work."],
-  ["Pranayama", "Use breath to regulate pace and reactivity."],
-  ["Pratyahara", "Choose what deserves your attention."],
-  ["Dharana", "Return to one meaningful point of focus."],
-  ["Dhyana", "Stay with worthwhile work long enough to go deep."],
-  ["Samadhi", "Let sustained attention become absorbed practice."],
-];
-
 const chapters = [
   [
     "01",
@@ -118,23 +107,6 @@ export default function Home() {
               </li>
             ))}
           </ol>
-        </section>
-
-        <section className="petals shell" id="petals">
-          <div className="section-heading">
-            <p className="section-kicker">The 8 Petals as AI practice</p>
-            <h2>Ancient structure. Contemporary application.</h2>
-          </div>
-
-          <div className="petal-grid">
-            {petals.map(([name, text], index) => (
-              <article className="petal-card" key={name}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <h3>{name}</h3>
-                <p>{text}</p>
-              </article>
-            ))}
-          </div>
         </section>
 
         <section className="curriculum shell" id="curriculum">
