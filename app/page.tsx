@@ -68,6 +68,28 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="curriculum shell" id="curriculum">
+          <div className="section-heading">
+            <p className="section-kicker">Original curriculum</p>
+            <h2>64 lessons across seven chapters.</h2>
+          </div>
+
+          <div className="chapter-list">
+            {chapters.map(([number, title, description]) => (
+              <a
+                key={number}
+                href={`/chapters/${chapterMap[Number(number) - 1].slug}`}
+                className="chapter-row"
+              >
+                <span className="chapter-number">{number}</span>
+                <span className="chapter-title">{title}</span>
+                <span className="chapter-description">{description}</span>
+                <span>→</span>
+              </a>
+            ))}
+          </div>
+        </section>
+
         <section className="thesis shell">
           <p className="section-kicker">The thesis</p>
           <blockquote>
@@ -107,28 +129,6 @@ export default function Home() {
               </li>
             ))}
           </ol>
-        </section>
-
-        <section className="curriculum shell" id="curriculum">
-          <div className="section-heading">
-            <p className="section-kicker">Original curriculum</p>
-            <h2>64 lessons across seven chapters.</h2>
-          </div>
-
-          <div className="chapter-list">
-            {chapters.map(([number, title, description]) => (
-              <a
-                key={number}
-                href={`/chapters/${chapterMap[Number(number) - 1].slug}`}
-                className="chapter-row"
-              >
-                <span className="chapter-number">{number}</span>
-                <span className="chapter-title">{title}</span>
-                <span className="chapter-description">{description}</span>
-                <span>→</span>
-              </a>
-            ))}
-          </div>
         </section>
 
         <section className="principle shell">
