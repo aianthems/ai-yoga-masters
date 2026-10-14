@@ -41,4 +41,20 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "ghbn8vlsJTI",
     title: "One Pose",
   },
+  "redefining-ai": {
+    youtubeId: "LLeIM339MDQ",
+    title: "Redefining AI",
+  },
+  "upgrading-the-person": {
+    youtubeId: "trg03vqrHUI",
+    title: "Upgrading the Person",
+  },
+  "samyama": {
+    youtubeId: "bdbGt3GWgqk",
+    title: "Samyama",
+  },
+  "emotion-and-stimulation": {
+    youtubeId: "ECeVyGU0LNM",
+    title: "Emotion and Stimulation",
+  },
 };
