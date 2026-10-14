@@ -25,4 +25,20 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "tuvj5_X8uno",
     title: "Clarity and Discernment",
   },
+  "pratyahara-and-dharana": {
+    youtubeId: "tUTgclKpKUU",
+    title: "Pratyahara and Dharana",
+  },
+  "ahimsa-and-satya": {
+    youtubeId: "x08VTs8O-NQ",
+    title: "Ahimsa and Satya",
+  },
+  "mental-and-physical": {
+    youtubeId: "SmX0GtkBXoU",
+    title: "Mental and Physical Yoga",
+  },
+  "one-pose": {
+    youtubeId: "ghbn8vlsJTI",
+    title: "One Pose",
+  },
 };
