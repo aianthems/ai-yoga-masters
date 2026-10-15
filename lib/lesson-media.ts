@@ -205,4 +205,24 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "-2YXOGWPfCc",
     title: "The Root System",
   },
+  "working-out-and-cardio": {
+    youtubeId: "0TXN9o-9LjM",
+    title: "Working Out and Cardio",
+  },
+  "dangers-of-sitting": {
+    youtubeId: "Mn10-fr0RXo",
+    title: "Dangers of Sitting",
+  },
+  "updated-ergonomics": {
+    youtubeId: "a2XCdmAts8E",
+    title: "Updated Ergonomics",
+  },
+  "nutrition": {
+    youtubeId: "5DpMC2T7X1U",
+    title: "Nutrition",
+  },
+  "sleep": {
+    youtubeId: "XzyTLiUoY8I",
+    title: "Sleep",
+  },
 };
