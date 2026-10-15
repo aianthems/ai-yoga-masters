@@ -131,26 +131,6 @@ export default function Home() {
           </ol>
         </section>
 
-        <section className="principle shell">
-          <p className="section-kicker">The relationship matters</p>
-          <div className="principle-grid">
-            <h2>
-              Use the tool deliberately — and retain the ability to put it down.
-            </h2>
-            <div>
-              <p>
-                AI Yoga Masters is neither anti-AI nor blindly pro-AI. It is a
-                practice of attention, discernment, ethics, embodiment, and
-                non-attachment.
-              </p>
-              <p>
-                AI can assist the school. Humans remain responsible for the
-                school.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <section className="closing">
           <div className="closing-inner">
             <p className="section-kicker">AI Yoga Masters</p>
