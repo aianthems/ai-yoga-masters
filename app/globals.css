@@ -591,6 +591,18 @@ footer p { margin: 0; }
   pointer-events: none;
 }
 .landing-content { padding: clamp(2rem, 5vw, 5rem) 6vw; }
+.landing-introduction {
+  max-width: 52ch;
+  margin-bottom: 1.8rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, .8);
+}
+.landing-content:has(.landing-introduction) {
+  width: 100%;
+  background: linear-gradient(0deg, rgba(15, 6, 30, .65), rgba(15, 6, 30, .3) 80%, transparent);
+}
+#first-practice { scroll-margin-top: 6rem; }
 .landing-content h1 {
   margin: 0 0 1.4rem;
   font-size: clamp(4.5rem, 8vw, 8rem);

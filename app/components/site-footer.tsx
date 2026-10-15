@@ -21,6 +21,7 @@ export default function SiteFooter() {
           <p>Founded by Alex Julian.</p>
         </div>
         <div className="school-footer-links" aria-label="Footer links">
+          <a href="/start-here">Start Here</a>
           <a href="/curriculum">Curriculum</a>
           <a href="/about">About</a>
           <a href={bookUrl} target="_blank" rel="noopener noreferrer">Book</a>

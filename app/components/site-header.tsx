@@ -16,6 +16,7 @@ export default function SiteHeader() {
           <span>AI Yoga Masters</span>
         </a>
         <nav aria-label="Primary navigation">
+          <a href="/start-here">Start Here</a>
           <a href="/curriculum">Curriculum</a>
           <a href="/about">About</a>
           <a

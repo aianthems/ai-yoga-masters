@@ -587,3 +587,7 @@ Every numbered lesson links to a matched Studio practice using `/practice?practi
 Pairings live in `lib/lesson-practice.ts` and apply to the contemporary exercises, not the original book’s health claims. Context is resolved from published curriculum data on the server; unknown or repeated lesson parameters add no context. A valid explicit practice selection takes precedence; otherwise a known lesson supplies its suggested practice, and generic entries fall back to One-Pointed Focus. Practice Library and Chapter 5 practice-only links continue to work. No account, submission, or persistence is added.
 
 Run `npm test` for focused lesson-routing regression tests and `npm run build` for the production build and type checks.
+
+## Start Here
+
+`/start-here` introduces one-pointed attention through a short contemporary AI exercise, an optional original Ekagra recording, and links to Lesson 4, Lesson 1, and the full curriculum. The homepage explains the school and makes Start Here the primary action; shared navigation and the footer also link to it. The page is server-rendered, appears in the sitemap, and collects no writing or personal data.

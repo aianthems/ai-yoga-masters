@@ -57,12 +57,20 @@ export default function Home() {
           />
           <div className="landing-content">
             <h1 id="hero-title">Yoga 2.0</h1>
+            <p className="landing-introduction">
+              A yoga school for people creating and working with AI. Explore
+              lessons, music, and everyday practices for clearer attention,
+              conscious intention, and a more balanced relationship with technology.
+            </p>
             <div className="landing-actions">
-              <a className="button landing-book" href={bookUrl} target="_blank" rel="noreferrer">
-                Read the book ↗
+              <a className="button landing-book" href="/start-here">
+                Start Here
               </a>
               <a className="button landing-curriculum" href="/curriculum">
                 Explore the curriculum →
+              </a>
+              <a className="button landing-curriculum" href={bookUrl} target="_blank" rel="noreferrer">
+                Read the book ↗
               </a>
             </div>
           </div>

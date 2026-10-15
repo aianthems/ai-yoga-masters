@@ -132,7 +132,7 @@ try {
         const page = await context.newPage(); const errors = []; const writes = []; const media = [];
         page.on("pageerror", error => errors.push(error.message));
         page.on("request", request => { if (!["GET", "HEAD"].includes(request.method())) writes.push(request.url()); if (/\.(mp3|mp4|pdf)(\?|$)/.test(request.url())) media.push(request.url()); });
-        const samples = ["/", "/curriculum", "/chapters/lost-teachings-of-yoga", "/lessons/ekagra-one-pointed-focus", ...["flows", "meditations"].map(section => new URL(urls.find(url => new URL(url).pathname.startsWith(`/${section}/`))).pathname)];
+        const samples = ["/", "/start-here", "/curriculum", "/chapters/lost-teachings-of-yoga", "/lessons/ekagra-one-pointed-focus", ...["flows", "meditations"].map(section => new URL(urls.find(url => new URL(url).pathname.startsWith(`/${section}/`))).pathname)];
         for (const path of samples) {
           const r = await page.goto(base + path); assert.equal(r.status(), 200, path);
           assert.equal(await page.locator("h1").count(), 1, path);
@@ -142,6 +142,13 @@ try {
           for (const link of await page.locator("header nav a").all()) assert.ok(await link.isVisible());
         }
         await page.goto(base + "/"); await page.screenshot({ path: join(output, `home-${width}.png`) });
+        await page.locator('.landing-actions a[href="/start-here"]').click();
+        await page.waitForURL(base + "/start-here");
+        await page.locator('a[href="#first-practice"]').click();
+        await page.waitForURL(base + "/start-here#first-practice");
+        assert.ok(await page.locator("#first-practice").isVisible());
+        await page.locator('a[href="/lessons/ekagra-one-pointed-focus"]').click();
+        await page.waitForURL(base + "/lessons/ekagra-one-pointed-focus");
         await page.locator('header nav a[href="/curriculum"]').click();
         await page.waitForURL(base + "/curriculum");
         await page.goto(base + "/lessons/ekagra-one-pointed-focus");
