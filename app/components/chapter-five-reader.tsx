@@ -40,7 +40,6 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           <p>{entry.practice}</p>
           <h3>Reflect afterward</h3>
           <p>{entry.reflection}</p>
-          <a className="text-link" href={`/practice?practice=${entry.studioPractice}`}>Bring this teaching to the Practice Studio →</a>
           <p className="editorial-note">Developed with AI assistance for this digital edition. Reflect privately; nothing needs to be submitted or shared.</p>
         </section>
         <section className="school-section" aria-labelledby="connections">
