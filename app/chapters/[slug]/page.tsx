@@ -131,9 +131,6 @@ export default async function Chapter({
           )}
         </nav>
       </main>
-      <footer>
-        <p>Founded by Alex Julian · Based on the original AI Yoga Masters.</p>
-      </footer>
     </>
   );
 }
