@@ -71,7 +71,7 @@ export default function Home() {
         <section className="curriculum shell" id="curriculum">
           <div className="section-heading">
             <p className="section-kicker">Original curriculum</p>
-            <h2>64 lessons across seven chapters.</h2>
+            <h2>64 lessons across 7 chapters.</h2>
           </div>
 
           <div className="chapter-list">
