@@ -301,7 +301,7 @@ h1 {
 }
 .closing h2 {
   margin-bottom: 2rem;
-  font-size: clamp(3.5rem, 7vw, 7.4rem);
+  font-size: clamp(1.75rem, 3.5vw, 3.7rem);
 }
 .button.light { border-color: white; color: white; }
 
