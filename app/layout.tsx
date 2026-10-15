@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SiteFooter from "./components/site-footer";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, robotsMetadata } from "../lib/seo";
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}<SiteFooter /></body>
     </html>
   );
 }
