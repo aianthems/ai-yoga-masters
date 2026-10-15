@@ -4,7 +4,6 @@ const { SITE_URL, SITE_NAME, canonicalUrl, isIndexableDeployment, pageMetadata, 
 const { sitemapEntries } = require("./lib/sitemap.js");
 const { curriculum, publishedLessons, chapters } = require("./lib/curriculum.js");
 const { yogaFlows, chapterMeditations } = require("./lib/chapter-five.js");
-const { practiceNeeds } = require("./lib/practice-library.js");
 const robots = require("./app/robots.js").default;
 const sitemap = require("./app/sitemap.js").default;
 const production = { NODE_ENV: "production", VERCEL_ENV: "production", VERCEL_TARGET_ENV: "production" };
@@ -82,7 +81,7 @@ test("preview metadata stays noindex with production canonicals", () => {
 
 test("sitemap exactly covers the real page collections without imaginary routes or dates", () => {
   assert.deepEqual(publishedLessons, curriculum.filter(lesson => lesson.paragraphs?.length));
-  const expected = ["/", "/curriculum", "/practices", "/practice", ...chapters.map(x => `/chapters/${x.slug}`), ...publishedLessons.map(x => `/lessons/${x.slug}`), ...yogaFlows.map(x => `/flows/${x.slug}`), ...chapterMeditations.map(x => `/meditations/${x.slug}`), ...practiceNeeds.map(x => `/practices/${x.slug}`)].map(path => new URL(path, SITE_URL).href);
+  const expected = ["/", "/curriculum", ...chapters.map(x => `/chapters/${x.slug}`), ...publishedLessons.map(x => `/lessons/${x.slug}`), ...yogaFlows.map(x => `/flows/${x.slug}`), ...chapterMeditations.map(x => `/meditations/${x.slug}`)].map(path => new URL(path, SITE_URL).href);
   const entries = sitemapEntries();
   assert.deepEqual(entries.map(x => x.url).sort(), [...new Set(expected)].sort());
   for (const item of entries) {
