@@ -13,7 +13,7 @@ export default function SiteFooter() {
     <footer className="school-footer">
       <div className="school-footer-top">
         <a className="school-footer-brand" href="/" aria-label="AI Yoga Masters home">
-          <img src="https://pub-651b74915ffe45ecaf36799e0842fc9f.r2.dev/images/logos/ai-yoga-masters-logo.webp" alt="AI Yoga Masters" width={1200} height={1310} loading="lazy" />
+          <img src="https://media.aiyogamasters.com/images/logos/ai-yoga-masters-logo.webp" alt="AI Yoga Masters" width={1200} height={1310} loading="lazy" />
         </a>
         <div className="school-footer-message">
           <p className="section-kicker">Yoga 2.0</p>
