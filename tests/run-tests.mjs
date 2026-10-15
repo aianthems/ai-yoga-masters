@@ -13,7 +13,8 @@ try {
   copyFileSync("tests/lesson-practice.test.cjs", join(output, "lesson-practice.test.cjs"));
   copyFileSync("tests/search-sharing.test.cjs", join(output, "search-sharing.test.cjs"));
   copyFileSync("tests/reading-journey.test.cjs", join(output, "reading-journey.test.cjs"));
-  execFileSync(process.execPath, ["--test", join(output, "reading-journey.test.cjs"), join(output, "lesson-practice.test.cjs"), join(output, "search-sharing.test.cjs")], { stdio: "inherit" });
+  copyFileSync("tests/evidence.test.cjs", join(output, "evidence.test.cjs"));
+  execFileSync(process.execPath, ["--test", join(output, "evidence.test.cjs"), join(output, "reading-journey.test.cjs"), join(output, "lesson-practice.test.cjs"), join(output, "search-sharing.test.cjs")], { stdio: "inherit" });
 } finally {
   rmSync(output, { recursive: true, force: true });
 }

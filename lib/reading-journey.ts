@@ -1,6 +1,8 @@
 import { chapters, publishedLessons } from "./curriculum";
 import { chapterFiveEntries, chapterFivePath } from "./chapter-five";
 
+import { evidenceForLesson, evidenceForPractice, evidenceReadingText } from "./evidence";
+
 export function estimatedReadingMinutes(text: readonly string[]): number {
   const words = text.join(" ").trim().split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.ceil(words / 200));
@@ -18,6 +20,7 @@ export const readingJourney = chapters.flatMap(chapter => {
       readingMinutes: estimatedReadingMinutes([
         ...entry.paragraphs, ...entry.poses, ...entry.benefits,
         entry.note, entry.practice, entry.reflection,
+        ...evidenceReadingText(evidenceForPractice(entry)),
       ]),
     }));
   }
@@ -29,7 +32,9 @@ export const readingJourney = chapters.flatMap(chapter => {
     chapterPosition: index + 1,
     chapterTotal: lessons.length,
     readingMinutes: estimatedReadingMinutes([
-      ...lesson.paragraphs, lesson.note, lesson.practice, lesson.reflection,
+      ...lesson.paragraphs,
+      ...(evidenceForLesson(lesson.slug).length ? evidenceReadingText(evidenceForLesson(lesson.slug)) : [lesson.note]),
+      lesson.practice, lesson.reflection,
     ]),
   }));
 });

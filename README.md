@@ -597,3 +597,11 @@ Run `npm test` for focused lesson-routing regression tests and `npm run build` f
 All 84 readers share the ordered navigation in `lib/reading-journey.ts`: Lessons 1–48, Chapter 5’s 16 flows and 4 meditations, then Lessons 49–64. Previous and next links are reciprocal, including both Chapter 5 boundaries. Numbered lessons show their position out of 64 and within their chapter; Chapter 5 readers show their position within its 20 practices.
 
 Estimated reading time uses 200 words per minute for source text, source lists where present, editorial notes, contemporary applications, and reflections, rounded up to at least 1 minute. It excludes recordings and time spent practicing. `npm test` checks complete reader coverage, chapter positions, reciprocal navigation, boundary transitions, and reading-time calculation.
+
+## Focused evidence review — October 15, 2026
+
+`/evidence` documents a focused, AI-assisted editorial review of 18 topics across 19 numbered lessons and the general benefit claims attached to all 16 flows and 4 meditations. Expandable commentary appears before the original teaching, with claim-specific findings, study limitations, direct research/agency links, source types, and the date checked. Sources and page mappings live in `lib/evidence.ts`; shared rendering lives in `app/components/evidence-review.tsx`. Reader time estimates include the new commentary.
+
+Coverage includes the hotel-worker mindset study, breathing, posture and power poses, nature, earthing and EMFs, microplastic intake, detoxing, blue-light glasses, sleep, magnesium, smiling, physical activity, yoga and meditation benefits, eye blinking, and inversion-related eye pressure. The original source text, pose inventories, benefits, exercises, and reflections are unchanged. This is not a complete literature review, clinician review, historical fact-check, or validation of the book’s individual physical sequences and meditation scripts. Unreviewed claims remain explicitly outside scope.
+
+`npm test` validates review mappings, source metadata, coverage, reading estimates, navigation, and search metadata. Production rendering can be checked for preservation of all original source paragraphs and lists.

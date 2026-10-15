@@ -5,6 +5,8 @@ import SiteHeader from "../../components/site-header";
 import { publishedLessons, bookUrl, chapters } from "../../../lib/curriculum";
 import { lessonMedia } from "../../../lib/lesson-media";
 import { readerNavigation } from "../../../lib/reading-journey";
+import EvidenceReview from "../../components/evidence-review";
+import { evidenceForLesson } from "../../../lib/evidence";
 const lessons = publishedLessons;
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -34,6 +36,7 @@ export default async function Lesson({
   const lesson = lessons[index];
   if (!lesson) notFound();
   const media = lessonMedia[slug];
+  const evidence = evidenceForLesson(slug);
   const chapter = chapters.find((c) => c.number === lesson.chapter)!;
   const { current, previous, next } = readerNavigation(`/lessons/${lesson.slug}`)!;
   return (
@@ -107,11 +110,11 @@ export default async function Lesson({
             footers and layout whitespace removed. The AI practice and
             reflection are new adaptations.
           </p>
-          <p>{lesson.note}</p>
-          <p>
-            Historical and scientific claims in the source have not yet
-            undergone a complete evidence review.
-          </p>
+          {evidence.length ? <EvidenceReview topics={evidence} /> : <>
+            <p>{lesson.note}</p>
+            <p>Historical and scientific claims in the source have not yet undergone a complete evidence review.</p>
+            <a className="text-link" href="/evidence">See the focused evidence review and its scope</a>
+          </>}
         </section>
         <section
           className="school-section original-teaching"

@@ -650,3 +650,13 @@ footer p { margin: 0; }
 
 .reader-position { margin-bottom: .35rem; color: var(--ink-soft); font-size: .95rem; }
 .reader-time-note { color: var(--ink-soft); font-size: .8rem; }
+
+.evidence-review { margin-top: 2rem; }
+.evidence-card { border-top: 1px solid var(--line); padding: 1rem 0; scroll-margin-top: 6rem; }
+.evidence-card summary { cursor: pointer; padding: .5rem 0; line-height: 1.6; }
+.evidence-card summary strong { font-weight: 700; }
+.evidence-card summary span { display: block; margin-top: .35rem; color: var(--ink-soft); font-size: .9rem; }
+.evidence-card p { max-width: 72ch; margin-top: 1rem; }
+.evidence-sources { padding-left: 1.25rem; }
+.evidence-sources a { overflow-wrap: anywhere; }
+.evidence-sources small { display: block; color: var(--ink-soft); }
