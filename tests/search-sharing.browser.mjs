@@ -85,7 +85,7 @@ try {
       const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => decode(match[1]));
       if (mode === "preview") {
         assert.match(robots, /^Disallow: \/$/m); assert.ok(!robots.includes("Sitemap:")); assert.deepEqual(urls, []);
-        for (const path of ["/", "/curriculum", "/lessons/redefining-yoga", "/practice"]) {
+        for (const path of ["/", "/curriculum", "/lessons/redefining-yoga"]) {
           const r = await get(path); checkPage(r, await r.text(), path, true);
         }
         results.modes.push({ mode, result: "PASS", sitemapUrls: 0 });
@@ -108,13 +108,10 @@ try {
         }));
       }
       assert.deepEqual([...links].sort(), [...urls].map(url => new URL(url).href).sort(), "Sitemap matches all linked native content");
-      for (const path of ["/practice?lesson=redefining-yoga", "/practice?practice=step-away", "/practice?lesson=", "/practice?lesson=a&lesson=b", "/practice?lesson=https%3A%2F%2Funtrusted.example"]) {
-        const r = await get(path); checkPage(r, await r.text(), path, true);
-      }
-      for (const path of ["/practice?utm_source=launch", "/curriculum?utm_source=launch"]) {
+      for (const path of ["/curriculum?utm_source=launch"]) {
         const r = await get(path); checkPage(r, await r.text(), path);
       }
-      for (const path of ["/not-a-page", "/chapters/not-published", "/lessons/not-published", "/flows/not-published", "/meditations/not-published", "/practices/not-published"]) {
+      for (const path of ["/practice", "/practice?lesson=redefining-yoga", "/practices", "/practices/scattered-attention", "/not-a-page", "/chapters/not-published", "/lessons/not-published", "/flows/not-published", "/meditations/not-published", "/practices/not-published"]) {
         const r = await get(path); assert.equal(r.status, 404, path); const html = await r.text(); assert.match(html, /noindex/); assert.deepEqual(canonicals(html), [], "No inherited homepage canonical on 404s");
       }
       for (const [path, width, height] of [["/share-image.png", 1200, 630], ["/apple-touch-icon.png", 180, 180]]) {
@@ -135,7 +132,7 @@ try {
         const page = await context.newPage(); const errors = []; const writes = []; const media = [];
         page.on("pageerror", error => errors.push(error.message));
         page.on("request", request => { if (!["GET", "HEAD"].includes(request.method())) writes.push(request.url()); if (/\.(mp3|mp4|pdf)(\?|$)/.test(request.url())) media.push(request.url()); });
-        const samples = ["/", "/curriculum", "/chapters/lost-teachings-of-yoga", "/lessons/ekagra-one-pointed-focus", "/practices", "/practices/scattered-attention", "/practice", ...["flows", "meditations"].map(section => new URL(urls.find(url => new URL(url).pathname.startsWith(`/${section}/`))).pathname)];
+        const samples = ["/", "/curriculum", "/chapters/lost-teachings-of-yoga", "/lessons/ekagra-one-pointed-focus", ...["flows", "meditations"].map(section => new URL(urls.find(url => new URL(url).pathname.startsWith(`/${section}/`))).pathname)];
         for (const path of samples) {
           const r = await page.goto(base + path); assert.equal(r.status(), 200, path);
           assert.equal(await page.locator("h1").count(), 1, path);
@@ -145,28 +142,13 @@ try {
           for (const link of await page.locator("header nav a").all()) assert.ok(await link.isVisible());
         }
         await page.goto(base + "/"); await page.screenshot({ path: join(output, `home-${width}.png`) });
-        for (const href of ["/curriculum", "/chapters/lost-teachings-of-yoga", "/practices", "/practice", "/#petals"]) {
-          await page.locator(`header nav a[href="${href}"]`).click(); await page.waitForURL(base + href);
-        }
+        await page.locator('header nav a[href="/curriculum"]').click();
+        await page.waitForURL(base + "/curriculum");
         await page.goto(base + "/lessons/ekagra-one-pointed-focus");
-        await page.locator('a[href^="/practice?"]').first().click();
-        assert.equal(await page.locator(".studio-origin").count(), 1);
-        await page.getByLabel("Steady", { exact: true }).check();
-        await page.getByRole("button", { name: "Continue →", exact: true }).click();
-        await page.getByRole("button", { name: "Choose this practice →", exact: true }).click();
-        await page.locator("#intention").fill("Local regression test"); await page.locator("#duration").selectOption("2");
-        await page.getByRole("button", { name: "Begin practicing →", exact: true }).click();
-        await page.getByRole("button", { name: "Start timer", exact: true }).click(); await page.waitForTimeout(1200);
-        await page.getByRole("button", { name: "Pause timer", exact: true }).click(); assert.notEqual(await page.getByRole("timer").innerText(), "02:00");
-        await page.getByRole("button", { name: "Finish and reflect →", exact: true }).click();
-        await page.locator("#reflection").fill("Local test completed");
-        await page.getByRole("button", { name: "Close my practice →", exact: true }).click();
-        assert.ok(await page.getByRole("heading", { name: "Your session is complete.", exact: true }).isVisible());
-        await page.getByRole("button", { name: "Clear and begin a new practice", exact: true }).click();
-        assert.ok(await page.getByRole("heading", { name: "How is your attention right now?", exact: true }).isVisible());
+        assert.equal(await page.locator('a[href^="/practice"]').count(), 0);
         assert.deepEqual(errors, []); assert.deepEqual(writes, []); assert.deepEqual(media, []);
-        results.browser.push({ width, pages: samples.length, navigation: "PASS", lessonStudioTimer: "PASS", errors: 0, networkWrites: 0 });
-        await context.close(); console.log(`PASS ${width}px metadata/navigation and lesson-aware Studio/timer without errors or network writes`);
+        results.browser.push({ width, pages: samples.length, navigation: "PASS", removedPracticeLinks: "PASS", errors: 0, networkWrites: 0 });
+        await context.close(); console.log(`PASS ${width}px metadata/navigation and removed practice links without errors or network writes`);
       }
       await browser.close(); browser = undefined;
     } finally { await stop(server); }
