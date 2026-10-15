@@ -5,6 +5,7 @@ const socials = [
   ["Instagram", "https://www.instagram.com/aianthems/"],
   ["TikTok", "https://www.tiktok.com/@sianthems"],
   ["YouTube", "https://www.youtube.com/@ai_anthems"],
+  ["GitHub", "https://github.com/aianthems"],
 ];
 
 export default function SiteFooter() {
