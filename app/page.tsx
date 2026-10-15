@@ -49,7 +49,7 @@ export default function Home() {
         <section className="landing-hero" id="top" aria-labelledby="hero-title">
           <img
             className="landing-image"
-            src="https://pub-651b74915ffe45ecaf36799e0842fc9f.r2.dev/images/laptop-girls/laptop-girl-1.webp"
+            src="https://media.aiyogamasters.com/images/laptop-girls/laptop-girl-1.webp"
             alt="Woman meditating beside a laptop beneath a neon sunset"
             width={1672}
             height={941}
