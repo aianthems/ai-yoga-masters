@@ -90,19 +90,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="thesis shell">
-          <p className="section-kicker">The thesis</p>
-          <blockquote>
-            Better AI use is not only an AI problem. It is also a human-practice
-            problem.
-          </blockquote>
-          <p>
-            A more capable machine does not automatically create a clearer,
-            calmer, more ethical, or more focused human. This school is about
-            cultivating the person on the other side of the interface.
-          </p>
-        </section>
-
         <section className="practice shell" id="practice">
           <div className="section-heading">
             <p className="section-kicker">Core practice</p>
