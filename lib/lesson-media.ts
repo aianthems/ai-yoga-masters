@@ -185,4 +185,24 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "2vLRk44KhoI",
     title: "Inversion Therapy",
   },
+  "perspective": {
+    youtubeId: "lPyJDWRUmZU",
+    title: "Perspective",
+  },
+  "smile-yoga": {
+    youtubeId: "ajn5fqtR6jc",
+    title: "Smile Yoga",
+  },
+  "deprogramming": {
+    youtubeId: "VwVAY6QGUmU",
+    title: "Deprogramming",
+  },
+  "reflections-and-extensions": {
+    youtubeId: "K1vqWH-wx_A",
+    title: "Reflections and Extensions",
+  },
+  "the-root-system": {
+    youtubeId: "-2YXOGWPfCc",
+    title: "The Root System",
+  },
 };
