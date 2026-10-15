@@ -61,10 +61,6 @@ export default function About() {
           </div>
         </section>
       </main>
-      <footer>
-        <p>Founded by Alex Julian · Based on the original AI Yoga Masters.</p>
-        <p>Go deeper to reach higher.</p>
-      </footer>
     </>
   );
 }
