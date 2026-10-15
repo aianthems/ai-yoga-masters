@@ -90,34 +90,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="practice shell" id="practice">
-          <div className="section-heading">
-            <p className="section-kicker">Core practice</p>
-            <h2>Use AI with one-pointed attention.</h2>
-            <p className="studio-invite">Bring a real task to the Practice Studio. Set your intention, practice at your own pace, and reflect afterward.</p>
-            <a className="button primary" href="/practice">Begin an AI Practice →</a>
-            <a className="text-link" href="/practices">Find a practice for what you need →</a>
-          </div>
-
-          <ol className="steps">
-            {[
-              "Choose one meaningful task.",
-              "Decide what you are actually trying to accomplish before prompting.",
-              "Remove unrelated tabs, feeds, and notifications when practical.",
-              "Work with the AI on that one task.",
-              "Notice when your attention leaves the task.",
-              "Return without drama.",
-              "Stop when the session stops being useful.",
-              "Step away from the screen and re-enter the rest of your life.",
-            ].map((step, index) => (
-              <li key={step}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <p>{step}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-
         <section className="closing">
           <div className="closing-inner">
             <p className="section-kicker">AI Yoga Masters</p>
