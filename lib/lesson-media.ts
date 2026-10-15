@@ -165,4 +165,24 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "Abx6kbAT3fY",
     title: "Sacredfication",
   },
+  "virtual-fasting": {
+    youtubeId: "e3lmJMJvJiY",
+    title: "Virtual Fasting",
+  },
+  "nature-therapy": {
+    youtubeId: "QEeMGqJHHPA",
+    title: "Nature Therapy",
+  },
+  "earthing-and-discharging": {
+    youtubeId: "OhlWDLvNGK0",
+    title: "Earthing and Discharging",
+  },
+  "foot-therapy": {
+    youtubeId: "pSZ2ocFRymc",
+    title: "Foot Therapy",
+  },
+  "inversion-therapy": {
+    youtubeId: "2vLRk44KhoI",
+    title: "Inversion Therapy",
+  },
 };
