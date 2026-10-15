@@ -57,7 +57,6 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           {next ? <a className="text-link" href={chapterFivePath(next)}>{next.title} →</a> : <a className="text-link" href="/chapters/mirrors-and-fractals">Continue to Chapter 6 →</a>}
         </nav>
       </main>
-      <footer><p>Founded by Alex Julian · Based on the original AI Yoga Masters.</p></footer>
     </>
   );
 }
