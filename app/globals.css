@@ -610,3 +610,28 @@ footer p { margin: 0; }
   .landing-content { width: 100%; padding: 2rem 5vw; }
   .landing-actions { flex-direction: column; }
 }
+
+.school-footer {
+  display: block;
+  padding: clamp(2rem, 5vw, 4.5rem) 6vw 1.5rem;
+  background: #e9ecf2;
+  color: var(--ink);
+  font-size: .9rem;
+}
+.school-footer-top { display: grid; grid-template-columns: 120px 1fr auto; align-items: center; gap: clamp(1.5rem, 4vw, 4rem); padding-bottom: 2.5rem; }
+.school-footer-brand img { display: block; width: 120px; height: auto; }
+.school-footer-message .section-kicker { margin-bottom: .75rem; }
+.school-footer-message .school-footer-motto { font: 400 clamp(1.7rem, 3vw, 2.8rem)/1.15 Georgia, serif; letter-spacing: -.035em; margin-bottom: .75rem; }
+.school-footer-message > p:last-child { color: var(--ink-soft); }
+.school-footer-links { display: flex; flex-direction: column; gap: .25rem; }
+.school-footer-links a { display: flex; align-items: center; min-height: 44px; }
+.school-footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.school-footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--line); padding-top: 1.5rem; color: var(--ink-soft); font-size: .8rem; }
+.school-footer-socials { display: flex; flex-wrap: wrap; gap: .5rem; }
+.school-footer-socials a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .5rem 1rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); }
+@media (max-width: 620px) {
+  .school-footer-top { grid-template-columns: 80px 1fr; gap: 1.5rem; }
+  .school-footer-brand img { width: 80px; }
+  .school-footer-links { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: 1.5rem; }
+  .school-footer-bottom { align-items: flex-start; }
+}
