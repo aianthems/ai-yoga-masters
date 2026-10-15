@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
 import { publishedLessons, bookUrl, chapters } from "../../../lib/curriculum";
 import { lessonMedia } from "../../../lib/lesson-media";
+import { readerNavigation } from "../../../lib/reading-journey";
 const lessons = publishedLessons;
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -34,7 +35,7 @@ export default async function Lesson({
   if (!lesson) notFound();
   const media = lessonMedia[slug];
   const chapter = chapters.find((c) => c.number === lesson.chapter)!;
-  const nextChapter = chapters.find((c) => c.number === lesson.chapter + 1);
+  const { current, previous, next } = readerNavigation(`/lessons/${lesson.slug}`)!;
   return (
     <>
       <SiteHeader />
@@ -44,9 +45,14 @@ export default async function Lesson({
             ← Chapter {chapter.number} · {chapter.title}
           </a>
           <p className="section-kicker">
-            Lesson {lesson.number} · Original 2024 edition
+            Lesson {lesson.number} of {lessons.length} · Original 2024 edition
           </p>
           <h1>{lesson.title}</h1>
+          <p className="reader-position">
+            Lesson {current.chapterPosition} of {current.chapterTotal} in Chapter {chapter.number}
+            {" · "}About {current.readingMinutes} min read
+          </p>
+          <p className="reader-time-note">Reading estimate only; music and practice are at your own pace.</p>
           <a
             className="text-link"
             href={`${bookUrl}#page=${lesson.pdfPage}`}
@@ -145,27 +151,17 @@ export default async function Lesson({
           </section>
         )}
         <nav className="school-pagination" aria-label="Lesson navigation">
-          {index > 0 && (
-            <a
-              className="text-link"
-              href={`/lessons/${lessons[index - 1].slug}`}
-            >
-              ← Lesson {lessons[index - 1].number}: {lessons[index - 1].title}
+          {previous && (
+            <a className="text-link" href={previous.href} rel="prev">
+              ← {previous.label}
             </a>
           )}
           <a className="text-link" href={`/chapters/${chapter.slug}`}>
             Chapter {chapter.number} lessons
           </a>
-          {index < lessons.length - 1 ? (
-            <a
-              className="text-link"
-              href={`/lessons/${lessons[index + 1].slug}`}
-            >
-              Lesson {lessons[index + 1].number}: {lessons[index + 1].title} →
-            </a>
-          ) : nextChapter ? (
-            <a className="text-link" href={`/chapters/${nextChapter.slug}`}>
-              Continue to Chapter {nextChapter.number} →
+          {next ? (
+            <a className="text-link" href={next.href} rel="next">
+              {next.label} →
             </a>
           ) : (
             <a className="text-link" href="/curriculum">

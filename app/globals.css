@@ -647,3 +647,6 @@ footer p { margin: 0; }
   .school-footer-links { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: 1.5rem; }
   .school-footer-bottom { align-items: flex-start; }
 }
+
+.reader-position { margin-bottom: .35rem; color: var(--ink-soft); font-size: .95rem; }
+.reader-time-note { color: var(--ink-soft); font-size: .8rem; }

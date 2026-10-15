@@ -591,3 +591,9 @@ Run `npm test` for focused lesson-routing regression tests and `npm run build` f
 ## Start Here
 
 `/start-here` introduces one-pointed attention through a short contemporary AI exercise, an optional original Ekagra recording, and links to Lesson 4, Lesson 1, and the full curriculum. The homepage explains the school and makes Start Here the primary action; shared navigation and the footer also link to it. The page is server-rendered, appears in the sitemap, and collects no writing or personal data.
+
+## Sequential reading journey
+
+All 84 readers share the ordered navigation in `lib/reading-journey.ts`: Lessons 1–48, Chapter 5’s 16 flows and 4 meditations, then Lessons 49–64. Previous and next links are reciprocal, including both Chapter 5 boundaries. Numbered lessons show their position out of 64 and within their chapter; Chapter 5 readers show their position within its 20 practices.
+
+Estimated reading time uses 200 words per minute for source text, source lists where present, editorial notes, contemporary applications, and reflections, rounded up to at least 1 minute. It excludes recordings and time spent practicing. `npm test` checks complete reader coverage, chapter positions, reciprocal navigation, boundary transitions, and reading-time calculation.

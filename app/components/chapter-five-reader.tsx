@@ -1,11 +1,12 @@
 import SiteHeader from "./site-header";
 import { bookUrl, curriculum } from "../../lib/curriculum";
-import { chapterFiveEntries, chapterFivePath, type ChapterFiveEntry } from "../../lib/chapter-five";
+import { chapterFiveEntries, type ChapterFiveEntry } from "../../lib/chapter-five";
+
+import { readerNavigation } from "../../lib/reading-journey";
 
 export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }) {
   const index = chapterFiveEntries.findIndex(item => item.slug === entry.slug);
-  const previous = chapterFiveEntries[index - 1];
-  const next = chapterFiveEntries[index + 1];
+  const { current, previous, next } = readerNavigation(`/${entry.kind === "flow" ? "flows" : "meditations"}/${entry.slug}`)!;
   const lessons = entry.relatedLessons.map(number => curriculum.find(lesson => lesson.number === number)!);
   return (
     <>
@@ -15,6 +16,11 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           <a className="text-link" href="/chapters/flows-and-meditations">← Chapter 5 · Flows and Meditations</a>
           <p className="section-kicker">{entry.kind === "flow" ? `Flow ${index + 1} of 16` : `Meditation ${index - 15} of 4`} · Original 2024 edition</p>
           <h1>{entry.title}</h1>
+          <p className="reader-position">
+            Practice {current.chapterPosition} of {current.chapterTotal} in Chapter 5
+            {" · "}About {current.readingMinutes} min read
+          </p>
+          <p className="reader-time-note">Reading estimate only; music and practice are at your own pace.</p>
           <a className="text-link" href={`${bookUrl}#page=${entry.pdfPage}`} target="_blank" rel="noreferrer">Original book · printed p. {entry.printedPage} onward ↗</a>
         </section>
         <section className="school-section source-note" aria-labelledby="edition">
@@ -52,9 +58,9 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           <p>The book refers to accompanying videos. A verified instructional video for this {entry.kind} has not yet been added to this edition.</p>
         </section>
         <nav className="school-pagination" aria-label="Flow and meditation navigation">
-          {previous ? <a className="text-link" href={chapterFivePath(previous)}>← {previous.title}</a> : <a className="text-link" href="/lessons/deprogramming">← Lesson 48: Deprogramming</a>}
+          {previous ? <a className="text-link" href={previous.href} rel="prev">← {previous.label}</a> : null}
           <a className="text-link" href="/chapters/flows-and-meditations">Chapter 5 practices</a>
-          {next ? <a className="text-link" href={chapterFivePath(next)}>{next.title} →</a> : <a className="text-link" href="/chapters/mirrors-and-fractals">Continue to Chapter 6 →</a>}
+          {next ? <a className="text-link" href={next.href} rel="next">{next.label} →</a> : null}
         </nav>
       </main>
     </>
