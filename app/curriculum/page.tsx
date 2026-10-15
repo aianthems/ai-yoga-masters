@@ -5,7 +5,7 @@ import { chapterFiveEntries } from "../../lib/chapter-five";
 import { chapters, curriculum } from "../../lib/curriculum";
 export const metadata: Metadata = pageMetadata({ title: "Curriculum | AI Yoga Masters",
   description:
-    "Explore the original seven chapters, 64 lessons, yoga flows, and meditations.", path: "/curriculum" });
+    "Explore the original 7 chapters, 64 lessons, yoga flows, and meditations.", path: "/curriculum" });
 export default function Curriculum() {
   return (
     <>
@@ -14,13 +14,13 @@ export default function Curriculum() {
         <section className="school-intro">
           <p className="section-kicker">The original learning journey</p>
           <h1>
-            Seven chapters.
+            7 chapters.
             <br />
             64 lessons.
           </h1>
           <p className="school-lede">
-            All seven chapters are readable here. Follow the book in order, or
-            explore a lesson on its own, alongside sixteen yoga flows and four
+            All 7 chapters are readable here. Follow the book in order, or
+            explore a lesson on its own, alongside 16 yoga flows and 4
             meditations.
           </p>
           <a className="button primary" href="/lessons/redefining-yoga">
