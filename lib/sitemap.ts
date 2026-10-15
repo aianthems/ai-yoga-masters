@@ -6,7 +6,7 @@ import { canonicalUrl } from "./seo";
 // Do not add book-only lessons, session queries, or made-up modification dates.
 export function sitemapEntries(): { url: string }[] {
   const paths = [
-    "/", "/curriculum",
+    "/", "/curriculum", "/about",
     ...chapters.map(item => `/chapters/${item.slug}`),
     ...publishedLessons.map(item => `/lessons/${item.slug}`),
     ...yogaFlows.map(item => `/flows/${item.slug}`),
