@@ -18,7 +18,7 @@ export default function SiteHeader() {
             target="_blank"
             rel="noreferrer"
           >
-            Book ↗
+            Book
           </a>
         </nav>
       </header>
