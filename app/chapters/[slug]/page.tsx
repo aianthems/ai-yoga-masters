@@ -109,7 +109,7 @@ export default async function Chapter({
           <p className="section-kicker">Source teaching · Alex Julian, 2024 · Printed p. 93</p>
           <h2 id="introduction">The original chapter introduction</h2>
           {chapterFiveIntroduction.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
-          <p className="editorial-note">The website address above is part of the original 2024 text. Verified accompanying videos have not yet been added to this edition. Health and benefit claims in the source have not undergone a complete evidence review.</p>
+          <p className="editorial-note">The website address above is part of the original 2024 text. Original recordings are available on all four meditation pages. Health and benefit claims in the source have not undergone a complete evidence review.</p>
           <p className="copyright-note">© 2024 Alex Julian Yoga. All rights reserved.</p>
         </section> : null}
         <nav className="school-pagination" aria-label="Chapter navigation">

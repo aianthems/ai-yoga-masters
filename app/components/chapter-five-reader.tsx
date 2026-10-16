@@ -7,7 +7,16 @@ import { readerNavigation } from "../../lib/reading-journey";
 import EvidenceReview from "./evidence-review";
 import { evidenceForPractice } from "../../lib/evidence";
 
+// Original meditation recordings supplied by Alex Julian.
+const meditationVideos: Record<string, string> = {
+  "meditation-for-focus": "qqE0-OSnbEM",
+  "meditation-for-innovation": "K1himeePf88",
+  "meditation-on-mortality": "7Ea9WtsuxF8",
+  "thank-you-love-meditation": "4fOC4xPC2Ck",
+};
+
 export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }) {
+  const videoId = entry.kind === "meditation" ? meditationVideos[entry.slug] : undefined;
   const index = chapterFiveEntries.findIndex(item => item.slug === entry.slug);
   const { current, previous, next } = readerNavigation(`/${entry.kind === "flow" ? "flows" : "meditations"}/${entry.slug}`)!;
   const lessons = entry.relatedLessons.map(number => curriculum.find(lesson => lesson.number === number)!);
@@ -26,6 +35,27 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           <p className="reader-time-note">Reading estimate only; music and practice are at your own pace.</p>
           <a className="text-link" href={`${bookUrl}#page=${entry.pdfPage}`} target="_blank" rel="noreferrer">Original book · printed p. {entry.printedPage} onward ↗</a>
         </section>
+        {videoId && (
+          <section className="school-section" aria-labelledby="video">
+            <p className="section-kicker">AI Yoga Masters · The original recording</p>
+            <h2 id="video">{entry.title}</h2>
+            <div className="lesson-video">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+                title={`${entry.title} — Original meditation video`}
+                width="960"
+                height="540"
+                loading="lazy"
+                allow="encrypted-media; picture-in-picture; fullscreen"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+            <a className="text-link" href={`https://www.youtube.com/watch?v=${videoId}`} target="_blank" rel="noreferrer">
+              Open the original meditation on YouTube
+            </a>
+          </section>
+        )}
         <section className="school-section source-note" aria-labelledby="edition">
           <h2 id="edition">About this edition</h2>
           <p>The original text, lists, and meditation cues below preserve the book’s wording, with page footers and layout whitespace removed. The AI application and reflection are new adaptations.</p>
@@ -59,10 +89,10 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           <h2 id="connections">Explore the connected teachings.</h2>
           {lessons.map(lesson => <div key={lesson.number}><a className="text-link" href={`/lessons/${lesson.slug}`}>Lesson {lesson.number}: {lesson.title} →</a></div>)}
         </section>
-        <section className="school-section" aria-labelledby="video">
+        {!videoId && <section className="school-section" aria-labelledby="video">
           <h2 id="video">Original teaching video</h2>
           <p>The book refers to accompanying videos. A verified instructional video for this {entry.kind} has not yet been added to this edition.</p>
-        </section>
+        </section>}
         <nav className="school-pagination" aria-label="Flow and meditation navigation">
           {previous ? <a className="text-link" href={previous.href} rel="prev">← {previous.label}</a> : null}
           <a className="text-link" href="/chapters/flows-and-meditations">Chapter 5 practices</a>
