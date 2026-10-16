@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "@fontsource-variable/inter";
 import "./globals.css";
 import SiteFooter from "./components/site-footer";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, robotsMetadata } from "../lib/seo";
