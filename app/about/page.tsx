@@ -21,6 +21,31 @@ export default function About() {
             AI Yoga Masters brings those parts of his life together.
           </p>
         </section>
+        <section className="school-section" aria-labelledby="origin-title">
+          <p className="section-kicker">The original founder video · About 1 minute</p>
+          <h2 id="origin-title">Where it all began</h2>
+          <p>
+            This original founder submission to OpenAI’s Converge 2 program
+            marked the beginning of Alex’s startup journey. In about a minute,
+            he introduces the vision behind AI Yoga Masters—the project from
+            which AI Anthems grew.
+          </p>
+          <div className="lesson-video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/T9yNkkitpyw"
+              title="Alex Julian introduces AI Yoga Masters — original OpenAI Converge 2 founder submission"
+              width="960"
+              height="540"
+              loading="lazy"
+              allow="encrypted-media; picture-in-picture; fullscreen"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+          <a className="text-link" href="https://www.youtube.com/watch?v=T9yNkkitpyw" target="_blank" rel="noreferrer">
+            Watch the original founder video on YouTube
+          </a>
+        </section>
         <section className="school-section">
           <h2>15 years of teaching yoga.</h2>
           <p>
