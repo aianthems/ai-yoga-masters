@@ -241,4 +241,16 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "H7qVkCyzDfM",
     title: "Driving Like AI",
   },
+  "implementation": {
+    youtubeId: "rReynlK7PDU",
+    title: "Implementation",
+  },
+  "integration-and-one-itis": {
+    youtubeId: "qfETxXfawOg",
+    title: "Integration and One-itis",
+  },
+  "pain-of-procrastination": {
+    youtubeId: "qMXSRGM6jv8",
+    title: "Pain of Procrastination",
+  },
 };
