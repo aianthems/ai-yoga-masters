@@ -76,6 +76,45 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="founder-story" id="origin" aria-labelledby="founder-title">
+          <div className="founder-story-inner">
+            <div className="founder-copy">
+              <p className="section-kicker">The founder’s introduction · Original footage</p>
+              <h2 id="founder-title">Before the anthems.<br /><em>A vision.</em></h2>
+              <p className="founder-lede">
+                AI Anthems began as AI Yoga Masters.
+              </p>
+              <p className="founder-description">
+                In this original submission to OpenAI’s Converge 2 program,
+                founder Alex Julian introduces AI Yoga Masters in about a minute.
+                It marks the beginning of his startup journey: an early vision
+                for the relationship between human practice and artificial intelligence.
+              </p>
+              <p className="founder-invitation">Meet the person behind the practice. Hear where it all began.</p>
+            </div>
+            <figure className="founder-film">
+              <div className="founder-film-label"><span>The original pitch</span><span>About 1 minute</span></div>
+              <div className="founder-video">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/T9yNkkitpyw"
+                  title="Alex Julian introduces AI Yoga Masters — original OpenAI Converge 2 founder submission"
+                  width="960"
+                  height="540"
+                  loading="lazy"
+                  allow="encrypted-media; picture-in-picture; fullscreen"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <figcaption>
+                <span>Alex Julian <span className="founder-caption-role">/ Founder, AI Yoga Masters &amp; AI Anthems</span></span>
+                <a className="text-link" href="https://www.youtube.com/watch?v=T9yNkkitpyw" target="_blank" rel="noreferrer">Watch on YouTube</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="founder-continuation"><span>An idea becomes a practice.</span><a className="text-link" href="/start-here">Begin yours →</a></div>
+        </section>
+
         <section className="curriculum shell" id="curriculum">
           <div className="section-heading">
             <p className="section-kicker">Original curriculum</p>

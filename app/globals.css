@@ -648,6 +648,42 @@ footer p { margin: 0; }
   .school-footer-bottom { align-items: flex-start; }
 }
 
+/* The original founder film: a personal introduction between vision and curriculum. */
+.founder-story {
+  padding: clamp(3rem, 7vw, 7rem) 6vw 0;
+  color: #f6f4ef;
+  background: radial-gradient(ellipse at 80% 10%, rgba(101, 87, 167, .22), transparent 55%), #111827;
+  border-top: 1px solid rgba(212, 170, 98, .45);
+}
+.founder-story-inner { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.3fr); align-items: center; gap: clamp(2rem, 5vw, 5.5rem); max-width: 1440px; margin: auto; }
+.founder-copy .section-kicker { color: #e5c38a; font-size: .68rem; line-height: 1.7; }
+.founder-copy h2 { margin-bottom: 1.8rem; font: 400 clamp(2.7rem, 4.4vw, 5.2rem)/1.03 Georgia, serif; letter-spacing: -.045em; }
+.founder-copy h2 em { color: #e5c38a; font-weight: 400; }
+.founder-lede { max-width: 30ch; font-size: clamp(1.1rem, 1.5vw, 1.35rem); line-height: 1.5; }
+.founder-description { max-width: 49ch; color: #c5ccda; font-size: .98rem; line-height: 1.85; }
+.founder-invitation { max-width: 42ch; margin: 1.7rem 0 0; color: #e5c38a; font-size: .86rem; line-height: 1.7; }
+.founder-film { min-width: 0; margin: 0; }
+.founder-film-label { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; padding: .9rem 0; border-top: 1px solid rgba(229, 195, 138, .5); color: #e5c38a; font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; }
+.founder-video { aspect-ratio: 16 / 9; background: #080d17; box-shadow: 0 20px 65px rgba(0, 0, 0, .28); }
+.founder-video iframe { display: block; width: 100%; height: 100%; border: 1px solid rgba(255, 255, 255, .16); }
+.founder-film figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .3rem 1rem; padding-top: .8rem; font-size: .78rem; line-height: 1.7; }
+.founder-caption-role { color: #b9c3d5; }
+.founder-film .text-link { color: #e5c38a; }
+.founder-continuation { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem 1.5rem; max-width: 1440px; margin: clamp(2.5rem, 5vw, 5rem) auto 0; padding: 1.1rem 0; border-top: 1px solid rgba(255, 255, 255, .16); color: #c5ccda; font-size: .85rem; }
+.founder-continuation a { color: #e5c38a; }
+.founder-story a:focus-visible { outline-color: #e5c38a; }
+@media (max-width: 900px) {
+  .founder-story-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .founder-description { max-width: 65ch; }
+  .founder-invitation { max-width: none; }
+}
+@media (max-width: 620px) {
+  .founder-story { padding-left: 5vw; padding-right: 5vw; }
+  .founder-copy h2 { font-size: clamp(2.7rem, 11vw, 4rem); }
+  .founder-film figcaption { align-items: flex-start; flex-direction: column; }
+  .founder-caption-role { display: block; }
+}
+
 .reader-position { margin-bottom: .35rem; color: var(--ink-soft); font-size: .95rem; }
 .reader-time-note { color: var(--ink-soft); font-size: .8rem; }
 
