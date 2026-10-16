@@ -75,7 +75,7 @@ export default function About() {
             visual art continue that exploration through AI.
           </p>
           <a className="text-link" href="https://aianthems.com/about/alex-julian">
-            Read Alex’s full story at AI Anthems →
+            Read Alex’s full story at AI Anthems
           </a>
         </section>
         <section className="school-section">

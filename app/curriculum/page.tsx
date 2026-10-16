@@ -25,7 +25,7 @@ export default function Curriculum() {
             meditations.
           </p>
           <a className="button primary" href="/lessons/redefining-yoga">
-            Begin with Lesson 1 →
+            Begin with Lesson 1
           </a>
         </section>
         <div id="reading-progress" className="curriculum-reading-progress"><ProgressOverview /></div>
@@ -59,7 +59,7 @@ export default function Curriculum() {
                               : "Lessons 60–64"}
                 </p>
                 <a className="text-link" href={`/chapters/${chapter.slug}`}>
-                  Explore chapter →
+                  Explore chapter
                 </a>
               </article>
             ))}

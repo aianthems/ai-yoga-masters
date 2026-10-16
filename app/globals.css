@@ -254,7 +254,7 @@ h1 {
 .chapter-list { border-top: 1px solid var(--line); }
 .chapter-row {
   display: grid;
-  grid-template-columns: 70px 1fr 1.2fr 30px;
+  grid-template-columns: 70px 1fr 1.2fr;
   gap: 1rem;
   align-items: center;
   min-height: 88px;
@@ -336,7 +336,7 @@ footer p { margin: 0; }
   .hero-art { min-height: 70vh; }
   .thesis { gap: 2rem; }
   .chapter-row {
-    grid-template-columns: 44px 1fr 24px;
+    grid-template-columns: 44px 1fr;
     padding: 1rem 0;
   }
   .chapter-description { display: none; }

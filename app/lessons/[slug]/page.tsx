@@ -46,7 +46,7 @@ export default async function Lesson({
       <main id="content" className="school">
         <section className="school-intro">
           <a className="text-link" href={`/chapters/${chapter.slug}`}>
-            ← Chapter {chapter.number} · {chapter.title}
+            Chapter {chapter.number} · {chapter.title}
           </a>
           <p className="section-kicker">
             Lesson {lesson.number} of {lessons.length} · Original 2024 edition
@@ -63,7 +63,7 @@ export default async function Lesson({
             target="_blank"
             rel="noreferrer"
           >
-            Original book · printed p. {lesson.printedPage} onward ↗
+            Original book · printed p. {lesson.printedPage} onward
           </a>
         </section>
         {media && (
@@ -97,7 +97,7 @@ export default async function Lesson({
               target="_blank"
               rel="noreferrer"
             >
-              Open the original song on YouTube ↗
+              Open the original song on YouTube
             </a>
           </section>
         )}
@@ -158,7 +158,7 @@ export default async function Lesson({
         <nav className="school-pagination" aria-label="Lesson navigation">
           {previous && (
             <a className="text-link" href={previous.href} rel="prev">
-              ← {previous.label}
+              {previous.label}
             </a>
           )}
           <a className="text-link" href={`/chapters/${chapter.slug}`}>
@@ -166,11 +166,11 @@ export default async function Lesson({
           </a>
           {next ? (
             <a className="text-link" href={next.href} rel="next">
-              {next.label} →
+              {next.label}
             </a>
           ) : (
             <a className="text-link" href="/curriculum">
-              Explore the curriculum →
+              Explore the curriculum
             </a>
           )}
         </nav>

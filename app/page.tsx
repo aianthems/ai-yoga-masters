@@ -76,10 +76,10 @@ export default function Home() {
                 Start Here
               </a>
               <a className="button landing-curriculum" href="/curriculum">
-                Explore the curriculum →
+                Explore the curriculum
               </a>
               <a className="button landing-curriculum" href={bookUrl} target="_blank" rel="noreferrer">
-                Read the book ↗
+                Read the book
               </a>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function Home() {
               </figcaption>
             </figure>
           </div>
-          <div className="founder-continuation"><span>An idea becomes a practice.</span><a className="text-link" href="/start-here">Begin yours →</a></div>
+          <div className="founder-continuation"><span>An idea becomes a practice.</span><a className="text-link" href="/start-here">Begin yours</a></div>
         </section>
 
         <section className="curriculum shell" id="curriculum">
@@ -163,7 +163,6 @@ export default function Home() {
                 <span className="chapter-number">{number}</span>
                 <span className="chapter-title">{title}</span>
                 <span className="chapter-description">{description}</span>
-                <span>→</span>
               </a>
             ))}
           </div>
@@ -185,7 +184,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Open the book ↗
+              Open the book
             </a>
           </div>
         </section>

@@ -42,7 +42,7 @@ export default async function Chapter({
       <main id="content" className="school">
         <section className="school-intro">
           <a className="text-link" href="/curriculum">
-            ← Full curriculum
+            Full curriculum
           </a>
           <p className="section-kicker">Chapter {chapter.number}</p>
           <h1>{chapter.title}</h1>
@@ -67,7 +67,7 @@ export default async function Chapter({
             target="_blank"
             rel="noreferrer"
           >
-            Open this chapter in the book ↗
+            Open this chapter in the book
           </a>
         </section>
         <section className="school-section">
@@ -75,11 +75,11 @@ export default async function Chapter({
             <>
               <h2>Yoga flows</h2>
               <ul className="lesson-map">
-                {yogaFlows.map(flow => <li key={flow.slug}><a href={chapterFivePath(flow)}>{flow.title}<span><CompletionMarker href={chapterFivePath(flow)} />Read flow →</span></a></li>)}
+                {yogaFlows.map(flow => <li key={flow.slug}><a href={chapterFivePath(flow)}>{flow.title}<span><CompletionMarker href={chapterFivePath(flow)} />Read flow</span></a></li>)}
               </ul>
               <h2>Meditations</h2>
               <ul className="lesson-map">
-                {chapterMeditations.map(meditation => <li key={meditation.slug}><a href={chapterFivePath(meditation)}>{meditation.title}<span><CompletionMarker href={chapterFivePath(meditation)} />Read meditation →</span></a></li>)}
+                {chapterMeditations.map(meditation => <li key={meditation.slug}><a href={chapterFivePath(meditation)}>{meditation.title}<span><CompletionMarker href={chapterFivePath(meditation)} />Read meditation</span></a></li>)}
               </ul>
               <p>These twenty practices form a separate collection alongside the book’s 64 numbered lessons.</p>
             </>
@@ -92,7 +92,7 @@ export default async function Chapter({
                     {lesson.paragraphs?.length ? (
                       <a href={`/lessons/${lesson.slug}`}>
                         {lesson.title}
-                        <span><CompletionMarker href={`/lessons/${lesson.slug}`} />Read lesson →</span>
+                        <span><CompletionMarker href={`/lessons/${lesson.slug}`} />Read lesson</span>
                       </a>
                     ) : (
                       <span>
@@ -119,7 +119,7 @@ export default async function Chapter({
               className="text-link"
               href={`/chapters/${chapters[chapter.number - 2].slug}`}
             >
-              ← Previous chapter
+              Previous chapter
             </a>
           )}
           {chapter.number < 7 && (
@@ -127,7 +127,7 @@ export default async function Chapter({
               className="text-link"
               href={`/chapters/${chapters[chapter.number].slug}`}
             >
-              Next chapter →
+              Next chapter
             </a>
           )}
         </nav>

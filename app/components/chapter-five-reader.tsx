@@ -26,7 +26,7 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
       <SiteHeader />
       <main id="content" className="school">
         <section className="school-intro">
-          <a className="text-link" href="/chapters/flows-and-meditations">← Chapter 5 · Flows and Meditations</a>
+          <a className="text-link" href="/chapters/flows-and-meditations">Chapter 5 · Flows and Meditations</a>
           <p className="section-kicker">{entry.kind === "flow" ? `Flow ${index + 1} of 16` : `Meditation ${index - 15} of 4`} · Original 2024 edition</p>
           <h1>{entry.title}</h1>
           <p className="reader-position">
@@ -34,7 +34,7 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
             {" · "}About {current.readingMinutes} min read
           </p>
           <p className="reader-time-note">Reading estimate only; music and practice are at your own pace.</p>
-          <a className="text-link" href={`${bookUrl}#page=${entry.pdfPage}`} target="_blank" rel="noreferrer">Original book · printed p. {entry.printedPage} onward ↗</a>
+          <a className="text-link" href={`${bookUrl}#page=${entry.pdfPage}`} target="_blank" rel="noreferrer">Original book · printed p. {entry.printedPage} onward</a>
         </section>
         {videoId && (
           <section className="school-section" aria-labelledby="video">
@@ -61,7 +61,7 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           <h2 id="edition">About this edition</h2>
           <p>The original text, lists, and meditation cues below preserve the book’s wording, with page footers and layout whitespace removed. The AI application and reflection are new adaptations.</p>
           <p>{entry.note}</p>
-          {entry.slug === "meditation-on-mortality" ? <a className="text-link" href="#practice">Go directly to the optional reflection →</a> : null}
+          {entry.slug === "meditation-on-mortality" ? <a className="text-link" href="#practice">Go directly to the optional reflection</a> : null}
           <p>The focused review below puts selected benefit claims in context. It is not a complete review of this practice or every claim in the source.</p>
         </section>
         <section className="school-section source-note" aria-label="Evidence commentary">
@@ -88,7 +88,7 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
         <section className="school-section" aria-labelledby="connections">
           <p className="section-kicker">Roots in the book</p>
           <h2 id="connections">Explore the connected teachings.</h2>
-          {lessons.map(lesson => <div key={lesson.number}><a className="text-link" href={`/lessons/${lesson.slug}`}>Lesson {lesson.number}: {lesson.title} →</a></div>)}
+          {lessons.map(lesson => <div key={lesson.number}><a className="text-link" href={`/lessons/${lesson.slug}`}>Lesson {lesson.number}: {lesson.title}</a></div>)}
         </section>
         {!videoId && <section className="school-section" aria-labelledby="video">
           <h2 id="video">Original teaching video</h2>
@@ -96,9 +96,9 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
         </section>}
         <ReaderProgress href={`/${entry.kind === "flow" ? "flows" : "meditations"}/${entry.slug}`} />
         <nav className="school-pagination" aria-label="Flow and meditation navigation">
-          {previous ? <a className="text-link" href={previous.href} rel="prev">← {previous.label}</a> : null}
+          {previous ? <a className="text-link" href={previous.href} rel="prev">{previous.label}</a> : null}
           <a className="text-link" href="/chapters/flows-and-meditations">Chapter 5 practices</a>
-          {next ? <a className="text-link" href={next.href} rel="next">{next.label} →</a> : null}
+          {next ? <a className="text-link" href={next.href} rel="next">{next.label}</a> : null}
         </nav>
       </main>
     </>
