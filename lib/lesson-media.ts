@@ -225,4 +225,20 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "XzyTLiUoY8I",
     title: "Sleep",
   },
+  "new-health-variables": {
+    youtubeId: "3gfi2X6P3ng",
+    title: "New Health Variables",
+  },
+  "emf-basics": {
+    youtubeId: "eecuCQBL4rs",
+    title: "EMF Basics",
+  },
+  "emf-protection": {
+    youtubeId: "iuXcliizrAE",
+    title: "EMF Protection",
+  },
+  "driving-like-ai": {
+    youtubeId: "H7qVkCyzDfM",
+    title: "Driving Like AI",
+  },
 };
