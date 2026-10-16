@@ -25,6 +25,7 @@ export default function SiteFooter() {
           <a href="/curriculum">Curriculum</a>
           <a href="/about">About</a>
           <a href="/evidence">Evidence review</a>
+          <a href="/privacy">Privacy</a>
           <a href={bookUrl} target="_blank" rel="noopener noreferrer">Book</a>
         </div>
       </div>

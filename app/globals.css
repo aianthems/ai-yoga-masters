@@ -658,6 +658,7 @@ footer p { margin: 0; }
 .reading-progress-summary progress { display: block; width: min(100%, 32rem); height: .6rem; margin: 1rem 0 1.5rem; accent-color: #46736a; }
 .reading-progress-summary .button { text-align: center; height: auto; padding-top: .8rem; padding-bottom: .8rem; line-height: 1.5; }
 .progress-privacy { color: var(--ink-soft); font-size: .8rem; margin: 1rem 0 .3rem; }
+.progress-policy-link { font-size: .8rem; }
 .progress-text-button { display: block; border: 0; padding: 0; background: none; color: var(--ink-soft); cursor: pointer; font: inherit; font-size: .8rem; }
 .progress-reset { padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--line); }
 .progress-reset .button { margin-right: 1rem; }

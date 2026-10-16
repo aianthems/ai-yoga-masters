@@ -101,6 +101,7 @@ export function ProgressOverview() {
         <button type="button" className="button primary" disabled={!ready} onClick={enable}>Enable progress on this browser</button>
         <p className="progress-privacy">Optional. Saved only in this browser, with no account or device sync. Your reflections and writing are never saved here.</p>
       </>}
+      <a className="text-link progress-policy-link" href="/privacy">Privacy and saved progress</a>
       <StorageNote />
     </section>
   );
@@ -125,6 +126,7 @@ export function ReaderProgress({ href }: { href: string }) {
         <p>Want to keep your place? Enable optional progress saving in this browser.</p>
         <button type="button" className="button ghost" disabled={!ready} onClick={enable}>Enable progress on this browser</button>
       </>}
+      <a className="text-link" href="/privacy">Privacy and saved progress</a>
       <StorageNote />
     </section>
   );
