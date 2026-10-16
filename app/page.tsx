@@ -122,7 +122,7 @@ export default function Home() {
                 It marks the beginning of his startup journey: an early vision
                 for the relationship between human practice and artificial intelligence.
               </p>
-              <p className="founder-invitation">Meet the person behind the practice. Hear where it all began.</p>
+              <p className="founder-invitation">Meet the person behind the practice.<br />Hear where it all began.</p>
             </div>
             <figure className="founder-film">
               <div className="founder-film-label"><span>The original pitch</span><span>About 1 minute</span></div>
