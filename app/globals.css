@@ -362,6 +362,8 @@ footer p { margin: 0; }
   .petal-grid { grid-template-columns: 1fr; }
   .petal-card { min-height: 240px; }
   .petal-card h3 { margin-top: 3.4rem; }
+  .closing { min-height: 0; }
+  .closing-inner { padding-top: 3rem; padding-bottom: 3rem; }
   footer { flex-direction: column; }
 }
 
