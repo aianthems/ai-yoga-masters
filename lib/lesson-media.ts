@@ -253,4 +253,12 @@ export const lessonMedia: Record<string, LessonMedia> = {
     youtubeId: "qMXSRGM6jv8",
     title: "Pain of Procrastination",
   },
+  "sweetness-of-starting": {
+    youtubeId: "Vmk_Ftg8wb0",
+    title: "Sweetness of Starting Song",
+  },
+  "just-the-beginning": {
+    youtubeId: "6g6B_gc4E0o",
+    title: "Just the Beginning Song",
+  },
 };
