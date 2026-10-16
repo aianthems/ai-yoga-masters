@@ -1,11 +1,19 @@
 import { pageMetadata, SITE_NAME, SITE_DESCRIPTION } from "../lib/seo";
 import SiteHeader from "./components/site-header";
-import { chapters as chapterMap } from "../lib/curriculum";
+import { chapters as chapterMap, publishedLessons } from "../lib/curriculum";
 
 export const metadata = pageMetadata({ title: SITE_NAME, description: SITE_DESCRIPTION, path: "/" });
 
 const bookUrl =
   "https://media.aianthems.com/books/ai-yoga-masters/ai-yoga-masters-optimized.pdf";
+
+const startingPoints = [
+  { title: "Focus", need: "My attention is scattered.", invitation: "Practice returning to one worthwhile task.", lessonNumber: 4 },
+  { title: "Clarity", need: "I want to think more clearly.", invitation: "Check an AI answer with care and discernment.", lessonNumber: 5 },
+  { title: "Creativity", need: "I want to create with purpose.", invitation: "Give your next idea a clear intention and direction.", lessonNumber: 23 },
+  { title: "Getting Started", need: "I keep putting it off.", invitation: "Make one small beginning in something that matters.", lessonNumber: 63 },
+  { title: "Stepping Away", need: "I need a screen break.", invitation: "Pause deliberately and make room for life beyond the screen.", lessonNumber: 41 },
+].map(point => ({ ...point, lesson: publishedLessons.find(lesson => lesson.number === point.lessonNumber)! }));
 
 const chapters = [
   [
@@ -74,6 +82,27 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </section>
+
+        <section className="starting-points shell" aria-labelledby="starting-points-title">
+          <div className="section-heading">
+            <p className="section-kicker">Find your starting point</p>
+            <h2 id="starting-points-title">What do you need today?</h2>
+            <p className="starting-points-intro">Choose what would help right now. Each choice opens a lesson with an original song and a simple practice.</p>
+          </div>
+          <ul className="starting-points-grid">
+            {startingPoints.map(point => (
+              <li key={point.lessonNumber}>
+                <a className="starting-point" href={`/lessons/${point.lesson.slug}`}>
+                  <h3>{point.title}</h3>
+                  <p className="starting-point-need">{point.need}</p>
+                  <p className="starting-point-invitation">{point.invitation}</p>
+                  <span className="starting-point-lesson">Lesson {point.lesson.number} · {point.lesson.title}</span>
+                  <span className="starting-point-action">Explore {point.title.toLowerCase()}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section className="founder-story" id="origin" aria-labelledby="founder-title">

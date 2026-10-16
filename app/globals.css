@@ -648,6 +648,31 @@ footer p { margin: 0; }
   .school-footer-bottom { align-items: flex-start; }
 }
 
+/* Five direct entrances into existing lessons. */
+.starting-points { background: linear-gradient(145deg, #edf3ef, var(--paper) 65%); }
+.starting-points .section-heading { margin-bottom: 2.2rem; }
+.starting-points-intro { max-width: 60ch; margin: 1.3rem 0 0; color: var(--ink-soft); line-height: 1.75; }
+.starting-points-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; padding: 0; margin: 0; list-style: none; }
+.starting-points-grid li { min-width: 0; }
+.starting-point { display: flex; flex-direction: column; height: 100%; padding: clamp(1.2rem, 1.8vw, 2rem); background: var(--paper); border: 1px solid var(--line); border-top: 3px solid #537f7a; border-radius: 4px; transition: background 160ms ease, border-color 160ms ease; }
+.starting-point:hover { background: #e7eeec; border-color: #537f7a; }
+.starting-point h3 { margin-bottom: 1rem; font: 400 1.35rem/1.2 Georgia, serif; letter-spacing: -.02em; }
+.starting-point-need { margin-bottom: .7rem; font-size: .95rem; font-weight: 600; line-height: 1.55; }
+.starting-point-invitation { margin-bottom: 1.5rem; color: var(--ink-soft); font-size: .9rem; line-height: 1.7; }
+.starting-point-lesson { display: block; margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .75rem; line-height: 1.6; }
+.starting-point-action { display: block; padding-top: 1rem; color: var(--indigo); font-size: .82rem; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 1100px) {
+  .starting-points-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .starting-points { padding-top: 3rem; padding-bottom: 3rem; }
+  .starting-points-grid { grid-template-columns: 1fr; }
+  .starting-point { padding: 1.35rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .starting-point { transition: none; }
+}
+
 /* The original founder film: a personal introduction between vision and curriculum. */
 .founder-story {
   padding: clamp(3rem, 7vw, 7rem) 6vw 0;
