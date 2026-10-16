@@ -1,4 +1,5 @@
 import SiteHeader from "./site-header";
+import { ReaderProgress } from "./reading-progress";
 import { bookUrl, curriculum } from "../../lib/curriculum";
 import { chapterFiveEntries, type ChapterFiveEntry } from "../../lib/chapter-five";
 
@@ -93,6 +94,7 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           <h2 id="video">Original teaching video</h2>
           <p>The book refers to accompanying videos. A verified instructional video for this {entry.kind} has not yet been added to this edition.</p>
         </section>}
+        <ReaderProgress href={`/${entry.kind === "flow" ? "flows" : "meditations"}/${entry.slug}`} />
         <nav className="school-pagination" aria-label="Flow and meditation navigation">
           {previous ? <a className="text-link" href={previous.href} rel="prev">← {previous.label}</a> : null}
           <a className="text-link" href="/chapters/flows-and-meditations">Chapter 5 practices</a>

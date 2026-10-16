@@ -2,6 +2,7 @@ import { pageMetadata } from "../../../lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
+import { ReaderProgress } from "../../components/reading-progress";
 import { publishedLessons, bookUrl, chapters } from "../../../lib/curriculum";
 import { lessonMedia } from "../../../lib/lesson-media";
 import { readerNavigation } from "../../../lib/reading-journey";
@@ -153,6 +154,7 @@ export default async function Lesson({
             </p>
           </section>
         )}
+        <ReaderProgress href={`/lessons/${lesson.slug}`} />
         <nav className="school-pagination" aria-label="Lesson navigation">
           {previous && (
             <a className="text-link" href={previous.href} rel="prev">

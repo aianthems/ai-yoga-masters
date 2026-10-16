@@ -2,6 +2,7 @@ import { pageMetadata } from "../../../lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
+import { CompletionMarker } from "../../components/reading-progress";
 import {
   chapters,
   curriculum,
@@ -74,11 +75,11 @@ export default async function Chapter({
             <>
               <h2>Yoga flows</h2>
               <ul className="lesson-map">
-                {yogaFlows.map(flow => <li key={flow.slug}><a href={chapterFivePath(flow)}>{flow.title}<span>Read flow →</span></a></li>)}
+                {yogaFlows.map(flow => <li key={flow.slug}><a href={chapterFivePath(flow)}>{flow.title}<span><CompletionMarker href={chapterFivePath(flow)} />Read flow →</span></a></li>)}
               </ul>
               <h2>Meditations</h2>
               <ul className="lesson-map">
-                {chapterMeditations.map(meditation => <li key={meditation.slug}><a href={chapterFivePath(meditation)}>{meditation.title}<span>Read meditation →</span></a></li>)}
+                {chapterMeditations.map(meditation => <li key={meditation.slug}><a href={chapterFivePath(meditation)}>{meditation.title}<span><CompletionMarker href={chapterFivePath(meditation)} />Read meditation →</span></a></li>)}
               </ul>
               <p>These twenty practices form a separate collection alongside the book’s 64 numbered lessons.</p>
             </>
@@ -91,7 +92,7 @@ export default async function Chapter({
                     {lesson.paragraphs?.length ? (
                       <a href={`/lessons/${lesson.slug}`}>
                         {lesson.title}
-                        <span>Read lesson →</span>
+                        <span><CompletionMarker href={`/lessons/${lesson.slug}`} />Read lesson →</span>
                       </a>
                     ) : (
                       <span>

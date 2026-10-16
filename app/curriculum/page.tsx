@@ -1,6 +1,7 @@
 import { pageMetadata } from "../../lib/seo";
 import type { Metadata } from "next";
 import SiteHeader from "../components/site-header";
+import { ProgressOverview } from "../components/reading-progress";
 import { chapterFiveEntries } from "../../lib/chapter-five";
 import { chapters, curriculum } from "../../lib/curriculum";
 export const metadata: Metadata = pageMetadata({ title: "Curriculum | AI Yoga Masters",
@@ -27,6 +28,7 @@ export default function Curriculum() {
             Begin with Lesson 1 →
           </a>
         </section>
+        <div id="reading-progress" className="curriculum-reading-progress"><ProgressOverview /></div>
         <section className="school-section">
           <h2>The curriculum</h2>
           <div className="school-grid">

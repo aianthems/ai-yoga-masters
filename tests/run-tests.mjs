@@ -7,14 +7,15 @@ import { join } from "node:path";
 // project's TypeScript dependency. No additional test runtime is required.
 const output = mkdtempSync(join(tmpdir(), "yoga-studio-tests-"));
 try {
-  execFileSync(process.execPath, ["node_modules/typescript/bin/tsc", "lib/lesson-practice.ts", "lib/reading-journey.ts", "lib/seo.ts", "lib/sitemap.ts", "app/robots.ts", "app/sitemap.ts",
+  execFileSync(process.execPath, ["node_modules/typescript/bin/tsc", "lib/lesson-practice.ts", "lib/reading-journey.ts", "lib/reading-progress.ts", "lib/seo.ts", "lib/sitemap.ts", "app/robots.ts", "app/sitemap.ts",
     "--outDir", output, "--module", "commonjs", "--target", "ES2017",
     "--resolveJsonModule", "--esModuleInterop", "--strict", "--skipLibCheck"], { stdio: "inherit" });
   copyFileSync("tests/lesson-practice.test.cjs", join(output, "lesson-practice.test.cjs"));
   copyFileSync("tests/search-sharing.test.cjs", join(output, "search-sharing.test.cjs"));
   copyFileSync("tests/reading-journey.test.cjs", join(output, "reading-journey.test.cjs"));
   copyFileSync("tests/evidence.test.cjs", join(output, "evidence.test.cjs"));
-  execFileSync(process.execPath, ["--test", join(output, "evidence.test.cjs"), join(output, "reading-journey.test.cjs"), join(output, "lesson-practice.test.cjs"), join(output, "search-sharing.test.cjs")], { stdio: "inherit" });
+  copyFileSync("tests/reading-progress.test.cjs", join(output, "reading-progress.test.cjs"));
+  execFileSync(process.execPath, ["--test", join(output, "evidence.test.cjs"), join(output, "reading-progress.test.cjs"), join(output, "reading-journey.test.cjs"), join(output, "lesson-practice.test.cjs"), join(output, "search-sharing.test.cjs")], { stdio: "inherit" });
 } finally {
   rmSync(output, { recursive: true, force: true });
 }

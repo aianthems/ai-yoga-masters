@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "@fontsource-variable/inter";
 import "./globals.css";
 import SiteFooter from "./components/site-footer";
+import { ReadingProgressProvider } from "./components/reading-progress";
+import { readingJourney } from "../lib/reading-journey";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, robotsMetadata } from "../lib/seo";
 
 export const metadata: Metadata = {
@@ -23,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}<SiteFooter /></body>
+      <body><ReadingProgressProvider entries={readingJourney.map(({ href, label }) => ({ href, label }))}>{children}<SiteFooter /></ReadingProgressProvider></body>
     </html>
   );
 }

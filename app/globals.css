@@ -648,6 +648,33 @@ footer p { margin: 0; }
   .school-footer-bottom { align-items: flex-start; }
 }
 
+/* Optional progress, stored only after the reader opts in. */
+.home-reading-progress { padding: clamp(2rem, 4vw, 4rem) 6vw; }
+.reading-progress-summary { padding: clamp(1.5rem, 3vw, 2.5rem); background: #e9efec; border: 1px solid #b9ccc5; border-radius: 12px; }
+.reading-progress-summary h2 { margin-bottom: 1rem; font: 400 clamp(1.5rem, 3vw, 2.4rem)/1.15 Georgia, serif; letter-spacing: -.03em; }
+.reading-progress-summary p { max-width: 68ch; line-height: 1.7; }
+.reading-progress-summary .section-kicker { margin-bottom: .8rem; }
+.reading-progress-summary .progress-count { color: var(--ink-soft); font-size: .9rem; }
+.reading-progress-summary progress { display: block; width: min(100%, 32rem); height: .6rem; margin: 1rem 0 1.5rem; accent-color: #46736a; }
+.reading-progress-summary .button { text-align: center; height: auto; padding-top: .8rem; padding-bottom: .8rem; line-height: 1.5; }
+.progress-privacy { color: var(--ink-soft); font-size: .8rem; margin: 1rem 0 .3rem; }
+.progress-text-button { display: block; border: 0; padding: 0; background: none; color: var(--ink-soft); cursor: pointer; font: inherit; font-size: .8rem; }
+.progress-reset { padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--line); }
+.progress-reset .button { margin-right: 1rem; }
+.progress-reset .progress-text-button { display: inline-flex; }
+.progress-error { color: #7d3029; font-size: .85rem; }
+.curriculum-reading-progress { padding: 0 clamp(1.25rem, 6vw, 5rem) 2rem; scroll-margin-top: 6rem; }
+.reader-progress { padding: 2rem clamp(1.25rem, 6vw, 5rem); background: #e9efec; border-top: 1px solid var(--line); }
+.reader-progress p { line-height: 1.7; }
+.reader-progress .text-link { margin-left: 1.2rem; font-size: .85rem; }
+.reader-progress button, .reading-progress-summary button { font-family: inherit; cursor: pointer; }
+.reader-progress button:disabled, .reading-progress-summary button:disabled { opacity: .6; cursor: wait; }
+.lesson-map .completion-marker { display: inline-block; margin-right: .7rem; padding: .1rem .5rem; border-radius: 999px; background: #dcebe3; color: #244d3e; font-size: .75rem; font-weight: 600; }
+@media (max-width: 620px) {
+  .home-reading-progress { padding-left: 5vw; padding-right: 5vw; }
+  .reader-progress .text-link { margin-left: 0; display: flex; margin-top: .8rem; }
+}
+
 /* Five direct entrances into existing lessons. */
 .starting-points { background: linear-gradient(145deg, #edf3ef, var(--paper) 65%); }
 .starting-points .section-heading { margin-bottom: 2.2rem; }

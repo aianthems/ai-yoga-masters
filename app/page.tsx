@@ -1,5 +1,6 @@
 import { pageMetadata, SITE_NAME, SITE_DESCRIPTION } from "../lib/seo";
 import SiteHeader from "./components/site-header";
+import { ProgressOverview } from "./components/reading-progress";
 import { chapters as chapterMap, publishedLessons } from "../lib/curriculum";
 
 export const metadata = pageMetadata({ title: SITE_NAME, description: SITE_DESCRIPTION, path: "/" });
@@ -83,6 +84,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <div className="home-reading-progress"><ProgressOverview /></div>
 
         <section className="starting-points shell" aria-labelledby="starting-points-title">
           <div className="section-heading">

@@ -1,5 +1,13 @@
 # AI Yoga Masters
 
+## Optional reading progress
+
+Readers can opt into browser-local progress on the homepage, curriculum, or any numbered lesson, flow, or meditation. The versioned `ai-yoga-masters:reading-progress:v1` localStorage record contains only the last opened curriculum path and explicitly completed paths. It stores no writing, account information, or cross-device identity and makes no network submissions. Completion is reversible; clearing progress removes the record and turns saving off.
+
+All 84 readings use the shared sequence in `lib/reading-journey.ts`. Continue reading resumes an unfinished reading, otherwise selects the next unfinished entry, including Chapter 5 boundaries. Chapter lists display completion badges. Unknown paths, duplicate completion marks, malformed data, and unsupported versions are filtered or ignored. Unavailable storage leaves the original reading experience usable and shows a save error. Open tabs synchronize changes without continuously overwriting one another’s last place.
+
+The provider receives only the sequence’s paths and labels. Original teaching remains server-rendered. `npm test` includes corruption, allowed-path, continuation, and completed-collection cases.
+
 **Ancient practice for intelligent tools.**
 
 AI keeps getting more capable. **AI Yoga Masters asks a different question: can the person using it become more capable too?**
