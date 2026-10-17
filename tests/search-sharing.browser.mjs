@@ -107,7 +107,10 @@ try {
           }
         }));
       }
-      assert.deepEqual([...links].sort(), [...urls].map(url => new URL(url).href).sort(), "Sitemap matches all linked native content");
+      assert.deepEqual([...links].filter(url => url !== origin + "/search").sort(), [...urls].map(url => new URL(url).href).sort(), "Sitemap matches all linked indexable native content");
+      for (const path of ["/search", "/search?q=focus&type=meditation"]) {
+        const r = await get(path); checkPage(r, await r.text(), path, true);
+      }
       for (const path of ["/curriculum?utm_source=launch"]) {
         const r = await get(path); checkPage(r, await r.text(), path);
       }

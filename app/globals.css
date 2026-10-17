@@ -432,6 +432,21 @@ footer p { margin: 0; }
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
 }
+.reading-search { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.reading-search-query { flex: 1 1 300px; }
+.reading-search label { display: block; font-weight: 600; font-size: .85rem; margin-bottom: .5rem; }
+.reading-search input, .reading-search select { width: 100%; min-height: 48px; padding: .75rem; border: 1px solid #8b96a7; border-radius: 8px; color: var(--ink); background: white; font: inherit; }
+.reading-search button { min-height: 48px; cursor: pointer; }
+.search-hint { color: var(--ink-soft); font-size: .8rem; }
+.search-topics { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+.search-results { list-style: none; padding: 0; display: grid; gap: 1rem; }
+.search-results h3 { margin: .5rem 0; }
+#search-results { overflow-wrap: anywhere; }
+.search-results h3 a { text-decoration: underline; text-underline-offset: 4px; }
+.search-results li { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 620px) {
+  .reading-search > div, .reading-search button { width: 100%; }
+}
 .school-card {
   padding: 1.5rem;
   background: var(--panel);

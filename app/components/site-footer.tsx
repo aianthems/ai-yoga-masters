@@ -23,6 +23,7 @@ export default function SiteFooter() {
         <div className="school-footer-links" aria-label="Footer links">
           <a href="/start-here">Start Here</a>
           <a href="/curriculum">Curriculum</a>
+          <a href="/search">Search</a>
           <a href="/about">About</a>
           <a href="/evidence">Evidence review</a>
           <a href="/privacy">Privacy</a>

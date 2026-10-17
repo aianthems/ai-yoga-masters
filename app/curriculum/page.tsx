@@ -27,6 +27,7 @@ export default function Curriculum() {
           <a className="button primary" href="/lessons/redefining-yoga">
             Begin with Lesson 1
           </a>
+          <p>Looking for a topic? <a className="text-link" href="/search">Search lessons, flows, and meditations</a>.</p>
         </section>
         <div id="reading-progress" className="curriculum-reading-progress"><ProgressOverview /></div>
         <section className="school-section">

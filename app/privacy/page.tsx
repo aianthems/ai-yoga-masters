@@ -16,7 +16,7 @@ export default function Privacy() {
           <p className="section-kicker">AI Yoga Masters</p>
           <h1>Privacy</h1>
           <p className="school-lede">Read, listen, and explore without an account. Saving your reading progress is optional and stays in your browser.</p>
-          <p>Last updated <time dateTime="2026-10-16">October 16, 2026</time>.</p>
+          <p>Last updated <time dateTime="2026-10-17">October 17, 2026</time>.</p>
           <p>This notice covers aiyogamasters.com, operated by Alex Julian.</p>
         </section>
 
@@ -38,6 +38,7 @@ export default function Privacy() {
           <h2 id="technical-information">Hosting and technical information</h2>
           <p>Vercel hosts this website. Images and book downloads are also delivered from media.aiyogamasters.com and media.aianthems.com. Loading pages or media sends the relevant delivery provider technical request information, such as your IP address, browser information, requested address, and request time. Your browser may also send a referring page.</p>
           <p>These providers process technical information to deliver content, maintain security, and diagnose problems, and may retain operational logs under their settings and policies. This is separate from the reading-progress record saved in your browser.</p>
+          <p>Search terms are included in the search page’s address and sent to the website host to find matching readings. They may appear in browser history and technical request logs. Search for topics rather than entering private reflections or sensitive personal information.</p>
           <p>The current website does not include a standalone visitor-analytics or advertising-pixel integration. That does not prevent hosting or embedded-video providers from processing technical information.</p>
           <a className="text-link" href="https://vercel.com/legal/privacy-notice" target="_blank" rel="noopener noreferrer">Vercel privacy notice</a>
         </section>

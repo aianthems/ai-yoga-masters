@@ -18,6 +18,7 @@ export default function SiteHeader() {
         <nav aria-label="Primary navigation">
           <a href="/start-here">Start Here</a>
           <a href="/curriculum">Curriculum</a>
+          <a href="/search">Search</a>
           <a href="/about">About</a>
           <a
             href="https://media.aianthems.com/books/ai-yoga-masters/ai-yoga-masters-optimized.pdf"
