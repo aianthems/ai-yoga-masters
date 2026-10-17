@@ -2,6 +2,7 @@ import { pageMetadata } from "../../../lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/site-header";
+import ReaderSections from "../../components/reader-sections";
 import { ReaderProgress } from "../../components/reading-progress";
 import { publishedLessons, bookUrl, chapters } from "../../../lib/curriculum";
 import { lessonMedia } from "../../../lib/lesson-media";
@@ -65,6 +66,7 @@ export default async function Lesson({
           >
             Original book · printed p. {lesson.printedPage} onward
           </a>
+          <ReaderSections listenHref={media ? "#music" : undefined} />
         </section>
         {media && (
           <section
@@ -74,7 +76,7 @@ export default async function Lesson({
             <p className="section-kicker">
               AI Yoga Masters · The original recording
             </p>
-            <h2 id="music">{media.title}</h2>
+            <h2 id="music" tabIndex={-1}>{media.title}</h2>
             <p>
               Listen to the original song, then explore the lesson directly from
               the book below.
@@ -122,7 +124,7 @@ export default async function Lesson({
           aria-labelledby="teaching"
         >
           <p className="section-kicker">Source teaching · Alex Julian, 2024</p>
-          <h2 id="teaching">The original lesson</h2>
+          <h2 id="teaching" tabIndex={-1}>The original lesson</h2>
           {lesson.paragraphs?.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
@@ -135,7 +137,7 @@ export default async function Lesson({
           aria-labelledby="practice"
         >
           <p className="section-kicker">New contemporary AI application</p>
-          <h2 id="practice">Try it in your next AI session.</h2>
+          <h2 id="practice" tabIndex={-1}>Try it in your next AI session.</h2>
           <p>{lesson.practice}</p>
           <h3>Reflect afterward</h3>
           <p>{lesson.reflection}</p>

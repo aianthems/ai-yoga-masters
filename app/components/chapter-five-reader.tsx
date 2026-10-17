@@ -1,4 +1,5 @@
 import SiteHeader from "./site-header";
+import ReaderSections from "./reader-sections";
 import { ReaderProgress } from "./reading-progress";
 import { bookUrl, curriculum } from "../../lib/curriculum";
 import { chapterFiveEntries, type ChapterFiveEntry } from "../../lib/chapter-five";
@@ -35,11 +36,12 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           </p>
           <p className="reader-time-note">Reading estimate only; music and practice are at your own pace.</p>
           <a className="text-link" href={`${bookUrl}#page=${entry.pdfPage}`} target="_blank" rel="noreferrer">Original book · printed p. {entry.printedPage} onward</a>
+          <ReaderSections listenHref={videoId ? "#video" : undefined} />
         </section>
         {videoId && (
           <section className="school-section" aria-labelledby="video">
             <p className="section-kicker">AI Yoga Masters · The original recording</p>
-            <h2 id="video">{entry.title}</h2>
+            <h2 id="video" tabIndex={-1}>{entry.title}</h2>
             <div className="lesson-video">
               <iframe
                 src={`https://www.youtube-nocookie.com/embed/${videoId}`}
@@ -69,7 +71,7 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
         </section>
         <section className="school-section original-teaching" aria-labelledby="teaching">
           <p className="section-kicker">Source teaching · Alex Julian, 2024</p>
-          <h2 id="teaching">{entry.kind === "flow" ? "The original flow overview" : "The original meditation"}</h2>
+          <h2 id="teaching" tabIndex={-1}>{entry.kind === "flow" ? "The original flow overview" : "The original meditation"}</h2>
           {entry.kind === "meditation" ? <h3>Practice</h3> : null}
           {entry.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
           {entry.poses.length ? <><h3>Poses / Exercises</h3><ol className="practice-cues">{entry.poses.map((pose, i) => <li key={i}>{pose}</li>)}</ol></> : null}
@@ -79,7 +81,7 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
         </section>
         <section className="school-section practice-panel" aria-labelledby="practice">
           <p className="section-kicker">New contemporary AI application</p>
-          <h2 id="practice">Try it in your next AI session.</h2>
+          <h2 id="practice" tabIndex={-1}>Try it in your next AI session.</h2>
           <p>{entry.practice}</p>
           <h3>Reflect afterward</h3>
           <p>{entry.reflection}</p>

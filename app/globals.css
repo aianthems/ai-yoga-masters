@@ -742,6 +742,19 @@ footer p { margin: 0; }
 .reader-position { margin-bottom: .35rem; color: var(--ink-soft); font-size: .95rem; }
 .reader-time-note { color: var(--ink-soft); font-size: .8rem; }
 
+.reader-sections { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: 1.5rem; }
+.reader-sections > span { margin-right: .35rem; color: var(--ink-soft); font-size: .75rem; }
+.reader-sections a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .55rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; color: var(--indigo); background: var(--paper); font-size: .85rem; font-weight: 600; opacity: 1; }
+.reader-sections a:hover { border-color: var(--indigo); background: #e9ecf2; }
+.school :is(#music, #video, #teaching, #practice) { scroll-margin-top: 6.5rem; }
+@media (max-width: 620px) {
+  .reader-sections > span { flex-basis: 100%; margin-right: 0; }
+  .reader-sections a { flex: 1; padding-right: .75rem; padding-left: .75rem; }
+}
+@media (max-width: 900px) {
+  .school :is(#music, #video, #teaching, #practice) { scroll-margin-top: 1.5rem; }
+}
+
 .evidence-review { margin-top: 2rem; }
 .evidence-card { border-top: 1px solid var(--line); padding: 1rem 0; scroll-margin-top: 6rem; }
 .evidence-card summary { cursor: pointer; padding: .5rem 0; line-height: 1.6; }
