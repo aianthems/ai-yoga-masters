@@ -779,3 +779,66 @@ footer p { margin: 0; }
 .evidence-sources { padding-left: 1.25rem; }
 .evidence-sources a { overflow-wrap: anywhere; }
 .evidence-sources small { display: block; color: var(--ink-soft); }
+
+/* Phone typography: a clear title / section / subheading hierarchy.
+   Keep these together so component styles cannot invert the reading scale. */
+@media (max-width: 620px) {
+  :root {
+    --mobile-title: clamp(1.68rem, 4.2vw, 2rem);
+    --mobile-section: 1.5rem;
+    --mobile-subheading: 1.2rem;
+  }
+
+  .school-intro,
+  .school-section { padding: 2rem 1.25rem; }
+  .school-intro h1 {
+    margin: 0 0 1.25rem;
+    font-size: var(--mobile-title);
+    line-height: 1.18;
+    letter-spacing: -.035em;
+  }
+  .school h2,
+  .section-heading h2,
+  .principle h2,
+  .founder-copy h2,
+  .reading-progress-summary h2 {
+    margin-bottom: 1rem;
+    font-size: var(--mobile-section);
+    line-height: 1.2;
+    letter-spacing: -.025em;
+    overflow-wrap: break-word;
+  }
+  .school h3,
+  .starting-point h3,
+  .petal-card h3 {
+    font-size: var(--mobile-subheading);
+    line-height: 1.3;
+    letter-spacing: -.015em;
+    overflow-wrap: break-word;
+  }
+  .school h3 { margin: 1.5rem 0 .75rem; }
+  .school .school-card h3 { margin: 0 0 .75rem; }
+  .school-lede { font-size: 1.1rem; line-height: 1.65; }
+  .school .section-kicker,
+  .section-heading .section-kicker,
+  .founder-copy .section-kicker,
+  .closing .section-kicker { margin-bottom: .75rem; line-height: 1.6; }
+  .school-intro > p:last-child,
+  .school-section > p:last-child { margin-bottom: 0; }
+
+  .landing-content h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 9vw, 2.7rem);
+    line-height: 1.1;
+  }
+  .landing-introduction { margin-bottom: 1.5rem; }
+  .shell { padding-top: 3rem; padding-bottom: 3rem; }
+  .section-heading,
+  .starting-points .section-heading { margin-bottom: 1.75rem; }
+  .starting-points-intro { margin-top: 1rem; }
+  .founder-story { padding-top: 3rem; }
+  .founder-lede { margin-bottom: 1rem; }
+  .closing h2 { line-height: 1.25; letter-spacing: -.025em; margin-bottom: 1.5rem; }
+  .reader-position { line-height: 1.6; }
+  .reader-time-note { margin-bottom: .75rem; }
+}
