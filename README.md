@@ -468,6 +468,21 @@ A database such as **Supabase should be added only when persistent user data gen
 
 ---
 
+## Local development
+
+Use Node.js 24 and `npm ci` to install the committed dependency versions.
+Run `npm run typecheck` and `npm test`; `npm run test:browser` builds and checks
+both production and preview modes, including desktop/mobile navigation.
+
+Commit `package.json` and `package-lock.json` together when dependencies change.
+Dependabot checks npm dependencies weekly; Next.js major upgrades require a
+separate migration decision.
+
+Next.js 15 pins an older PostCSS. The scoped PostCSS 8.5.23 override addresses
+the published source-map and stringify advisories while retaining Next.js 15.
+Review it when Next.js updates its bundled dependency; validate dependency
+changes with the production and preview builds before merging.
+
 ## Contributing
 
 AI Yoga Masters was built around the idea that the system itself should remain open to learning.
