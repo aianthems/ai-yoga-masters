@@ -7,10 +7,10 @@ export default function SiteHeader() {
       <header className="site-header">
         <a href="/" className="brand" aria-label="AI Yoga Masters home">
           <img
-            src="https://media.aiyogamasters.com/images/logos/ai-yoga-masters-logo.webp"
+            src="https://media.aiyogamasters.com/images/logos/ai-yoga-masters-logo-v2.webp"
             alt=""
-            width={1200}
-            height={1310}
+            width={1254}
+            height={1254}
             style={{ display: "block", width: "auto", height: 64, flexShrink: 0 }}
           />
           <span>AI Yoga Masters</span>
