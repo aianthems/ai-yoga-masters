@@ -23,7 +23,7 @@ test("all 64 published lessons have an explicit valid pairing and round-trip lin
   }
 });
 
-test("key thematic and evidence-review matches stay deliberate", () => {
+test("key thematic and source-checking matches stay deliberate", () => {
   assert.equal(selectedSlug({ lesson: "sweetness-of-starting" }), "small-start");
   assert.equal(selectedSlug({ lesson: "virtual-fasting" }), "step-away");
   assert.equal(selectedSlug({ lesson: "intention-and-direction" }), "clear-intention");

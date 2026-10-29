@@ -564,7 +564,7 @@ The goal is to preserve the roots, examine the claims, practice the principles, 
 
 `/curriculum` maps all seven chapters and 64 numbered lessons, plus the separate 16-flow and 4-meditation libraries. All 64 numbered lessons in Chapters 1–4 and 6–7, plus Chapter 5’s sixteen flows and four meditations, are readable on the site. Each published lesson page preserves source teaching separately from new AI-assisted practices, reflections, editorial notes, and future verified song/video slots.
 
-Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make all seven chapters readable. Historical and scientific evidence review remains incomplete and is identified on lesson pages.
+Curriculum content lives in `content/curriculum.json`. Original source passages retain their book copyright and are excluded from the code/documentation MIT license; see `content/README.md`. This publication is authorized by the author’s request to make all seven chapters readable.
 
 
 ## Practice Studio
@@ -621,10 +621,3 @@ All 84 readers share the ordered navigation in `lib/reading-journey.ts`: Lessons
 
 Estimated reading time uses 200 words per minute for source text, source lists where present, editorial notes, contemporary applications, and reflections, rounded up to at least 1 minute. It excludes recordings and time spent practicing. `npm test` checks complete reader coverage, chapter positions, reciprocal navigation, boundary transitions, and reading-time calculation.
 
-## Focused evidence review — October 15, 2026
-
-`/evidence` documents a focused, AI-assisted editorial review of 18 topics across 19 numbered lessons and the general benefit claims attached to all 16 flows and 4 meditations. Expandable commentary appears before the original teaching, with claim-specific findings, study limitations, direct research/agency links, source types, and the date checked. Sources and page mappings live in `lib/evidence.ts`; shared rendering lives in `app/components/evidence-review.tsx`. Reader time estimates include the new commentary.
-
-Coverage includes the hotel-worker mindset study, breathing, posture and power poses, nature, earthing and EMFs, microplastic intake, detoxing, blue-light glasses, sleep, magnesium, smiling, physical activity, yoga and meditation benefits, eye blinking, and inversion-related eye pressure. The original source text, pose inventories, benefits, exercises, and reflections are unchanged. This is not a complete literature review, clinician review, historical fact-check, or validation of the book’s individual physical sequences and meditation scripts. Unreviewed claims remain explicitly outside scope.
-
-`npm test` validates review mappings, source metadata, coverage, reading estimates, navigation, and search metadata. Production rendering can be checked for preservation of all original source paragraphs and lists.

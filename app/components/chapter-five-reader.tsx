@@ -6,8 +6,6 @@ import { chapterFiveEntries, type ChapterFiveEntry } from "../../lib/chapter-fiv
 
 import { readerNavigation } from "../../lib/reading-journey";
 
-import EvidenceReview from "./evidence-review";
-import { evidenceForPractice } from "../../lib/evidence";
 
 // Original meditation recordings supplied by Alex Julian.
 const meditationVideos: Record<string, string> = {
@@ -64,10 +62,6 @@ export default function ChapterFiveReader({ entry }: { entry: ChapterFiveEntry }
           <p>The original text, lists, and meditation cues below preserve the book’s wording, with page footers and layout whitespace removed. The AI application and reflection are new adaptations.</p>
           <p>{entry.note}</p>
           {entry.slug === "meditation-on-mortality" ? <a className="text-link" href="#practice">Go directly to the optional reflection</a> : null}
-          <p>The focused review below puts selected benefit claims in context. It is not a complete review of this practice or every claim in the source.</p>
-        </section>
-        <section className="school-section source-note" aria-label="Evidence commentary">
-          <EvidenceReview topics={evidenceForPractice(entry)} />
         </section>
         <section className="school-section original-teaching" aria-labelledby="teaching">
           <p className="section-kicker">Source teaching · Alex Julian, 2024</p>

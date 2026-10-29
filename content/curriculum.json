@@ -15,7 +15,7 @@
     "pdfPage": 7,
     "practice": "Choose one meaningful task for your next AI session. Write down what you want to accomplish before prompting.",
     "reflection": "What changed when you treated the session as a practice of attention?",
-    "note": "The hotel-worker study is described broadly in the original. Its outcomes and limits need an evidence review before this account is presented as a current research summary."
+    "note": "The hotel-worker study is described broadly in the original."
   },
   {
     "number": 2,
@@ -100,7 +100,7 @@
     "pdfPage": 8,
     "practice": "Choose one of the 8 Petals and consider how it could shape one AI interaction today. For example, use honesty to check a claim or focused attention to stay with one task.",
     "reflection": "Which petal felt most relevant to your actual work?",
-    "note": "The book’s descriptions of the 8 Petals combine philosophical interpretation, historical framing, and health claims. These are preserved as source teaching; an evidence review has not yet been completed."
+    "note": "The book’s descriptions of the 8 Petals combine philosophical interpretation, historical framing, and health claims."
   },
   {
     "number": 3,
@@ -340,7 +340,7 @@
     "pdfPage": 43,
     "practice": "Choose one manageable next step for your AI task. Set aside optional inputs that make the task harder to follow, and decide where you will stop. If continuing feels unhelpful, pause and return later.",
     "reflection": "What made the task more manageable, and what still needs your attention?",
-    "note": "The original includes broad health, nutrition, breathing, and stress claims that have not undergone a complete evidence review. The adaptation is a task-planning exercise, not a treatment for stress."
+    "note": "The adaptation is a task-planning exercise, not a treatment for stress."
   },
   {
     "number": 16,
@@ -443,7 +443,7 @@
     "pdfPage": 53,
     "practice": "Name one obstacle in your current AI project. Describe the outcome you still want, then try one alternative route: a smaller step, a clearer prompt, a different format, or a different tool. Compare what changed.",
     "reflection": "Which adjustment let you keep moving without abandoning your purpose?",
-    "note": "Water is used as a philosophical metaphor for adaptability. The original’s claims connecting hydration, age, and mental flexibility have not undergone an evidence review; this adaptation is a project exercise, not health guidance."
+    "note": "Water is used as a philosophical metaphor for adaptability."
   },
   {
     "number": 22,
@@ -591,7 +591,7 @@
     "pdfPage": 66,
     "practice": "Choose one assumption behind an AI answer or your own plan. Ask what evidence would challenge it. Look for a reliable source or a contrasting example, then revise the assumption if the evidence warrants it.",
     "reflection": "What did you update, and what remains uncertain?",
-    "note": "The software and crystal-mind images are metaphors. The source’s cognitive-bias counts and examples have not undergone a complete evidence review; the adaptation invites checking assumptions rather than claiming a bias-free mind."
+    "note": "The software and crystal-mind images are metaphors."
   },
   {
     "number": 30,
@@ -648,7 +648,7 @@
     "pdfPage": 74,
     "practice": "Settle into a comfortable, supported working position. Notice one point of contact with your chair or surroundings. Adjust your position or take a movement break if that would feel useful, then choose your next task.",
     "reflection": "What did noticing your surroundings and comfort change about starting?",
-    "note": "Yogafication is the author’s term. The source’s study anecdote and health claims have not undergone a complete evidence review. The adaptation invites optional body awareness without promising physical benefits."
+    "note": "Yogafication is the author’s term. The adaptation invites optional body awareness without promising physical benefits."
   },
   {
     "number": 33,
@@ -666,7 +666,7 @@
     "pdfPage": 75,
     "practice": "Pause before your next prompt. Notice your breath as it is, without making it deeper, slower, or different. If attending to breathing feels uncomfortable, notice an ordinary sound or a point of contact instead. Return to the task when you are ready.",
     "reflection": "What did you notice during the pause?",
-    "note": "The source makes broad physiological claims about breathing that have not undergone a complete evidence review. The new exercise is simple noticing; it does not teach breath retention, forced breathing, or a therapeutic breathing technique."
+    "note": "The new exercise is simple noticing; it does not teach breath retention, forced breathing, or a therapeutic breathing technique."
   },
   {
     "number": 34,
@@ -705,7 +705,7 @@
     "pdfPage": 79,
     "practice": "Before working, arrange your screen and materials so you can use them comfortably. Choose a supported position and allow yourself to change it. After one small task, check whether a pause or adjustment would help.",
     "reflection": "Which adjustment made your workspace easier to use?",
-    "note": "The source’s claims about posture, chakras, and physical benefits have not undergone a complete evidence review. The adaptation encourages comfort and variation, without asking you to hold a perfect position or push through discomfort."
+    "note": "The adaptation encourages comfort and variation, without asking you to hold a perfect position or push through discomfort."
   },
   {
     "number": 36,
@@ -722,7 +722,7 @@
     "pdfPage": 81,
     "practice": "Notice how you feel as you approach your next AI task. If useful, make one comfortable adjustment to your position or surroundings. Then choose whether to continue, simplify the task, or pause.",
     "reflection": "What did you learn by noticing both your state of mind and your comfort?",
-    "note": "The original includes claims about poses and emotional conditions that have not undergone a complete evidence review. This adaptation does not prescribe postures to diagnose or treat anxiety, depression, or another condition."
+    "note": "This adaptation does not prescribe postures to diagnose or treat anxiety, depression, or another condition."
   },
   {
     "number": 37,
@@ -739,7 +739,7 @@
     "pdfPage": 82,
     "practice": "Step away from the screen for a familiar activity that feels comfortable and accessible to you. Give the activity your attention for a moment. When you return, choose one clear action in your project.",
     "reflection": "What changed in your attention after the change of activity?",
-    "note": "The source’s links between coordination, mental functioning, and productivity have not undergone a complete evidence review. The adaptation is an optional change of activity, without a promised performance benefit."
+    "note": "The adaptation is an optional change of activity, without a promised performance benefit."
   },
   {
     "number": 38,
@@ -811,7 +811,7 @@
     "pdfPage": 87,
     "practice": "Choose a short break from your current screen task. Keep essential communication and accessibility tools available. Spend the break in an ordinary activity away from that task, then decide deliberately whether to return or finish for now.",
     "reflection": "What did the pause help you notice about continuing?",
-    "note": "Virtual fasting is a metaphor for a digital break, not a recommendation to restrict food. The source’s biochemical and health claims have not undergone a complete evidence review; this adaptation makes no such promise."
+    "note": "Virtual fasting is a metaphor for a digital break, not a recommendation to restrict food."
   },
   {
     "number": 42,
@@ -827,7 +827,7 @@
     "pdfPage": 89,
     "practice": "If a view of a tree or another natural detail is available, spend a moment observing it from a window or an accessible outdoor place. Notice a color, a shape, and a small change. Return to your project with one clear next step.",
     "reflection": "Which detail drew your attention when you paused to observe?",
-    "note": "The source’s broad health and energy-field claims have not undergone a complete evidence review. The adaptation is an observation practice, without a claim that trees emit healing fields or treat a condition."
+    "note": "The adaptation is an observation practice, without a claim that trees emit healing fields or treat a condition."
   },
   {
     "number": 43,
@@ -845,7 +845,7 @@
     "pdfPage": 90,
     "practice": "Pause in a familiar, safe place, using your usual footwear and supports. Notice one ordinary sensation of contact with a chair, floor, or another surface. Name a detail in your surroundings before returning to your task.",
     "reflection": "What helped you orient yourself to the place you were in?",
-    "note": "The original makes claims about wireless technology, illness, electrical discharge, and earthing products that have not undergone an evidence review. In the adaptation, grounding means attending to ordinary sensations and surroundings; it does not mean electrical discharge or a treatment, and requires no product."
+    "note": "In the adaptation, grounding means attending to ordinary sensations and surroundings; it does not mean electrical discharge or a treatment, and requires no product."
   },
   {
     "number": 44,
@@ -862,7 +862,7 @@
     "pdfPage": 92,
     "practice": "In your usual comfortable position, notice where your feet rest if that is accessible to you. You may instead notice another supported point of contact. Make an ordinary comfort adjustment if useful, then return to your next task.",
     "reflection": "What did you notice about the support already available to you?",
-    "note": "The source’s claims about footwear, foot exercises, and productivity have not undergone a complete evidence review. The adaptation does not recommend changing footwear, buying products, or using an exercise as treatment."
+    "note": "The adaptation does not recommend changing footwear, buying products, or using an exercise as treatment."
   },
   {
     "number": 45,
@@ -911,7 +911,7 @@
     "pdfPage": 95,
     "practice": "If you wish, recall a pleasant moment or a small kindness before continuing your work. Let your expression be natural. You can also simply pause without changing how you feel, then choose your next action.",
     "reflection": "What kind of pause felt appropriate for you today?",
-    "note": "The source’s claims about smiling and health have not undergone a complete evidence review. The adaptation does not require a forced smile, a timed hold, or a particular emotional response."
+    "note": "The adaptation does not require a forced smile, a timed hold, or a particular emotional response."
   },
   {
     "number": 48,
@@ -929,7 +929,7 @@
     "pdfPage": 96,
     "practice": "Notice one work habit you would like to change, such as accepting an AI answer before reading it. Choose a concrete replacement cue: ‘read once, then check one claim.’ Try it during one interaction and reflect on whether it helped.",
     "reflection": "Which small cue could support the habit you want to develop?",
-    "note": "Deprogramming and the garden images are used as metaphors. The source’s claims about thought suppression and nature’s energy fields have not undergone a complete evidence review. The adaptation concerns an ordinary work habit, not a clinical intervention or an instruction to suppress difficult thoughts."
+    "note": "Deprogramming and the garden images are used as metaphors. The adaptation concerns an ordinary work habit, not a clinical intervention or an instruction to suppress difficult thoughts."
   },
   {
     "number": 49,
@@ -967,7 +967,7 @@
     "pdfPage": 127,
     "practice": "Before your next AI session, notice whether your working space supports your comfort and attention. Choose one ordinary act of care, such as preparing your materials, adjusting a support, or leaving room for a break. Let the session fit the capacity you have today.",
     "reflection": "What support helped you approach the work?",
-    "note": "The root-system image is a metaphor for caring for the practitioner. The source makes broad claims about physical and mental health that have not undergone a complete evidence review; the adaptation does not make productivity or mental practice conditional on physical ability."
+    "note": "The root-system image is a metaphor for caring for the practitioner."
   },
   {
     "number": 51,
@@ -1002,7 +1002,7 @@
     "pdfPage": 130,
     "practice": "Notice the supports you are using in your usual working position. Make an ordinary adjustment if useful, and allow yourself to change position or activity as needed. Choose a useful stopping point for the next task.",
     "reflection": "Which support or pause made the session easier to approach?",
-    "note": "The original’s comparisons with smoking and claims about posture, metabolism, and the nervous system have not undergone a complete evidence review. The adaptation does not ask you to hold a perfect position or treat sitting as a personal failing."
+    "note": "The adaptation does not ask you to hold a perfect position or treat sitting as a personal failing."
   },
   {
     "number": 53,
@@ -1038,7 +1038,7 @@
     "pdfPage": 133,
     "practice": "Look at the work you have planned and leave space for your usual meals and personal care. If you use AI to explore a nutrition question, turn the answer into questions to check with reliable sources or an appropriate professional, rather than a personalized plan to follow immediately.",
     "reflection": "What deserves checking before an AI suggestion becomes a decision?",
-    "note": "The source’s nutrition, hydration, deficiency, and food-specific claims have not undergone a complete evidence review. This adaptation is about planning and checking information; it does not prescribe a diet, supplement, fasting routine, or fluid intake."
+    "note": "This adaptation is about planning and checking information; it does not prescribe a diet, supplement, fasting routine, or fluid intake."
   },
   {
     "number": 55,
@@ -1056,7 +1056,7 @@
     "pdfPage": 135,
     "practice": "Choose a deliberate stopping point for your AI work. Save what you have made and leave a short note for your next session. Close the task when you are ready, allowing room for your usual rest routine.",
     "reflection": "What would help you leave the session without carrying every unfinished task with you?",
-    "note": "The source includes sleep advice and claims about electromagnetic fields that have not undergone a complete evidence review. The adaptation is a session-closing exercise, not a treatment for sleep problems or an EMF intervention."
+    "note": "The adaptation is a session-closing exercise, not a treatment for sleep problems or an EMF intervention."
   },
   {
     "number": 56,
@@ -1077,7 +1077,7 @@
     "pdfPage": 136,
     "practice": "Choose one environmental or health claim you encounter in an AI answer. Find the source behind it, note its date and what was actually measured, and separate findings from speculation or a product recommendation. Leave uncertain conclusions open.",
     "reflection": "What did the source establish, and what remains uncertain?",
-    "note": "The original’s claims about wireless technology, microplastic intake, contamination, detoxing, and canceling hazards have not undergone a complete evidence review. The adaptation invites source checking and does not recommend a detox or protective product."
+    "note": "The adaptation invites source checking and does not recommend a detox or protective product."
   },
   {
     "number": 57,
@@ -1095,7 +1095,7 @@
     "pdfPage": 138,
     "practice": "Take one claim about electromagnetic fields from an AI answer or another text. Ask what kind of field and exposure the claim describes, what evidence it cites, and whether the conclusion follows. Look for a relevant primary source rather than accepting the wording alone.",
     "reflection": "Which distinction helped you assess the claim more carefully?",
-    "note": "The source’s positive/negative field categories, healing-tree claims, illness claims, and discharge explanations have not undergone a complete evidence review. They are preserved as the author’s original statements; the adaptation is an evidence-reading exercise rather than verified EMF or medical guidance."
+    "note": "They are preserved as the author’s original statements; the adaptation is an evidence-reading exercise rather than verified EMF or medical guidance."
   },
   {
     "number": 58,
@@ -1113,7 +1113,7 @@
     "pdfPage": 140,
     "practice": "Before accepting an AI recommendation for a protective product, identify the exact claim, the evidence offered, and any commercial interest. Check those details with relevant reliable sources before deciding whether the recommendation is useful.",
     "reflection": "What evidence would you need before acting on the recommendation?",
-    "note": "The original’s claims that plants, people, pets, or grounding mats cancel electromagnetic harm, and its claims about blue-light glasses, have not undergone a complete evidence review. The adaptation does not endorse these products or claims, and does not provide instructions for making or connecting a grounding device."
+    "note": "The adaptation does not endorse these products or claims, and does not provide instructions for making or connecting a grounding device."
   },
   {
     "number": 59,

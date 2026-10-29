@@ -5,6 +5,7 @@ const nextConfig = {
   distDir: process.env.AYM_TEST_DIST_DIR || ".next",
   async redirects() {
     return [
+      { source: "/evidence", destination: "/curriculum", permanent: true },
       {
         source: "/practice",
         has: [{ type: "query", key: "practice", value: "clarity-discernment" }],
