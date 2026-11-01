@@ -1,5 +1,19 @@
 # AI Yoga Masters
 
+**Ancient practice for intelligent tools.**
+
+AI keeps getting more capable. **AI Yoga Masters asks a different question: can the person using it become more capable too?**
+
+AI Yoga Masters is an open-source educational project founded by **Alex Julian**, helping people use AI with greater attention, discernment, and conscious intention. Its foundation is the original *AI Yoga Masters* book: a 2024 system that applies yoga, meditation, philosophy, focus training, and practical self-observation to the way people use AI and technology.
+
+> **Train the user, not only the model.**
+
+[Visit the live school](https://aiyogamasters.com) · [Start Here](https://aiyogamasters.com/start-here) · [Read the original book][book] · [Explore the curriculum](#the-original-curriculum) · [Start with the core practice](#the-core-practice) · [Build with us](#contributing)
+
+**Project status:** Live at [aiyogamasters.com](https://aiyogamasters.com). The Next.js school publishes all seven chapters: 64 numbered lessons, 16 yoga flow overviews, and 4 meditation scripts. Readers can search the curriculum, follow a sequential reading journey, and opt into browser-local progress. Original source teaching is distinguished from contemporary practices and editorial notes. There is no account system, database, or AI teaching assistant.
+
+---
+
 ## Optional reading progress
 
 Readers can opt into browser-local progress on the homepage, curriculum, or any numbered lesson, flow, or meditation. The versioned `ai-yoga-masters:reading-progress:v1` localStorage record contains only the last opened curriculum path and explicitly completed paths. It stores no writing, account information, or cross-device identity and makes no network submissions. Completion is reversible; clearing progress removes the record and turns saving off.
@@ -7,18 +21,6 @@ Readers can opt into browser-local progress on the homepage, curriculum, or any 
 All 84 readings use the shared sequence in `lib/reading-journey.ts`. Continue reading resumes an unfinished reading, otherwise selects the next unfinished entry, including Chapter 5 boundaries. Chapter lists display completion badges. Unknown paths, duplicate completion marks, malformed data, and unsupported versions are filtered or ignored. Unavailable storage leaves the original reading experience usable and shows a save error. Open tabs synchronize changes without continuously overwriting one another’s last place.
 
 The provider receives only the sequence’s paths and labels. Original teaching remains server-rendered. `npm test` includes corruption, allowed-path, continuation, and completed-collection cases.
-
-**Ancient practice for intelligent tools.**
-
-AI keeps getting more capable. **AI Yoga Masters asks a different question: can the person using it become more capable too?**
-
-AI Yoga Masters is an open-source, AI-native yoga school founded by **Alex Julian**. Its foundation is the original *AI Yoga Masters* book: a 2024 system that applies yoga, meditation, philosophy, focus training, and practical self-observation to the way people use AI and technology.
-
-> **Train the user, not only the model.**
-
-[Read the original book][book] · [Explore the curriculum](#the-original-curriculum) · [Start with the core practice](#the-core-practice) · [Build with us](#contributing)
-
-**Project status:** Website foundation stage. The original book and curriculum now have a runnable Next.js public-site foundation in this repository. There is not yet a database, user-account system, or AI teaching assistant.
 
 ---
 
@@ -445,7 +447,9 @@ Mindfulness should increase agency—not create dependence on a teacher, app, re
 
 ## What exists today
 
-The repository now contains the first runnable Next.js website foundation alongside the project documentation. It remains intentionally lightweight: there is no database, authentication system, AI agent, or practice tracker yet.
+The public school includes Start Here, searchable curriculum pages, original recordings where available, and all 84 lesson, flow, and meditation readers. Optional reading progress stores only the last opened reading and explicit completion marks in the visitor’s browser; it does not save reflections or synchronize across devices. There is no database, authentication system, or AI teaching agent.
+
+Earlier implementation notes below document the project’s development; the live-school summary above describes its current public experience.
 
 ---
 
@@ -454,15 +458,15 @@ The repository now contains the first runnable Next.js website foundation alongs
 | Stage | Focus |
 | --- | --- |
 | **Foundation — complete** | Establish identity, source material, principles, safety boundaries, and the public-building model. |
-| **Website foundation — now** | Launch the calm, accessible Next.js home for AI Yoga Masters and connect the production domain. |
-| **Curriculum extraction** | Convert the 64 lessons, flows, and meditations into structured source-aware content. |
+| **Website — live** | The public Next.js school is available at aiyogamasters.com. |
+| **Curriculum — readable** | All 64 lessons, 16 flows, and 4 meditations have native pages with source references and editorial distinctions. |
 | **Evidence pass** | Review health, scientific, historical, and philosophical claims; clearly separate source, evidence, and interpretation. |
-| **Minimal school — underway** | Expand the website from the public foundation into structured curriculum pages. |
+| **Reading tools — available** | Start Here, curriculum search, sequential navigation, and optional browser-local progress. |
 | **AI-native learning** | Add source-aware study tools only where they materially improve learning. |
-| **Practice layer** | Explore optional private reflection, progress, and journaling features without turning practice into engagement farming. |
+| **Future practice tools** | Consider further reflection or journaling features only when useful; browser-local reading progress is already available. |
 | **Open ecosystem** | Develop contribution standards, reusable teaching formats, and experiments others can build on. |
 
-The proposed technical direction is **Next.js + Markdown/MDX + Vercel** for the first functional school.
+The current school uses **Next.js, TypeScript, React, structured curriculum content, and Vercel**.
 
 A database such as **Supabase should be added only when persistent user data genuinely becomes necessary**.
 
